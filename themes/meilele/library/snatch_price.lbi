@@ -1,0 +1,11 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="snatch-panel">
+	<h3>{$lang.new_price}</h3>
+    <div class="table">
+    	<!--{foreach from=$price_list item=item}-->
+    	<p>{$item.user_name}&nbsp;&nbsp;{$item.bid_price}</p>
+    	<!--{/foreach}-->
+    </div>
+</div>
+
+

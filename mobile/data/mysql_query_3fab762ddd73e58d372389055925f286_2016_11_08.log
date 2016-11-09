@@ -1,0 +1,617 @@
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '69a707292c635d44ed697903893a36e6'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='root'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593042', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:4:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:5;s:9:\"flow_type\";i:0;}' WHERE sesskey = '69a707292c635d44ed697903893a36e6' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478591242
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '69a707292c635d44ed697903893a36e6'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT value FROM `test`.`ecs_touch_shop_config` WHERE id = 419
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593058', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:4:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:5;s:9:\"flow_type\";i:0;}' WHERE sesskey = '69a707292c635d44ed697903893a36e6' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478591258
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '69a707292c635d44ed697903893a36e6'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT value FROM `test`.`ecs_touch_shop_config` WHERE id = 419
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593085', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:4:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:5;s:9:\"flow_type\";i:0;}' WHERE sesskey = '69a707292c635d44ed697903893a36e6' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '69a707292c635d44ed697903893a36e6'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='root'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593087', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:4:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:6;s:9:\"flow_type\";i:0;}' WHERE sesskey = '69a707292c635d44ed697903893a36e6' LIMIT 1
+
+INSERT INTO `test`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('da040679e84d86ddc387d156ee71e0d1', '1478593127', '0.0.0.0', 'a:0:{}')
+
+SELECT SUM(goods_number) AS number FROM `test`.`ecs_cart` WHERE session_id = 'da040679e84d86ddc387d156ee71e0d1' AND rec_type = '0'
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593128', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;}' WHERE sesskey = 'da040679e84d86ddc387d156ee71e0d1' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478591328
+
+INSERT INTO `test`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('54d60a3a2b4cc978708241beca40c88a', '1478593129', '0.0.0.0', 'a:0:{}')
+
+SELECT SUM(goods_number) AS number FROM `test`.`ecs_cart` WHERE session_id = '54d60a3a2b4cc978708241beca40c88a' AND rec_type = '0'
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593130', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;}' WHERE sesskey = '54d60a3a2b4cc978708241beca40c88a' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478591330
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478564197'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478564197
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593177', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478564377;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478591377
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+INSERT INTO `test`.`ecs_sessions` (sesskey, expiry, ip, data) VALUES ('8ee2477d231be0c9adf938f1b39f903b', '1478593260', '0.0.0.0', 'a:0:{}')
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='niro\'--'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593261', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:1;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '54d60a3a2b4cc978708241beca40c88a'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT value FROM `test`.`ecs_touch_shop_config` WHERE id = 419
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593299', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;}' WHERE sesskey = '54d60a3a2b4cc978708241beca40c88a' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478591499
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '54d60a3a2b4cc978708241beca40c88a'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='niro\'--'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593305', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:1;}' WHERE sesskey = '54d60a3a2b4cc978708241beca40c88a' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478591505
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478564377'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478564377
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593357', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478564557;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478591557
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478564557'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478564557
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593537', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478564737;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478591737
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='; backup database ecs_users to disk = ‘c:\\*.db’;--'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593681', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:2;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478564737'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478564737
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593717', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478564917;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478591917
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478564917'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478564917
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478593898', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478565098;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478592098
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478565098'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478565098
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478594077', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478565277;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478565277'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478565277
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478594257', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478565457;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478565457'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478565457
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478594437', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478565637;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478565637'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478565637
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478594617', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478565817;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478565817'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478565817
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478594797', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478565997;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478565997'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478565997
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478594977', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478566177;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478566177'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478566177
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478595157', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478566357;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='niro\'; backup database ecs_users to disk = ‘C:\\Users\\Administrator\\Desktop\\*.db’;--'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478595179', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:3;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478566357'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478566357
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478595337', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478566537;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478566537'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478566537
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478595518', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478566718;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478593718
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478593718
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478566718'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478566718
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478595697', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478566897;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478566897'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478566897
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478595877', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478567077;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478594077
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478567077'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478567077
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596058', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478567258;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478594258
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='’ or 1=1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596142', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:4;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478594342
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='’ or 1=1‘'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596209', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:5;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478567258'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478567258
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596237', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478567437;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478567437'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478567437
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596417', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478567617;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478594617
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478567617'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478567617
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596597', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478567797;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478567797'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478567797
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596777', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478567977;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478594977
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478567977'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478567977
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478596957', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478568157;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478568157'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478568157
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597137', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478568337;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478595337
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='\' or 1=1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597204', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:6;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478595404
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478595404
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478568337'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478568337
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597317', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478568517;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478568517'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478568517
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597497', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478568697;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478568697'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478568697
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597677', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478568877;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478595877
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='\' and 1=1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597698', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:7;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478595898
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478595898
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478568877'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478568877
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597857', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478569057;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='preg_match(‘/(and|or|union|where)/I’,$id)'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597944', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:8;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478596144
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478596144
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='preg_match(‘/(and|or|union|where)/I’,1)'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478597978', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:9;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478596178
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478569057'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478569057
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598037', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478569237;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478596237
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='1 or 1 = 1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598039', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:10;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478596239
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='1 or 1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598145', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:11;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='’1 or 1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598175', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:12;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='\'1 or 1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598198', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:13;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478596398
+
+DELETE FROM `test`.`ecs_sessions` WHERE expiry < 1478596398
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478569237'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478569237
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598217', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478569417;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478569417'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478569417
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598397', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478569597;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='preg_replace(\'\\\'),\'\')\' or 1'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598547', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:14;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478596747
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478569597'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478569597
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598577', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478569777;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+DELETE FROM `test`.`ecs_sessions_data` WHERE expiry < 1478596777
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b'
+
+SELECT user_id, password, salt,ec_salt  FROM `test`.`ecs_users` WHERE user_name='1 union select 1, table_name from information_schema.tables where table_name=’ecs_users’'
+
+SELECT * FROM `test`.`ecs_touch_nav`
+            WHERE ifshow = '1' ORDER BY type, vieworder
+
+select region_name from `test`.`ecs_region` where region_id in (1,6,80)
+
+SELECT c.cat_id, c.cat_name, c.sort_order, a.article_id, a.title, a.file_url, a.open_type FROM `test`.`ecs_article` AS a LEFT JOIN `test`.`ecs_article_cat` AS c ON a.cat_id = c.cat_id WHERE c.cat_type = 5 AND a.is_open = 1 ORDER BY c.sort_order ASC, a.article_id
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598755', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='1', email='0', data = 'a:3:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:15;}' WHERE sesskey = '8ee2477d231be0c9adf938f1b39f903b' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478569777'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478569777
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598757', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478569957;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+
+SELECT userid, adminid, user_name, user_rank, discount, email, data, expiry FROM `test`.`ecs_sessions` WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE add_time >= '1478569957'
+
+SELECT COUNT(*) FROM `test`.`ecs_order_info` WHERE pay_time >= 1478569957
+
+UPDATE `test`.`ecs_sessions` SET expiry = '1478598937', ip = '0.0.0.0', userid = '0', adminid = '0', user_name='0', user_rank='0', discount='0', email='0', data = 'a:1:{s:10:\"last_check\";i:1478570137;}' WHERE sesskey = '22cf9c4c1b975e3d42d243e382ed0ebe' LIMIT 1
+

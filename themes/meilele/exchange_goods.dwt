@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/meilele/goods.css" />
+{* 包含脚本文件 *}
+<style>
+.goods-panel .table .btns .add{ background:#ffa114; color:#fff; font-size:18px; text-align:center; display:inline-block; line-height:40px;}
+.goods-panel .table .btns .add:hover{ color:#fff !important; text-decoration:none}
+.root_body .main-frame{ float:left; width:1190px;}
+</style>
+{insert_scripts files='common.js'}
+<script type="text/javascript">
+function $id(element)
+{
+  return document.getElementById(element);
+}
+//切屏--是按钮，_v是内容平台，_h是内容库
+function reg(str)
+{
+  var bt=$id(str+"_b").getElementsByTagName("h2");
+
+  for(var i=0;i<bt.length;i++)
+  {
+    bt[i].subj=str;
+    bt[i].pai=i;
+    bt[i].style.cursor="pointer";
+
+    bt[i].onclick=function()
+    {
+      $id(this.subj+"_v").innerHTML=$id(this.subj+"_h").getElementsByTagName("blockquote")[this.pai].innerHTML;
+
+      for(var j=0;j<$id(this.subj+"_b").getElementsByTagName("h2").length;j++)
+      {
+        var _bt=$id(this.subj+"_b").getElementsByTagName("h2")[j];
+        var ison=j==this.pai;
+        _bt.className=(ison?"":"h2bg");
+      }
+    }
+  }
+
+  $id(str+"_h").className="none";
+  $id(str+"_v").innerHTML=$id(str+"_h").getElementsByTagName("blockquote")[0].innerHTML;
+}
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='magiczoomplus.js,meilele_goods.js'}
+<div class="w mt10 clearfix">
+	<div class="goods-display Left">
+    	<!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem -->
+    </div>
+    <form action="exchange.php?act=buy" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
+    	<div id="JS_goods_info_panel" class="goods-panel">
+        	<div class="title">
+        		<h4 class="main-title">
+            		<a title="{$goods.goods_brand}" href="{$goods.goods_brand_url}" target="_blank">[{$goods.goods_brand}]</a>
+                    {$goods.goods_style_name}
+                    <span class="sn">编号：{$goods.goods_sn}</span>
+            	</h4>
+                <h4 id="JS_goods_sub_title" class="sub-title">
+                	{$goods.goods_brief}
+                </h4>
+        	</div>
+            <ul class="price">
+            	<li class="price-att">
+                	<table>
+                    	<tr>
+                        	<td>
+                            	<span id="JS_effect_price_type" class="key">{$lang.exchange_integral}</span>
+                            </td>
+                            <td>
+								<strong id="current_price" class="num">{$goods.exchange_integral}</strong>
+							</td>
+                        </tr>
+                    </table>
+                </li>
+                <li class="price-ext">
+                	<table>
+                    	<tr>
+                        	<td>
+								<span class="key">商店价</span>
+							</td>
+                        	<td>
+                            	<del class="mt">¥{$goods.shop_price}</del>
+                            	<a class="mt JS_jump" href="javascript:void(0);">
+                                	已售
+									<span id="JS_goods_saled_number" class="panel_red">{$goods.sales_volume}</span>
+                                </a> <a class="mt JS_jump" href="javascript:void(0);">
+									用户评分
+									<span id="JS_goods_comment_num" class="panel_red">{$goods.comment_rank}</span>
+								</a>                         
+                            </td>
+                            <td>
+                                <!-- QQ 号码 {foreach from=$qq item=im name=qq} -->
+                                <!-- {if $smarty.foreach.qq.iteration<2}--> 
+      							<!-- {if $im} -->
+      							<a href="http://wpa.qq.com/msgrd?V=1&amp;Uin={$im}&amp;Site={$shop_name}&amp;Menu=yes" target="_blank" class="chat"></a>
+      							<!-- {/if} -->
+                                <!-- {/if} -->
+      							<!-- {/foreach} 结束QQ号码 -->
+							</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <div class="table">
+            	<!-- {* 开始循环所有可选属性 *} --> 
+            	<!-- {foreach from=$specification item=spec key=spec_key} --> 
+            	<!-- {if $spec.attr_type eq 1} -->            
+            	<dl class="diff clearfix" id="s1">
+              		<dt>{$spec.name}</dt>
+              		<dd>
+                    	<!-- {foreach from=$spec.values item=value key=key} -->
+                        <a href="javascript:void(0);" class="{if $key eq 0}current{/if} opt">
+                        	{$value.label}
+                        	<input id="spec_value_{$value.id}" style="display:none;" type="radio" name="spec_{$spec_key}" value="{$value.id}" {if $key eq 0}checked{/if} />
+                            <i></i>
+                        </a>
+                        <!-- {/foreach} -->
+              		</dd>
+            	</dl>
+            	<!-- {else} --> 
+            	<dl class="diff clearfix">
+              		<dt>{$spec.name}</dt>	
+              		<dd>
+                    	<!-- {foreach from=$spec.values item=value key=key} -->
+                        <a href="javascript:void(0);" class="{if $key eq 0}current{/if} opt">
+                        	{$value.label}
+                        	<input type="checkbox" name="spec_{$spec_key}" value="{$value.id}" id="spec_value_{$value.id}" onclick="changePrice()" style="display:none;" {if $key eq 0}checked{/if} />
+                            <i></i>
+                        </a>
+                        <!-- {/foreach} -->
+              		</dd>
+            	</dl>            
+            	<!-- {/if} -->
+            	<input type="hidden" name="spec_list" value="{$key}" />
+            	<!-- {/foreach} --> 
+            	<!-- {* 结束循环可选属性 *} -->
+                <dl class="number clearfix">
+                	<dt>数量</dt>
+                    <dd>
+                    	<div class="row">
+                        	<div class="input">
+                            	<input type="text" value="1" class="goodsNumber" name="number" id="product_amount">
+                                <div class="click">
+                                	<a class="JS_add" href="javascript:"></a>
+                    				<a class="JS_minus" href="javascript:" id="reduce"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="btns clearfix">
+                	<a id="JS_goods_panel_add" class="add normal JS_addToCart shop_normal" title="" href="javascript:$('#ECS_FORMBUY').submit();">{$lang.exchange_goods}</a>
+                    <input type="hidden" name="goods_id" value="{$goods.goods_id}" />
+                </dl>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="w mt20 clearfix">
+	<div class="main-frame">
+    	<div style="height:0px;position:absolute;" id="JS_float_navs_position"></div>
+		<script>
+		(function(){
+			if( /MSIE\s6/.test( navigator.userAgent ) ){
+				var d = document.getElementById('JS_float_navs_position');
+				d.parentNode.removeChild( d );
+			}
+		})();
+		</script>
+    	<div id="JS_float_navs" class="module-toggle-bar">
+        	<div class="list Left hd">
+            	<ul>
+            		<li><a id="JS_gd_tab_head_xiangqing" class="first current" href="javascript:;">商品详情</a></li>
+                	<li><a id="JS_gd_tab_head_guige" href="javascript:;">规格参数</a></li>
+                </ul>
+            </div>
+            <div class="side-btn Right">
+            	<table>
+                	<tr>
+						<td>
+							<div class="chat-box">
+                            	<!-- QQ 号码 {foreach from=$qq item=im name=qq} -->
+                                <!-- {if $smarty.foreach.qq.iteration<2}--> 
+      							<!-- {if $im} -->
+      							<a href="http://wpa.qq.com/msgrd?V=1&amp;Uin={$im}&amp;Site={$shop_name}&amp;Menu=yes" target="_blank" class="chat"></a>
+      							<!-- {/if} -->
+                                <!-- {/if} -->
+      							<!-- {/foreach} 结束QQ号码 -->
+							</div>
+						</td>
+						<td>
+							<div id="JS_float_chat_box" class="add-box">
+								<a id="JS_float_nav_buy" class="add" href="javascript:addToCart({$goods.goods_id})"></a>
+							</div>
+						</td>
+					</tr>
+                </table>
+            </div>
+        </div>
+        <div class="bd">
+        	<ul>
+            	<div id="div1" class="goods-detail current" style="display: block;">
+        			{$goods.goods_desc}
+        		</div>
+        	</ul>
+        	<ul>
+            	<div id="div2" class="goods-standard">
+        			<table>
+            			<!-- {foreach from=$properties item=property_group key=key} -->
+                		<tr>
+                			<th colspan="2">{$key|escape}</th>
+                		</tr>
+                		<!-- {foreach from=$property_group item=property} -->
+        				<tr>
+          					<td class="key">{$property.name|escape:html}：</td>
+          					<td>{$property.value}</td>
+        				</tr>
+        				<!-- {/foreach}-->
+                		<!-- {/foreach}-->
+           		 	</table>
+        		</div>
+        	</ul>
+        </div>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89343201.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<script type="text/javascript">
+<!-- {literal} -->
+onload = function()
+{
+  fixpng();
+}
+<!-- {/literal} -->
+</script>
+</html>
+
+

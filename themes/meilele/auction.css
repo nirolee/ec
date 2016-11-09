@@ -1,0 +1,345 @@
+img {
+	background:#eee
+}
+.seckill-header {
+	margin-top:15px
+}
+.seckill-header .ad {
+	height:26px
+}
+.seckill-header .nav {
+	height:36px;
+	border:solid 1px #e6e6e6;
+	margin-top:18px;
+	padding-right:19px;
+	font-family:Microsoft Yahei;
+	background:#fff
+}
+.seckill-header .nav .tab {
+	height:38px;
+	position:absolute;
+	margin:-1px 0 0 -1px
+}
+.seckill-header .nav .tab a {
+	display:inline-block;
+	vertical-align:top;
+	padding:0 35px;
+	height:18px;
+	line-height:18px;
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:none;
+	border-right:dotted 1px #ccc;
+	margin-top:10px;
+	overflow:hidden
+}
+.seckill-header .nav .tab a:hover, .seckill-header .nav .tab a.current {
+	background:#ca033c;
+	color:#fff!important;
+	border-right:solid 1px #ca033c;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0
+}
+.seckill-header .nav ul {
+	margin-top:11px;
+	float:right
+}
+.seckill-header .nav ul li {
+	float:left
+}
+.seckill-header .nav ul li a, .seckill-header .nav ul li span {
+	display:inline-block;
+	vertical-align:top
+}
+.seckill-header .nav ul li a {
+	height:16px;
+	line-height:16px;
+	background:url(http://image.meilele.com/images/miaosha/seckill.gif) no-repeat;
+	text-decoration:none;
+	color:#666
+}
+.seckill-header .nav ul li.method a {
+	background-position:0 -53px;
+	padding-left:18px
+}
+.seckill-header .nav ul li.method a:hover {
+	background-position:0 -69px
+}
+.seckill-header .nav ul li.rule a {
+	background-position:0 -85px;
+	padding-left:17px
+}
+.seckill-header .nav ul li.rule a:hover {
+	background-position:0 -101px
+}
+.seckill-header .nav ul .attention {
+	position:relative;
+	z-index:2
+}
+.seckill-header .nav ul .attention a {
+	background-position:0 -117px;
+	padding-left:19px;
+	color:#333
+}
+.seckill-header .nav ul .attention a:hover {
+	color:#333!important
+}
+.seckill-header .nav ul .attention .wechat {
+	width:182px;
+	height:232px;
+	border:solid 1px #ccc;
+	background:#fff;
+	padding:26px;
+	position:absolute;
+	box-shadow:0 0 8px #bbb;
+	left:-150px;
+	top:25px;
+	display:none
+}
+.seckill-header .nav ul .attention .wechat p {
+	text-align:center;
+	color:#333;
+	line-height:125%;
+	margin-top:16px;
+	font-size:14px
+}
+.seckill-header .nav ul .attention .wechat .arrow {
+	position:absolute;
+	right:30px;
+	font-size:50px
+}
+.seckill-header .nav ul .attention .wechat .arrow-line {
+	color:#ccc;
+	top:-35px
+}
+.seckill-header .nav ul .attention .wechat .arrow-bg {
+	color:#fff;
+	top:-34px
+}
+.seckill-header .nav ul .attention.hover .wechat {
+	display:block
+}
+.seckill-header .nav ul li .line {
+	width:0;
+	height:14px;
+	overflow:hidden;
+	border-right:dotted 1px #ddd;
+	margin:2px 11px 0
+}
+.seckill-goods {
+	width:984px;
+	margin:11px auto 0;
+	font-family:Microsoft Yahei
+}
+.seckill-goods li {
+	width:316px;
+	padding:9px 0 9px 18px;
+	float:left
+}
+.seckill-goods li .item {
+	width:312px;
+	border:solid 2px #fff
+}
+.seckill-goods li.first {
+	padding-left:0
+}
+.seckill-goods li .face {
+	height:207px;
+	position:relative
+}
+.seckill-goods li .face .bg, .seckill-goods li .face .fg {
+	height:23px;
+	line-height:23px;
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0
+}
+.seckill-goods li .face .bg {
+	background:#000;
+	opacity:.4;
+	filter:alpha(opacity=40)
+}
+.seckill-goods li .face .fg {
+	color:#fff;
+	z-index:1
+}
+.seckill-goods li .face .fg .time {
+	padding-left:14px;
+	float:left
+}
+.seckill-goods li .face .fg .time table tr td {
+	height:23px;
+	color:#fff
+}
+.seckill-goods li .face .fg .time .txt {
+	color:#ffba00
+}
+.seckill-goods li .face .fg .num {
+	padding-right:14px
+}
+.seckill-goods li .info {
+	height:105px;
+	padding:14px 14px 25px 14px;;
+	border:solid 1px #ddd;
+	border-top:0
+}
+.seckill-goods li .info .goods-name .link1 {
+	font-size:14px
+}
+.seckill-goods li .info .goods-name .link2 {
+	color:#9a9a9a
+}
+.seckill-goods li .info .goods-attr {
+	height:80px;
+	margin-top:12px
+}
+.seckill-goods li .info .goods-attr .price {
+	float:left
+}
+.seckill-goods li .info .goods-attr .price strong, .seckill-goods li .info .goods-attr .price del {
+	display:inline-block;
+	vertical-align:top
+}
+.seckill-goods li .info .goods-attr .price strong {
+	color:#ca033e
+}
+.seckill-goods li .info .goods-attr .price .yen {
+	margin:13px 2px 0 0
+}
+.seckill-goods li .info .goods-attr .price del {
+	color:#989898;
+	margin:11px 0 0 9px
+}
+.seckill-goods li .info .goods-attr .price .f {
+	font-size:26px
+}
+.seckill-goods li .info .goods-attr .extra {
+	height:33px;
+	float:right
+}
+.seckill-goods li .info .goods-attr .extra table tr td {
+	vertical-align:top
+}
+.seckill-goods li .info .goods-attr .extra p {
+	padding-top:13px;
+	color:#989898;
+	padding-right:5px
+}
+.seckill-goods li .info .goods-attr .extra p span {
+	color:#ca033e
+}
+.seckill-goods li .info .goods-attr .extra a {
+	display:inline-block;
+	width:94px;
+	height:33px;
+	line-height:33px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	border-radius:2px;
+	text-decoration:none
+}
+.seckill-goods li .info .goods-attr .extra a:hover {
+	color:#fff!important
+}
+.seckill-goods li .info .goods-attr .extra a.state1 {
+	background:#ff811a
+}
+.seckill-goods li .info .goods-attr .extra a.state2 {
+	background:#1bac61
+}
+.seckill-goods li .info .goods-attr .extra a.state3 {
+	background:#ca033c
+}
+.seckill-goods li .info .goods-attr .extra a.state4 {
+	background:#1bab61
+}
+.seckill-goods li .info .goods-attr .extra a.state5 {
+	background:#a6a6a6
+}
+.seckill-goods li.hover .item, .seckill-goods li:hover .item {
+	border-color:#c9033b
+}
+.seckill-goods li.hover .info, .seckill-goods li:hover .info {
+	border-color:#fff
+}
+.seckill-goods-null {
+	margin-top:20px;
+	border:solid 1px #eedcc7;
+	background:#fffce8;
+	text-align:center;
+	padding:47px 0;
+	font-family:Microsoft Yahei
+}
+.seckill-goods-null span {
+	display:inline-block;
+	height:53px;
+	line-height:53px;
+	padding-left:65px;
+	font-size:18px;
+	color:#4c4c4c;
+	background:url(http://image.meilele.com/images/miaosha/seckill.gif) 0 0 no-repeat
+}
+.seckill-pager {
+	margin-top:18px
+}
+.seckill-pager table {
+	margin:0 auto
+}
+.seckill-pager table tr td {
+	padding:0 3px
+}
+.seckill-pager a, .seckill-pager .current {
+	display:inline-block;
+	vertical-align:top;
+	padding:6px 10px
+}
+.seckill-pager a {
+	border:1px solid #ddd;
+	color:#666;
+	text-decoration:none
+}
+.seckill-pager a:hover, .seckill-pager .current {
+	border:solid 1px #c9033b;
+	background:#c9033b;
+	color:#fff!important
+}
+.seckill-pager a.prev .arrow, .seckill-pager a.next .arrow {
+	display:inline-block;
+	vertical-align:top;
+	width:6px;
+	overflow:hidden;
+	margin:0 3px
+}
+.seckill-pager a.prev .arrow .char, .seckill-pager a.next .arrow .char {
+	font-family:宋体
+}
+.seckill-pager a.prev .arrow .char {
+	text-align:left;
+	margin-left:1px
+}
+.seckill-pager a.next .arrow .char {
+	margin-left:-6px;
+	text-align:right
+}
+.seckill-pager .go-num {
+	width:24px;
+	height:24px;
+	line-height:24px;
+	text-align:center;
+	border:1px solid #ddd;
+vertical-align:middle padding:0
+}
+.seckill-pager .go {
+	color:#666;
+	padding:6px 12px
+}
+.seckill-pager .go:hover {
+	background:#fff;
+	border:1px solid #c0c0c0;
+	color:#333!important
+}
+
+

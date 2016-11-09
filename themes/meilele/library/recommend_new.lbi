@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $new_goods} -->
+<!--{foreach from=$new_goods item=goods}-->
+<div class="o_list Left">
+	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}"><img src="{$goods.thumb}" width="156" height="130"></a>
+    <div class="o_b1_title">
+    	<table width="100%">
+        	<tr>
+            	<td class="c_1 f_1" width="100%" align="center">
+                	<span class="s_1">¥</span>
+					<span class="s_2">
+                    	<!-- {if $goods.promote_price neq ""} -->
+        				{$goods.promote_price}
+        				<!-- {else}-->
+        				{$goods.shop_price}
+        				<!--{/if}-->
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="o_b1_title c_3 o_t_c">
+    	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}">{$goods.short_style_name}</a>
+    </div>
+</div>
+<!--{/foreach}-->
+<!-- {/if} -->
+
+

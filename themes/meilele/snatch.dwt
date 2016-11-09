@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/xspace_common-980.css" rel="stylesheet" type="text/css" />
+<link href="snatch.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem --> 
+<div class="w seckill-header">
+	<div class="ad">
+    	<img width="306" height="26" style="background:none;" src="images/ad.gif">
+    </div>
+</div>
+<div class="w">
+	<div class="goods-panel clearfix">
+    	<div class="face">
+        	<a href="{$snatch_goods.url}"><img src="{$snatch_goods.goods_thumb}" alt="{$snatch_goods.goods_name|escape:html}" width="486" height="322" /></a>
+        </div>
+        <div class="info-table">
+        	<div class="goods-name">
+            	<span class="name" title="{$snatch_goods.goods_name|escape:html}">{$snatch_goods.goods_name|escape:html}</span>
+            </div>
+            <ul class="goods-attr">
+            	<li class="price">
+                	<table>
+                    	<tr>
+                        	<td><span class="label red">{$lang.shop_price}</span></td>
+                            <td><span class="yen">¥</span></td>
+                            <td><strong>{$snatch_goods.formated_shop_price}</strong></td>
+                            <td><del>¥{$snatch_goods.formated_market_price}</del></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <div class="time">
+            	<table>
+                	<tr>
+                    	<td class="txt1">剩余时间还有：</td>
+                        <td id="leftTime">{$lang.please_waiting}</td>
+                    </tr>
+                </table>
+            </div>
+            <p class="note">{$snatch_goods.desc|escape:html|nl2br}</p>
+            <p class="note">{$lang.price_extent}{$snatch_goods.formated_start_price} - {$snatch_goods.formated_end_price}</p>
+            <p class="note">{$lang.user_to_use_up}{$snatch_goods.cost_points} {$points_name}</p>
+            <p class="note">{$lang.snatch_victory_desc}</p>
+            <p class="note">
+            	<!--{if $snatch_goods.max_price neq 0}-->
+                {$lang.price_less_victory}{$snatch_goods.formated_max_price}，{$lang.price_than_victory}{$snatch_goods.formated_max_price}，{$lang.or_can}{$snatch_goods.formated_max_price}{$lang.shopping_product}。
+    			<!--{else}-->
+    			{$lang.victory_price_product}
+    			<!--{/if}-->
+    		</p>
+    		<div id="ECS_SNATCH">
+    			<!-- #BeginLibraryItem "/Library/snatch.lbi" --><!-- #EndLibraryItem -->
+    		</div>
+            <div id="ECS_PRICE_LIST">
+    			<!-- #BeginLibraryItem "/Library/snatch_price.lbi" --><!-- #EndLibraryItem -->
+    		</div>
+        </div>
+    </div>
+</div>  
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+var gmt_end_time = {$snatch_goods.gmt_end_time|default:0};
+var id = {$id};
+{foreach from=$lang.snatch_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    window.setInterval("newPrice(" + id + ")", 8000);
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
+</html>
+
+

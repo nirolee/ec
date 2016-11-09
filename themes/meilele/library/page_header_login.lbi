@@ -1,0 +1,10 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js,meilele_common.js'}
+<div class="AD_tonglan">
+	<div style="width:980px;height:50px;margin:0 auto">
+    	{insert name='ads' id=3 num=1}
+    </div>
+</div>
+
+

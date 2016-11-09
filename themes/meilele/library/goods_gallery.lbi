@@ -1,0 +1,49 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="slide">
+	<div class="stage">
+    	<a href="{$pictures.0.img_url}" class="MagicZoomPlus jqzoom" id="Zoomer3" rel="hint-text: ; selectors-change: mouseover;;selectors-effect: false; selectors-class: on; zoom-distance: 22;zoom-width: 400; zoom-height: 400;"><img id="J_prodImg" src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" width="520" height="344" /></a>
+    </div>
+    <div class="thumb">
+    	<div id="JS_goods_album_btn" class="arrow hd">
+			<a class="prev" href="javascript:;"></a>
+			<a class="next" href="javascript:;"></a>
+		</div>
+    	<div class="table">
+        	<ul id="JS_goods_album_stage" class="clearfix">
+            	<!-- {if $pictures}-->
+                <!-- {foreach from=$pictures item=picture}--> 
+            	<li class="album_item">
+                	<a href="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}" rel="zoom-id: Zoomer3" rev="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}" ></a>
+                    <img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" alt="{$goods.goods_name}" width="108" height="72" />
+                </li>
+                <!--{/foreach}-->
+                <!-- {/if}-->
+            </ul>
+        </div>
+    </div>
+</div>
+<ul class="extra clearfix">
+	<li class="share">
+    	<div class="bdShare">
+           <div class="sku_share" style=" clear:both">
+              	<div class="bdsharebuttonbox">
+					<a href="#" class="bds_more icon" data-cmd="more" style=" color:#999; margin:0px; text-decoration:none">
+                        分享
+                    </a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li id="JS_collect_this_goods" class="collect">
+    	<a class="icon" href="javascript:collect({$goods.goods_id})">收藏商品</a>
+    </li>
+</ul>
+<script type="text/javascript">
+	jQuery(".thumb").slide({mainCell:".table ul",autoPage:true,effect:"left",autoPlay:false,vis:4});
+</script>
+
+
+
+
+
+

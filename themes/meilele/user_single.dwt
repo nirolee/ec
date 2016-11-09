@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon" >
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/meilele/uploadify.css"/>
+{* 包含脚本文件 *}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='jquery.uploadify-3.1.min.js'}
+<script type="text/javascript">
+var img_id_upload=new Array();//初始化数组，存储已经上传的图片名
+var i=0;//初始化数组下标
+$(function() {
+	uploadLimit = 10;
+    $('#file_upload').uploadify({
+    	'auto'     : true,//关闭自动上传
+    	'removeTimeout' : 1,//文件队列上传完成1秒后删除
+        'swf'      : 'uploadify.swf',
+        'uploader' : 'uploadify.php',
+        'method'   : 'post',//方法，服务端可以用$_POST数组获取数据
+	'buttonText' : '上传图片',//设置按钮文本
+        'multi'    : true,//允许同时上传多张图片
+        'uploadLimit' : uploadLimit,//一次最多只允许上传10张图片
+        'fileTypeDesc' : '允许类型',//只允许上传图像
+        'fileTypeExts' : '*.gif; *.jpg; *.png',//限制允许上传的图片后缀
+        'fileSizeLimit' : '4096KB',//限制上传的图片不得超过4M 
+	 height: 30,//上传按钮的高和宽
+	 width: 120,
+	 progressData : 'all',
+	 successTimeout : 30,//上传时的
+	 postData: {},//和后台交互时，附加的参数
+
+        'onUploadSuccess' : function(file, data, response) {//每次成功上传后执行的回调函数，从服务端返回数据到前端
+		//alert(data);
+               img_id_upload[i]=data;
+               i++;
+		var item_img = '<div id="img-' + file.id + '"><div class="item"><div class="img"><img src="' + data + '" width="120" height="90" /><input type="hidden" name="single_img_url['+file.id+']" value="' + data + '"></div><div class="i-item" style="float:right;width:390px"><div class="s-list"><p><input type="radio" name="cover" id="cover" value="' + file.id + '">设为封面 <span onclick=del_img(' + '"' + file.id + '"' + '); style="cursor:pointer;">删除</span></p><textarea name="cont_desc[]" id="cont_desc" rows="5"></textarea><div class="tips" style="width:85%; text-align:right; padding-top:5px;" >还能输入10000个字符</div></div></div></div><div class="blank"></div><div class="blank"></div><div class="blank"></div>';
+		$("#upimg_box").append(item_img);
+	       
+			   //alert(data);
+        },
+        'onQueueComplete' : function(queueData) {//上传队列全部完成后执行的回调函数
+            if(img_id_upload.length>0)
+				//var img = "<img src=uploads/" + encodeURIComponent(img_id_upload) + " />";
+				//$('#imgBox').html(img);
+				//alert(img_id_upload);
+            encodeURIComponent(img_id_upload);
+        }
+        // Put your options here
+    });
+});
+</script>
+<div class="w clearfix">
+	<div id="show" class="shaidan">
+    	<h2>发表晒单</h2>
+    	<form id="formI" method="post" action="user.php" style="width: 100%; padding: 0px;" onSubmit="return checkSingle();">
+      		<div class="mc">
+        		<div class="o-item">
+          			<div class="item fore  ">
+            			<div class="tit">选择晒单商品<s>*</s></div>
+            			<div class="i-item">
+              				<div id="o-select">
+                				<div class="value">请选择</div>
+                				<div id="select" class="hide" style="height: auto;">
+									<!-- {foreach from=$orders item=order} -->
+                  					<div class="i-select" id="i-select_{$order.goods_id}" onClick="get_html({$order.goods_id},{$order.order_id});">
+                    					<div class="p-img"><img src="{$order.goods_thumb}" width="50" height="50" clg="733151"></div>
+                    					<div class="p-name"><span>{$order.goods_name}</span></div>
+                  					</div>
+									<!-- {/foreach} -->
+                  					<div class="mb"><a href="user.php?act=single_list" target="_blank">查看更多可晒单商品</a></div>
+		  							<input type="hidden" id="single_goods_id" name="goods_id" value="0" />
+		  							<input type="hidden" id="single_order_id" name="order_id" value="0" />
+                				</div>
+              				</div>
+              				<div id="palert" class="tips fl" >请选择您要晒单的商品</div>
+              				<span class="clr"></span>
+              				<div class="err"></div>
+            			</div>
+          			</div>
+          			<div class="item">
+            			<div class="tit">标题<s>*</s></div>
+            			<div class="i-item">
+              				<input name="title_sn" type="text" value="" class="title" id="title">
+              				<div id="title_verif"></div>
+              				<div class="err"></div>
+            			</div>
+          			</div>
+          			<div class="item text">
+            			<div class="tit">内容<s>*</s></div>
+            			<div class="i-item">
+              				<textarea name="desc_sn" id="cont" rows="5"></textarea>
+              				<div id="cont_verif"></div>
+              				<div class="tips" id="v_c">还能输入10000个字符</div>
+              				<div class="err"></div>
+            			</div>
+          			</div>
+          			<div class="item" >
+            			<div class="tit">上传图片<s>*</s></div>
+            			<div class="item">
+            				<div class="i-item">
+								<input type="file" name="file_upload" id="file_upload" class="release" />        
+	       						<!-- Baidu Button BEGIN -->
+	    						<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style=" float:left; ">
+									<span style=" float:left; padding-top:3px; padding-left:20px;">分享到：</span>
+									<a class="bds_qzone"></a>
+									<a class="bds_tsina"></a>
+									<a class="bds_tqq"></a>
+									<a class="bds_renren"></a>
+									<span class="bds_more" style=" padding-left:25px;"></span>
+									<a class="shareCount"></a>
+	    						</div>
+								<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=692785" ></script>
+								<script type="text/javascript" id="bdshell_js"></script>
+								<script type="text/javascript">
+									document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+								</script>
+								<!-- Baidu Button END -->
+            				</div>            
+          				</div>            
+            			<div class="i-item">              
+              				<div class="tips">
+                            	请上传图片格式为：PNG、GIF、JPGE，图片数量最多为10张，每张图片不超过4M；<br>按住“Ctrl”键，可一次选择多张。
+                			</div>
+              				<div class="err"></div>
+            			</div>
+            			<div class="item">
+            				<div class="i-item">
+								<input type="hidden" name="act" value="single_sun_insert" />
+								<input type="submit" name="submit" value="发布"  class="uploadify-button"/>
+	  						</div>
+      					</div>
+          			</div>               
+	  				<div id="upimg_box" style="margin-top:10px;">
+	  					<!-- 图片 -->
+          			</div>	  
+        		</div>
+        		<div class="expl">
+          			<h3>关于晒单帖：</h3>
+          			<ul>
+            			<li>您可以将自己的使用感受、选购建议、实物照片、使用场景、拆包过程等与网友们分享；</li>
+            			<li>·请保证所上传的图片是原创的及合法的，否则能良网有权删除图片及冻结帐号，且保留追究其法律责任的权利；</li>            
+          			</ul>
+        		</div>
+      		</div>
+    	</form>
+  	</div>
+</div>
+<script type="text/javascript">
+	$("#o-select").click(function(){
+	   if($("#select").is(":hidden"))
+	   {
+		$("#select").show();
+	   }
+	   else
+	   {
+		   $("#select").hide();
+	   }
+	});
+
+	
+	function get_html(goods_id, order_id)
+	{
+	   $("#o-select .value").html($("#select #i-select_" + goods_id + " .p-name span").text());
+	   $("#palert").html('订单完成后所购商品才能晒单，每个商品只可晒单一次');
+	   $("#single_goods_id").val(goods_id);
+	   $("#single_order_id").val(order_id);
+	}
+
+	function del_img(id)
+	{
+		$('#file_upload').uploadify('cancel', id);
+		$('#file_upload').uploadify('settings','uploadLimit', ++uploadLimit);
+		$("#img-" + id).remove();
+	}
+
+	function checkSingle()
+	{
+		if(document.getElementById('single_order_id').value == 0)
+		{
+			alert('请选择订单');
+			return false;
+		}
+
+		if(document.getElementById('single_goods_id').value == 0)
+		{
+			alert('请选择订单');
+			return false;
+		}
+		
+		if(document.getElementById('title').value == "" || document.getElementById('title').value == "请输入标题，最长30字")
+		{
+			alert('请填写晒单标题');
+			return false;
+		}
+
+		if(document.getElementById('cont').value == "" || document.getElementById('cont').value == "请输入描述，最长500字")
+		{
+			alert('请填写晒单描述');
+			return false;
+		}
+
+	}
+</script>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
+
+
+

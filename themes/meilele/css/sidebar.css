@@ -1,0 +1,102 @@
+     /*在线客服*/
+            .sidebar {
+                width:70px;
+                height:314px;
+                position:fixed;
+                top:212px;
+                right:30px;
+            }
+            .sidebar_goto{
+                width:70px;
+                height:40px;
+                background:url('../images/kefu/goto_fenlei.jpg') no-repeat;
+                margin-bottom:2px;
+                display:block;
+                text-decoration:none;
+            }
+            .sidebar_word{
+                color:#999999;
+                margin-left:auto;
+                margin-right:auto;
+                width:50px;
+                height:20px;
+                line-height:20px;
+                text-align:center;
+                margin-top:35px;
+                overflow:hidden;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_01{
+                width:68px;
+                height:56px;
+                border:1px solid #D6D6D6;
+                background:url('../images/kefu/toolbar1.jpg') no-repeat scroll 0px 0px;
+                margin-bottom:2px;
+                display:block;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_02{
+                width:68px;
+                height:56px;
+                border:1px solid #D6D6D6;
+                background:url('../images/kefu/toolbar2.jpg') no-repeat scroll 0px 0px;
+                margin-bottom:2px;
+                display:block;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_03{
+                width:68px;
+                height:56px;
+                border:1px solid #D6D6D6;
+                background:url('../images/kefu/toolbar3.jpg') no-repeat scroll 0px 0px;
+                margin-bottom:2px;
+                display:block;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_04{
+                width:68px;
+                height:56px;
+                border:1px solid #D6D6D6;
+                background:url('../images/kefu/toolbar4.jpg') no-repeat scroll 0px 0px;
+                margin-bottom:2px;
+                display:block;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_01:hover{
+                background:url('../images/kefu/toolbar1.jpg') no-repeat scroll -68px 0px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_02:hover{
+                background:url('../images/kefu/toolbar2.jpg') no-repeat scroll -68px 0px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_03:hover{
+                background:url('../images/kefu/toolbar3.jpg') no-repeat scroll -68px 0px;
+                text-decoration:none;
+            }
+            .sidebar_icon_word_04:hover{
+                background:url('kefu/toolbar4.jpg') no-repeat scroll -68px 0px;
+                text-decoration:none;
+            }
+            .sidebar_back{
+                width:70px;
+                height:40px;
+                background:url('../images/kefu/sidebar_back.png') no-repeat;
+                cursor: pointer;
+            }
+            .sidebar_ie6 {
+                position:absolute;
+                top:expression(eval(document.documentElement.scrollTop+150));
+                z-index:2146432;
+                right:30px;
+            }
+			/* CSS Document */
+

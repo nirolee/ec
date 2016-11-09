@@ -1,0 +1,622 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--用户评论 START-->
+<div class="slideComment">
+	<div class="filter inhd">
+		<ul>
+			<li><a class="cm_fliter" href="javascript:;"><span class="t">全部评价</span>({$comment_nums})</a></li>
+    		<li><a class="cm_fliter " href="javascript:;"><span class="t">满意</span>({$good_nums})</a></li>
+    		<li><a class="cm_fliter " href="javascript:;"><span class="t">一般</span>({$medium_nums})</a></li>
+    		<li><a class="cm_fliter " href="javascript:;"><span class="t">不满意</span>({$difference_nums})</a></li>
+    		<li><a class="cm_fliter xspace " href="javascript:;"><span class="t">秀家</span>({$single_nums})</a></li>
+    	</ul>
+	</div>
+	<div class="inbd">
+		<!-- 全部评价 start-->
+		<ul id="all_comment">
+			<div class="comment-table">
+				<table>
+    				{foreach from=$comments_list item=item_comment key=k}
+					{if $k neq 'comment_page'}
+        			<tr>
+        				<td class="user-label">
+            				<div class="avatar">
+                				<img width="56" height="56" src="images/level5.gif">
+                			</div>
+                			<p class="name">
+								<span class="">{if $item_comment.user_name}{$item_comment.user_name}{else}匿名用户{/if}</span>
+							</p>
+            			</td>
+            			<td class="c-content">
+            				<div class="c-tip clearfix">
+                				<div class="score Left">
+									<span><img src="images/stars{$item_comment.comment_rank}.gif" /></span>
+									<span>{$item_comment.comment_rank}分</span>
+                    			</div>
+                    			<div class="time Right">{$item_comment.add_time}</div>
+                			</div>
+                			<p>{$item_comment.content}</p>
+                			{if $item_comment.single}
+                			<ul class="show-img clearfix">
+                			{foreach from=$item_comment.single item=com_single key=k}
+                			<li class="JS_gallery_item">
+                    			<img width="130" height="83" src="{$com_single.thumb_url}">
+                    		</li>
+                    		{/foreach}
+                			</ul>
+                			{/if}
+                			<a class="nice JS_comment_like" title="0" href="#none" name="agree" onClick="get_like({$item_comment.comment_id}, 'comm');">
+								<span id="like-comm-{$item_comment.comment_id}" class="text"> {$item_comment.useful} </span><span class="space"></span>
+							</a>
+            			</td>
+        			</tr>
+        			{/if}
+					{/foreach}
+    			</table>
+			</div>
+            <div class="page-unit clearfix">
+            	<table>
+                	<tr>
+                    	{foreach from=$item_comment.comment_pager item=pager}
+                        <td>
+                        	<!-- {if $pager.page_prev} -->
+	     					<a href="{$pager.page_prev}" class="Prev cm_fliter"> <span class="arrow"><span class="char">◆</span></span>上一页 </a>  
+		   					<!-- {else} -->     
+							<!-- {/if} -->
+                        </td>
+                        <!--{foreach from=$pager.page_number_comm key=key item=item}-->
+                        <td>
+	      					<!-- {if $pager.page eq $key} -->
+	      					<span class="current">{$key}</span>
+	      					<!-- {else} -->
+	      					<a href="{$item}" class="cm_fliter"> {$key}</a>  
+	      					<!-- {/if} -->
+                        </td>
+	     				<!--{/foreach}-->
+                        <td>
+                        	<!-- {if $pager.page_next} -->
+	       					<a href="{$pager.page_next}" class="Next cm_fliter"> 下一页<span class="arrow"><span class="char">◆</span></span></a>
+		   					<!-- {else} -->
+		  					<!-- {/if} -->
+                        </td>
+                        {/foreach}
+                    </tr>
+                </table>
+            </div>
+		</ul>
+		<!-- 全部评价 end-->
+		<!-- 全部好评 start-->
+		<ul id="good_comment">
+			<div class="comment-table">
+				<table>
+    				{foreach from=$good_comments item=good_comment key=good_k}
+					{if $good_k eq 'comment_page'}
+    				{else}
+        			<tr>
+        				<td class="user-label">
+            				<div class="avatar">
+                				<img width="56" height="56" src="images/level5.gif">
+                			</div>
+                			<p class="name">
+								<span>{if $good_comment.user_name}{$good_comment.user_name}{else}匿名用户{/if}</span>
+							</p>
+            			</td>
+            			<td class="c-content">
+            				<div class="c-tip clearfix">
+                				<div class="score Left">
+									<span><img src="images/stars{$good_comment.comment_rank}.gif" /></span>
+									<span>{$good_comment.comment_rank}分</span>
+                    			</div>
+                    			<div class="time Right">{$good_comment.add_time}</div>
+                			</div>
+                			<p>{$good_comment.content}</p>
+                			{if $good_comment.single}
+                			<ul class="show-img clearfix">
+                				{foreach from=$good_comment.single item=com_single key=k}
+                				<li class="JS_gallery_item">
+                    				<img width="130" height="83" src="{$com_single.thumb_url}">
+                    			</li>
+                    			{/foreach}
+                			</ul>
+                			{/if}
+                			<a class="nice JS_comment_like" title="0" href="#none" name="agree" onClick="get_like({$good_comment.comment_id}, 'comm');">
+								<span id="like-comm-{$good_comment.comment_id}" class="text">{$good_comment.useful}</span><span class="space"></span>
+							</a>
+            			</td>
+        			</tr>
+        			{/if}
+					{/foreach}
+    			</table>
+			</div>
+			<div class="page-unit clearfix">
+            	<table>
+                	<tr>
+                    	{foreach from=$good_comment.comment_pager item=pager}
+                        <td>
+                        	<!-- {if $pager.page_prev} -->
+	     					<a href="{$pager.page_prev}" class="Prev cm_fliter"> <span class="arrow"><span class="char">◆</span></span>上一页 </a>  
+		   					<!-- {else} -->     
+							<!-- {/if} -->
+                        </td>
+                        <!--{foreach from=$pager.page_number_comm key=key item=item}-->
+                        <td>
+	      					<!-- {if $pager.page eq $key} -->
+	      					<span class="current">{$key}</span>
+	      					<!-- {else} -->
+	      					<a href="{$item}" class="cm_fliter"> {$key}</a>  
+	      					<!-- {/if} -->
+                        </td>
+	     				<!--{/foreach}-->
+                        <td>
+                        	<!-- {if $pager.page_next} -->
+	       					<a href="{$pager.page_next}" class="Next cm_fliter"> 下一页<span class="arrow"><span class="char">◆</span></span></a>
+		   					<!-- {else} -->
+		  					<!-- {/if} -->
+                        </td>
+                        {/foreach}
+                    </tr>
+                </table>
+            </div>
+		</ul>
+		<!-- 全部好评 end-->
+		<!-- 全部中评 start-->
+		<ul id="med_comment">
+			<div class="comment-table">
+	<table>
+    	{foreach from=$medium_comments item=medium_comment key=med_k}
+       	{if $med_k eq 'comment_page'}
+    	{else}
+        <tr>
+        	<td class="user-label">
+            	<div class="avatar">
+                	<img width="56" height="56" src="images/level5.gif">
+                </div>
+                <p class="name">
+					<span>{if $medium_comment.user_name}{$medium_comment.user_name}{else}匿名用户{/if}</span>
+				</p>
+            </td>
+            <td class="c-content">
+            	<div class="c-tip clearfix">
+                	<div class="score Left">
+						<span><img src="images/stars{$medium_comment.comment_rank}.gif" /></span>
+						<span>{$medium_comment.comment_rank}分</span>
+                    </div>
+                    <div class="time Right">{$medium_comment.add_time}</div>
+                </div>
+                <p>{$medium_comment.content}</p>
+                {if $medium_comment.single}
+                <ul class="show-img clearfix">
+                	{foreach from=$medium_comment.single item=com_single key=k}
+                	<li class="JS_gallery_item">
+                    	<img width="130" height="83" src="{$com_single.thumb_url}">
+                    </li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <a class="nice JS_comment_like" title="0" href="#none" name="agree" onClick="get_like({$medium_comment.comment_id}, 'comm');">
+					<span id="like-comm-{$medium_comment.comment_id}" class="text">{$medium_comment.useful}</span><span class="space"></span>
+				</a>
+            </td>
+        </tr>
+        {/if}
+		{/foreach}
+    </table>
+</div>
+			<div class="page-unit clearfix">
+            	<table>
+                	<tr>
+                    	{foreach from=$medium_comment.comment_pager item=pager}
+                        <td>
+                        	<!-- {if $pager.page_prev} -->
+	     					<a href="{$pager.page_prev}" class="Prev cm_fliter"> <span class="arrow"><span class="char">◆</span></span>上一页 </a>  
+		   					<!-- {else} -->     
+							<!-- {/if} -->
+                        </td>
+                        <!--{foreach from=$pager.page_number_comm key=key item=item}-->
+                        <td>
+	      					<!-- {if $pager.page eq $key} -->
+	      					<span class="current">{$key}</span>
+	      					<!-- {else} -->
+	      					<a href="{$item}" class="cm_fliter"> {$key}</a>  
+	      					<!-- {/if} -->
+                        </td>
+	     				<!--{/foreach}-->
+                        <td>
+                        	<!-- {if $pager.page_next} -->
+	       					<a href="{$pager.page_next}" class="Next cm_fliter"> 下一页<span class="arrow"><span class="char">◆</span></span></a>
+		   					<!-- {else} -->
+		  					<!-- {/if} -->
+                        </td>
+                        {/foreach}
+                    </tr>
+                </table>
+            </div>
+		</ul>
+		<!-- 全部中评 end-->
+		<!-- 全部差评 start-->
+		<ul id="diff_comment">
+			<div class="comment-table">
+	<table>
+    	{foreach from=$difference_comments item=difference_comment key=diff_k}
+		{if $diff_k eq 'comment_page'}
+    	{else}
+        <tr>
+        	<td class="user-label">
+            	<div class="avatar">
+                	<img width="56" height="56" src="images/level5.gif">
+                </div>
+                <p class="name">
+					<span>{if $difference_comment.user_name}{$difference_comment.user_name}{else}匿名用户{/if}</span>
+				</p>
+            </td>
+            <td class="c-content">
+            	<div class="c-tip clearfix">
+                	<div class="score Left">
+						<span><img src="images/stars{$difference_comment.comment_rank}.gif" /></span>
+						<span>{$difference_comment.comment_rank}分</span>
+                    </div>
+                    <div class="time Right">{$difference_comment.add_time}</div>
+                </div>
+                <p>{$difference_comment.content}</p>
+                {if $difference_comment.single}
+                <ul class="show-img clearfix">
+                	{foreach from=$difference_comment.single item=com_single key=k}
+                	<li class="JS_gallery_item">
+                    	<img width="130" height="83" src="{$com_single.thumb_url}">
+                    </li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <a class="nice JS_comment_like" title="0" href="#none" name="agree" onClick="get_like({$difference_comment.comment_id}, 'comm');">
+					<span id="like-comm-{$difference_comment.comment_id}" class="text">{$difference_comment.useful}</span><span class="space"></span>
+				</a>
+            </td>
+        </tr>
+        {/if}
+		{/foreach}
+    </table>
+</div>
+			<div class="page-unit clearfix">
+            	<table>
+                	<tr>
+                    	{foreach from=$difference_comment.comment_pager item=pager}
+                        <td>
+                        	<!-- {if $pager.page_prev} -->
+	     					<a href="{$pager.page_prev}" class="Prev cm_fliter"> <span class="arrow"><span class="char">◆</span></span>上一页 </a>  
+		   					<!-- {else} -->     
+							<!-- {/if} -->
+                        </td>
+                        <!--{foreach from=$pager.page_number_comm key=key item=item}-->
+                        <td>
+	      					<!-- {if $pager.page eq $key} -->
+	      					<span class="current">{$key}</span>
+	      					<!-- {else} -->
+	      					<a href="{$item}" class="cm_fliter"> {$key}</a>  
+	      					<!-- {/if} -->
+                        </td>
+	     				<!--{/foreach}-->
+                        <td>
+                        	<!-- {if $pager.page_next} -->
+	       					<a href="{$pager.page_next}" class="Next cm_fliter"> 下一页<span class="arrow"><span class="char">◆</span></span></a>
+		   					<!-- {else} -->
+		  					<!-- {/if} -->
+                        </td>
+                        {/foreach}
+                    </tr>
+                </table>
+            </div>
+		</ul>
+		<!-- 全部差评 end-->
+		<!-- 秀家 start-->
+		<ul id="single_comment">
+			<div class="comment-table">
+	<table>
+    	{foreach from=$goods_single item=item_single key=single_k}
+	 	{if $item_single.single}
+        <tr>
+        	<td class="user-label">
+            	<div class="avatar">
+                	<img width="56" height="56" src="images/level5.gif">
+                </div>
+                <p class="name">
+					<span>{if $item_single.user_name}{$item_single.user_name}{else}匿名用户{/if}</span>
+				</p>
+            </td>
+            <td class="c-content">
+            	<div class="c-tip clearfix">
+                	<div class="score Left">
+						<span><img src="images/stars{$item_single.comment_rank}.gif" /></span>
+						<span>{$item_single.comment_rank}分</span>
+                    </div>
+                    <div class="time Right">{$item_single.add_time}</div>
+                </div>
+                <p>{$item_single.content}</p>
+                {if $item_single.single}
+                <ul class="show-img clearfix">
+                	{foreach from=$item_single.single item=com_single key=k}
+                	<li class="JS_gallery_item">
+                    	<img width="130" height="83" src="{$com_single.thumb_url}">
+                    </li>
+                    {/foreach}
+                </ul>
+                {/if}
+                <a class="nice JS_comment_like" title="0" href="#none" name="agree" onClick="get_like({$item_single.comment_id}, 'comm');">
+					<span id="like-comm-{$item_single.comment_id}" class="text">{$item_single.useful}</span><span class="space"></span>
+				</a>
+            </td>
+        </tr>
+        {/if}
+		{/foreach}
+    </table>
+</div>
+			<div class="page-unit clearfix">
+            	<table>
+                	<tr>
+                    	{foreach from=$item_single.comment_pager item=pager}
+                        <td>
+                        	<!-- {if $pager.page_prev} -->
+	     					<a href="{$pager.page_prev}" class="Prev cm_fliter"> <span class="arrow"><span class="char">◆</span></span>上一页 </a>  
+		   					<!-- {else} -->     
+							<!-- {/if} -->
+                        </td>
+                        <!--{foreach from=$pager.page_number_comm key=key item=item}-->
+                        <td>
+	      					<!-- {if $pager.page eq $key} -->
+	      					<span class="current">{$key}</span>
+	      					<!-- {else} -->
+	      					<a href="{$item}" class="cm_fliter"> {$key}</a>  
+	      					<!-- {/if} -->
+                        </td>
+	     				<!--{/foreach}-->
+                        <td>
+                        	<!-- {if $pager.page_next} -->
+	       					<a href="{$pager.page_next}" class="Next cm_fliter"> 下一页<span class="arrow"><span class="char">◆</span></span></a>
+		   					<!-- {else} -->
+		  					<!-- {/if} -->
+                        </td>
+                        {/foreach}
+                    </tr>
+                </table>
+            </div>
+		</ul>
+		<!-- 秀家 end-->
+	</div>
+</div>
+<div class="clearfix"></div>
+<div id="comment_show" style="width: 766px; height: 283px; display:none;" class=" jqmID1">
+  <div class="popbox" style="background:none; width:764px;">
+    <div class="popc" style="width:764px;">
+      <h2 id="easyDialogTitle"><a class="popwinClose" href="#">关闭</a>发表评论</h2>
+      <div class="commentsList stat_box" style=" border:none">
+        <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
+          <table width="706" border="0" cellspacing="5" cellpadding="0" >
+            <tr width="706">
+              <td width="66" align="right">{$lang.username}：</td>
+              <td{if !$enabled_captcha}{/if}><!--{if $smarty.session.user_name}-->{$smarty.session.user_name}<!--{else}-->{$lang.anonymous}<!--{/if}--></td>
+            </tr>
+            <tr>
+              <td align="right">E-mail：</td>
+              <td><input type="text" name="email" id="email"  maxlength="100" value="{$smarty.session.email|escape}" class="inputBorder"/></td>
+            </tr>
+            <tr>
+              <td align="right">{$lang.comment_rank}：</td>
+              <td><input name="comment_rank" type="radio" value="1" id="comment_rank1" />
+              <span class="star s1"></span>
+ 
+                <input name="comment_rank" type="radio" value="2" id="comment_rank2" />
+                  <span class="star s2"></span>
+                <input name="comment_rank" type="radio" value="3" id="comment_rank3" />
+                  <span class="star s3"></span>
+                <input name="comment_rank" type="radio" value="4" id="comment_rank4" />
+          <span class="star s4"></span>
+                <input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5" />
+                  <span class="star s5"></span></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">{$lang.comment_content}：</td>
+              <td><textarea name="content" class="inputBorder" style="height:100px; width:480px;"></textarea>
+                <input type="hidden" name="cmt_type" value="{$comment_type}" />
+                <input type="hidden" name="id" value="{$id}" /></td>
+            </tr>
+            <tr>
+              <td colspan="2"><!-- 判断是否启用验证码{if $enabled_captcha} -->
+                
+                <div style="padding-left:15px; text-align:left; float:left;"> {$lang.comment_captcha}：
+                  <input type="text" name="captcha"  class="inputBorder" style="width:50px; margin-left:5px; margin-top:3px;"/>
+                  <img src="captcha.php?{$rand}" alt="captcha" onClick="this.src='captcha.php?'+Math.random()" class="captcha"> </div>
+                
+                <!-- {/if} -->
+                
+                <input type="submit" class="red_btn_2" value="提交评论"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--用户评论 END--> 
+<script type="text/javascript" >
+		
+		/**
+		 *回复评论
+		 */
+		function onsubmit_comm(id, type)
+		{
+		    var content = document.getElementById(type + '_reply_content_' + id).value;
+		    if(content == "")
+		    {
+			alert('回复内容不能为空');
+			return false;
+		    }
+
+		    Ajax.call('goods.php?act=reply_comment', 'comment_id=' + id + '&is_ajax=1' + '&comment_content=' + content, get_reply_comm, 'GET', 'JSON');
+		}
+
+		function get_reply_comm(res)
+		{
+		    if(res.is_user == "")
+		    {
+			window.location.href="user.php";
+			return false;
+		    }
+
+		    if(res.option == true)
+		    {
+			location.reload();
+		    }
+		    else
+		    {
+			alert(res.error);
+		    }
+		}
+
+		function dis_comment(int, type)
+		{
+			if($("#reply-lz_" + type + "_" + int).is(":hidden"))
+			{
+				$("#reply-lz_" + type + "_" + int).show();
+			}
+			else
+			{
+				$("#reply-lz_" + type + "_" + int).hide();
+			}
+		}
+
+		function dis_reply(int, type)
+		{
+			if($("#item-reply_" + type + "_" + int).is(":hidden"))
+			{
+				$("#item-reply_" + type + "_" + int).show();
+			}
+			else
+			{
+				$("#item-reply_" + type + "_" + int).hide();
+			}
+		}
+
+		/**
+		 *喜欢
+		 */
+		
+		function get_like(id, type)
+		{
+			Ajax.call('goods.php?act=add_useful', 'id=' + id + '&type=' + type, get_like_single, 'GET', 'JSON');
+		}
+
+
+		function get_like_single(res)
+		{
+			if(res.option)
+			{		
+				var like_count = $("#like-" + res.type + '-' + res.id);
+				var count = like_count.html();
+				$num = parseInt(count) + 1;
+				like_count.html($num);
+			}
+			else
+			{
+				alert('一个评论只能点击一次哦');
+			}
+		}
+
+
+	</script>
+<script type="text/javascript">
+//<![CDATA[
+{foreach from=$lang.cmt_lang item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+{literal}
+/**
+ * 提交评论信息
+*/
+function submitComment(frm)
+{
+  var cmt = new Object;
+
+  //cmt.username        = frm.elements['username'].value;
+  cmt.email           = frm.elements['email'].value;
+  cmt.content         = frm.elements['content'].value;
+  cmt.type            = frm.elements['cmt_type'].value;
+  cmt.id              = frm.elements['id'].value;
+  cmt.enabled_captcha = frm.elements['enabled_captcha'] ? frm.elements['enabled_captcha'].value : '0';
+  cmt.captcha         = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
+  cmt.rank            = 0;
+
+  for (i = 0; i < frm.elements['comment_rank'].length; i++)
+  {
+    if (frm.elements['comment_rank'][i].checked)
+    {
+       cmt.rank = frm.elements['comment_rank'][i].value;
+     }
+  }
+
+//  if (cmt.username.length == 0)
+//  {
+//     alert(cmt_empty_username);
+//     return false;
+//  }
+
+  if (cmt.email.length > 0)
+  {
+     if (!(Utils.isEmail(cmt.email)))
+     {
+        alert(cmt_error_email);
+        return false;
+      }
+   }
+   else
+   {
+        alert(cmt_empty_email);
+        return false;
+   }
+
+   if (cmt.content.length == 0)
+   {
+      alert(cmt_empty_content);
+      return false;
+   }
+
+   if (cmt.enabled_captcha > 0 && cmt.captcha.length == 0 )
+   {
+      alert(captcha_not_null);
+      return false;
+   }
+
+   Ajax.call('comment.php', 'cmt=' + $.toJSON(cmt), commentResponse, 'POST', 'JSON');
+   return false;
+}
+
+/**
+ * 处理提交评论的反馈信息
+*/
+  function commentResponse(result)
+  {
+    if (result.message)
+    {
+      alert(result.message);
+    }
+
+    if (result.error == 0)
+    {
+      var layer = document.getElementById('ECS_COMMENT');
+
+      if (layer)
+      {
+        layer.innerHTML = result.content;
+      }
+    }
+	easyDialog.close();
+  	window.location.reload();
+  }
+  
+	function commentsFrom(){
+		easyDialog.open({
+			  container : 'commentsFrom'
+		});	
+	}
+{/literal}
+//]]>
+</script>
+
+

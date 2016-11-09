@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="group_list.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='meilele_group.js'}
+<div id="tuan_container" class="w">
+	<div class="tuan_ad">
+    	<!-- TemplateBeginEditable name="团购列表页头部广告" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+    </div>
+    <!-- {if $gb_list} 如果有团购活动 --> 
+    <div id="tuan_list" class="tuan_list_container clearfix">
+    	<!-- {foreach from=$gb_list item=group_buy} 循环团购活动开始 -->
+    	<div class="tg_list">
+        	<div class="tg_goods">
+        		<p class="name"><a href="{$group_buy.url}" target="_blank">{$group_buy.goods_name|escape:html}</a></p>
+            	<p class="tg_pic">
+            		<a href="{$group_buy.url}" target="_blank"><img src="{$group_buy.goods_thumb}" alt="{$group_buy.goods_name|escape:html}" width="266" height="176" /></a>
+                    <span class="tg_info"></span>
+                    <span class="tg_info_1">
+                    	{if $group_buy.status eq 0}
+                        开始时间：<span>{$group_buy.formated_end_date}</span>
+                        {elseif $group_buy.status eq 1}
+                        <span class="Left endtime" value="{$group_buy.end_date}"></span>
+                        {/if}
+                        <span class="Right">
+                        	已团购：<b>{$group_buy.cur_amount}</b>件
+                        </span>
+                    </span>
+            	</p>
+                <a {if $group_buy.status eq 0} class="delstl gogo nostart" {elseif $group_buy.status eq 1}class="delstl gogo" {elseif $group_buy.status eq 2 OR $group_buy.status eq 3 OR $group_buy.status eq 4} class="delstl gogo over"{/if} href="{$group_buy.url}" target="_blank">
+                	<strong class="yen">
+						<small>¥</small>
+						<font class="group-price">{$group_buy.price_ladder.0.formated_price}</font>
+					</strong>
+                    <span>
+                    	<b class="group-discount">{$group_buy.zhekou}</b>折<br><i>¥{$group_buy.shop_price}元</i>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--{/foreach}--> 
+    </div>
+    <!--{/if}-->
+    <div class="cPager c w">
+    	<form name="selectPageForm" action="{$smarty.server.PHP_SELF}" method="get">
+    		<!-- {if $pager.styleid eq 0 } --> 
+    		{$lang.pager_1}{$pager.record_count}{$lang.pager_2}{$lang.pager_3}{$pager.page_count}{$lang.pager_4} <span> <a href="{$pager.page_first}">{$lang.page_first}</a> <a href="{$pager.page_prev}">{$lang.page_prev}</a> <a href="{$pager.page_next}">{$lang.page_next}</a> <a href="{$pager.page_last}">{$lang.page_last}</a> </span> 
+    		<!--{foreach from=$pager.search key=key item=item}--> 
+    		{if $key eq 'keywords'}
+    		<input type="hidden" name="{$key}" value="{$item|escape:decode_url}" />
+    		{else}
+    		<input type="hidden" name="{$key}" value="{$item}" />
+    		{/if} 
+    		<!--{/foreach}-->
+    		<select name="page" id="page" onchange="selectPage(this)">
+      
+      
+    {html_options options=$pager.array selected=$pager.page}
+    
+    
+    </select>
+    		<!--{else}--> 
+    		<!--翻页 start-->
+    		<div class="p-list">
+    			<!-- {if $pager.page_prev} --><a href="{$pager.page_prev}"><span class="arrow"><span class="aleft">◆</span></span>上一页</a><!-- {/if} --> 
+        		<!-- {if $pager.page_count neq 1} --> 
+        		<!--{foreach from=$pager.page_number key=key item=item}--> 
+        		<!-- {if $pager.page eq $key} --> 
+        		<strong>{$key}</strong> 
+        		<!-- {else} --> 
+        		<a href="{$item}" class="bold">{$key}</a> 
+       			<!-- {/if} --> 
+        		<!--{/foreach}--> 
+        		<!-- {/if} -->
+        		<!-- {if $pager.page_next} --><a href="{$pager.page_next}">下一页<span class="arrow"><span class="aright">◆</span></span></a><!-- {/if} --> 
+    		</div>
+    		<!--翻页 END-->     
+    		<!-- {/if} -->
+  		</form>
+		<script type="Text/Javascript" language="JavaScript">
+<!--
+{literal}
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+{/literal}
+//-->
+</script> 
+    </div>
+    <div class="tuan_activity">
+    	<h3>以下活动正在进行中...</h3>
+        <ul>
+        	<!-- TemplateBeginEditable name="团购页底部广告" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+        </ul>
+    </div>
+</div>
+<div class="footer-box">
+	<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</div>
+<!-- #BeginLibraryItem "/library/back-top.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
+
+

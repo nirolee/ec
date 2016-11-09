@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon" >
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<!-- {if $cat_style} -->
+
+<!-- {/if} -->
+{* 包含脚本文件 *}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}
+{insert_scripts files='common.js,global.js,compare.js'}
+<SCRIPT type=text/javascript>
+window.pageConfig={
+	compatible:true,
+	navId:"home"
+};
+</SCRIPT>
+</head>
+ 
+ 
+<body class="{$cat_style}">
+ 
+<!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem -->
+
+
+<div class="block clearfix">
+<div class="span3" style="margin-top:580px; margin-left:0;">
+<!-- TemplateBeginEditable name="精品" -->
+<!-- #BeginLibraryItem "/library/recommend_best.lbi" -->
+
+<!-- {if $best_goods} -->
+<div class="xm-box1">
+  <div class="hd">
+    <h3 class="title">你可能还喜欢</h3>
+  </div>
+  <div class="bd">
+    <ul class="xm-goods-sublist xm-goods-sublist-l">
+      <!--{foreach from=$best_goods item=goods name=best_goods}-->
+      <li>
+        <div class="item-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></div>
+        <div class="item-price">
+          <!--{if $goods.promote_price neq "" } -->
+          {$goods.promote_price}元
+          <!--{else}-->
+          {$goods.shop_price}元
+          <!--{/if}-->
+        </div>
+        <div class="item-thumb"> <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}"  /></a> </div>
+      </li>
+      <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+<!-- {/if} -->
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ <div class="blank"></div>
+ <!-- #BeginLibraryItem "/library/history.lbi" --><!-- #EndLibraryItem -->
+
+</div>
+ 
+<div class="span12" style="float:right; overflow:hidden;">
+<div class="category-bn-box clearfix">
+            <div class="category-bn9">
+			 <!-- TemplateBeginEditable name="分类页广告一" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+			
+			</div>
+            <div class="category-bn3 w">
+			<!-- TemplateBeginEditable name="分类页广告二" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+			</div>
+        </div>
+        
+  <!-- #BeginLibraryItem "/library/goos_discuss.lbi" --><!-- #EndLibraryItem -->
+
+	
+		</div>
+		
+
+</div>  
+
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
+
+
+

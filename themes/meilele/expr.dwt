@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{insert name='area_name'}体验馆</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/meilele/category_wide.css" />
+<link rel="stylesheet" type="text/css" href="themes/meilele/css/sub_expr.min.css" />
+<!-- {if $cat_style} -->
+<link href="{$cat_style}" rel="stylesheet" type="text/css" />
+<!-- {/if} -->
+{* 包含脚本文件 *}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'} 
+{insert_scripts files='common.js,global.js,compare.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='easydialog.min.js,meilele_category.js'} 
+
+<div id="exprGroup" class="w clearfix">
+  <div class="indexTitle" style="padding-bottom:5px;"> <span class="titleCN">{insert name='area_name'}体验馆</span>  </div>
+  <div class="speLine" style="border-left:1px solid #dcdcdc;border-right:1px solid #dcdcdc;"></div>
+  <div id="JS_expr_resort_box" class="exprGroup clearfix">
+  {if $suppliers}
+  <!--{foreach from=$suppliers item=supplier name=suppliers}-->
+    <div class="eList">
+      <div class="header"><span></span><strong><a class="name" href="expr_show.php?id={$supplier.suppliers_id}" target="_blank" title="{$supplier.suppliers_name}">{$supplier.suppliers_name}</a></strong></div>
+      <div class="body">
+        <div class="imgBox"><a href="expr_show.php?id={$supplier.suppliers_id}" target="_blank"><img src="{$supplier.logo}" width="166" height="103" alt="{$supplier.suppliers_name}" /></a> </div>
+        <ul class="infoBox">
+          <li class="clearfix"><span class="name">服务电话：</span><span class="txt" title="{$supplier.tel}">{$supplier.tel}&ensp;</span></li>
+          <li class="clearfix"><span class="name">营业时间：</span><span class="txt">{$supplier.work_time}</span></li>
+          <li class="clearfix"><span class="name">展馆地址：</span><a title="{$supplier.address}" href="expr_show.php?id={$supplier.suppliers_id}" target="_blank" class="txt">{$supplier.address}</a></li>
+        
+        </ul>
+      </div>
+    </div>
+    <!--{/foreach}-->
+{else}
+<div style="padding:30px; text-align:center; font-size:14px; ">
+{insert name='area_name'}暂无体验馆！
+</div>
+{/if}	
+  </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
+<!--
+LDZ:2013-11-27 16:42:23
+-->

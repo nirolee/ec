@@ -1,0 +1,621 @@
+body, html {
+    background: #f5f5f5;
+}
+img {
+	background:#eee
+}
+.seckill-header {
+	margin-top:15px
+}
+.seckill-header .ad {
+	height:26px
+}
+.seckill-header .nav {
+	height:36px;
+	border:solid 1px #e6e6e6;
+	margin-top:18px;
+	padding-right:19px;
+	font-family:Microsoft Yahei;
+	background:#fff
+}
+.seckill-header .nav .tab {
+	height:38px;
+	position:absolute;
+	margin:-1px 0 0 -1px
+}
+.seckill-header .nav .tab a {
+	display:inline-block;
+	vertical-align:top;
+	padding:0 35px;
+	height:18px;
+	line-height:18px;
+	font-weight:bold;
+	font-size:15px;
+	text-decoration:none;
+	border-right:dotted 1px #ccc;
+	margin-top:10px;
+	overflow:hidden
+}
+.seckill-header .nav .tab a:hover, .seckill-header .nav .tab a.current {
+	background:#ca033c;
+	color:#fff!important;
+	border-right:solid 1px #ca033c;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin:0
+}
+.seckill-header .nav ul {
+	margin-top:11px;
+	float:right
+}
+.seckill-header .nav ul li {
+	float:left
+}
+.seckill-header .nav ul li a, .seckill-header .nav ul li span {
+	display:inline-block;
+	vertical-align:top
+}
+.seckill-header .nav ul li a {
+	height:16px;
+	line-height:16px;
+	background:url(http://image.meilele.com/images/miaosha/seckill.gif) no-repeat;
+	text-decoration:none;
+	color:#666
+}
+.seckill-header .nav ul li.method a {
+	background-position:0 -53px;
+	padding-left:18px
+}
+.seckill-header .nav ul li.method a:hover {
+	background-position:0 -69px
+}
+.seckill-header .nav ul li.rule a {
+	background-position:0 -85px;
+	padding-left:17px
+}
+.seckill-header .nav ul li.rule a:hover {
+	background-position:0 -101px
+}
+.seckill-header .nav ul .attention {
+	position:relative;
+	z-index:2
+}
+.seckill-header .nav ul .attention a {
+	background-position:0 -117px;
+	padding-left:19px;
+	color:#333
+}
+.seckill-header .nav ul .attention a:hover {
+	color:#333!important
+}
+.seckill-header .nav ul .attention .wechat {
+	width:182px;
+	height:232px;
+	border:solid 1px #ccc;
+	background:#fff;
+	padding:26px;
+	position:absolute;
+	box-shadow:0 0 8px #bbb;
+	left:-150px;
+	top:25px;
+	display:none
+}
+.seckill-header .nav ul .attention .wechat p {
+	text-align:center;
+	color:#333;
+	line-height:125%;
+	margin-top:16px;
+	font-size:14px
+}
+.seckill-header .nav ul .attention .wechat .arrow {
+	position:absolute;
+	right:30px;
+	font-size:50px
+}
+.seckill-header .nav ul .attention .wechat .arrow-line {
+	color:#ccc;
+	top:-35px
+}
+.seckill-header .nav ul .attention .wechat .arrow-bg {
+	color:#fff;
+	top:-34px
+}
+.seckill-header .nav ul .attention.hover .wechat {
+	display:block
+}
+.seckill-header .nav ul li .line {
+	width:0;
+	height:14px;
+	overflow:hidden;
+	border-right:dotted 1px #ddd;
+	margin:2px 11px 0
+}
+/*leihao:2015-04-14 19:00:58*/</style> <style type="text/css">@charset 'utf-8';
+body, html {
+	background:#f5f5f5
+}
+.goods-panel {
+	margin-top:20px;
+	padding:25px;
+	background:#fff;
+	font-family:Microsoft Yahei
+}
+.goods-panel .face {
+	width:486px;
+	height:322px;
+	overflow:hidden;
+	float:left
+}
+.goods-panel .info-table {
+	width:394px;
+	padding-right:14px;
+	float:right
+}
+.goods-panel .info-table .goods-name {
+	padding-bottom:18px;
+	border-bottom:dotted 1px #e6e6e6
+}
+.goods-panel .info-table .goods-name table tr td {
+	vertical-align:middle
+}
+.goods-panel .info-table .goods-name .label {
+	padding:0 3px;
+	background:#c9033b;
+	color:#fff;
+	border-radius:2px;
+	font-size:14px;
+	margin-right:5px
+}
+.goods-panel .info-table .goods-name .name {
+	font-size:20px
+}
+.goods-panel .info-table .goods-name .link {
+	color:#c9033b;
+	padding-left:5px
+}
+.goods-panel .info-table .goods-attr {
+	padding-bottom:15px;
+	border-bottom:dotted 1px #e6e6e6;
+	margin-top:4px
+}
+.goods-panel .info-table .goods-attr li {
+	color:#999
+}
+.goods-panel .info-table .goods-attr li span, .goods-panel .info-table .goods-attr li strong, .goods-panel .info-table .goods-attr li del {
+	display:inline-block;
+	vertical-align:top
+}
+.goods-panel .info-table .goods-attr li .label {
+	padding-right:18px
+}
+.goods-panel .info-table .goods-attr .price .label {
+	margin-top:17px;
+	_margin-top:18px
+}
+.goods-panel .info-table .goods-attr .price .yen {
+	font-size:14px;
+	color:#c9033b;
+	margin-right:3px;
+	margin-top:20px
+}
+.goods-panel .info-table .goods-attr .price strong {
+	font-size:36px;
+	color:#c9033b;
+	margin-right:8px
+}
+.goods-panel .info-table .goods-attr .price del {
+	margin-top:18px
+}
+.goods-panel .info-table .goods-attr .number {
+	margin-top:2px
+}
+.goods-panel .info-table .time, .goods-panel .info-table .note {
+	color:#999;
+	line-height:24px
+}
+.goods-panel .info-table .time {
+	margin-top:12px
+}
+.goods-panel .info-table .time .txt1 {
+	padding-right:16px
+}
+.goods-panel .info-table .time span {
+	color:#f60
+}
+.goods-panel .info-table .note a, .goods-panel .info-table .note span {
+	color:#f60
+}
+.goods-panel .info-table .tools {
+	height:42px;
+	line-height:42px;
+	margin-top:17px
+}
+.goods-panel .info-table .tools a {
+	display:inline-block;
+	vertical-align:top;
+	width:184px;
+	height:42px;
+	color:#fff;
+	font-size:18px;
+	text-align:center;
+	border-radius:2px;
+	margin-right:18px;
+	text-decoration:none
+}
+.goods-panel .info-table .tools .state1 {
+	background:#ff811a
+}
+.goods-panel .info-table .tools .state2 {
+	background:#1bac61
+}
+.goods-panel .info-table .tools .state3 {
+	background:#ca033c
+}
+.goods-panel .info-table .tools .state4 {
+	background:#1bab61
+}
+.goods-panel .info-table .tools .state5 {
+	background:#a6a6a6
+}
+.goods-panel .info-table .tools a:hover {
+	color:#fff!important
+}
+.goods-panel .info-table .tools .total {
+	font-size:14px;
+	color:#999
+}
+.goods-panel .info-table .tools span {
+	padding:3px
+}
+.goods-panel .info-table .tools-extra {
+	margin-top:20px
+}
+.goods-panel .info-table .tools-extra .effect {
+	color:#f60;
+	position:absolute;
+	font-size:25px;
+	font-weight:bold;
+	margin-left:40px;
+	margin-top:-10px;
+	opacity:0;
+	display:none;
+	font-family:Arial
+}
+.goods-panel .info-table .tools-extra .nice-icon, .goods-panel .info-table .tools-extra .share-icon {
+	background:url(http://image.meilele.com/images/miaosha/seckill_detail.gif) no-repeat;
+	color:#999;
+	padding:0 0 0 22px
+}
+.goods-panel .info-table .tools-extra .nice-icon {
+	background-position:0 -4px;
+	margin-right:25px
+}
+.goods-panel .info-table .tools-extra .share-icon {
+	background-position:0 -28px
+}
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more {
+	margin-top:0!important;
+	margin-bottom:0!important
+}
+.hot-sales {
+	padding:16px 25px 20px;
+	background:#fff;
+	margin-top:20px;
+	font-family:Microsoft Yahei
+}
+.hot-sales .header {
+	line-height:20px
+}
+.hot-sales .header .title {
+	font-size:15px;
+	color:#333;
+	float:left
+}
+.hot-sales .header .more {
+	color:#f60;
+	float:right
+}
+.hot-sales ul {
+	margin-top:20px
+}
+.hot-sales ul li {
+	width:216px;
+	padding-left:22px;
+	float:left
+}
+.hot-sales ul li.first {
+	padding-left:0
+}
+.hot-sales ul li .face {
+	height:143px;
+	overflow:hidden
+}
+.hot-sales ul li .name {
+	text-align:center;
+	margin-top:11px
+}
+.hot-sales ul li .name a {
+	color:#666
+}
+.hot-sales ul li .attr {
+	text-align:center;
+	color:#999;
+	margin-top:6px
+}
+.main-info {
+	width:717px;
+	background:#fff;
+	font-family:Microsoft Yahei
+}
+.main-info .tab-head {
+	height:44px;
+	border-bottom:solid 1px #ddd;
+	font-size:15px
+}
+.main-info .tab-head a {
+	display:inline-block;
+	height:42px;
+	line-height:42px;
+	padding:0 25px;
+	border-top:solid 2px #fff;
+	border-right:solid 1px #ddd;
+	text-decoration:none
+}
+.main-info .tab-head a.last {
+	border-right:0
+}
+.main-info .tab-head a:hover {
+	color:#333!important
+}
+.main-info .tab-head a.current {
+	border-top-color:#c9033b;
+	color:#c9033b!important;
+	border-bottom:solid 1px #fff
+}
+.main-info .tab-head .last.current {
+	border-right:solid 1px #ddd
+}
+.main-info .tab-body {
+	padding:25px
+}
+.main-info .tab-body .body-item {
+	display:none
+}
+.main-info .tab-body .current {
+	display:block
+}
+.main-info .goods-info table {
+	width:100%
+}
+.main-info .goods-info table tr td {
+	height:28px;
+	color:#666
+}
+.main-info .goods-info .pic {
+	margin-top:10px
+}
+.goods-spec table {
+	width:100%;
+	border-top:solid 1px #e6e6e6;
+	border-right:solid 1px #e6e6e6
+}
+.goods-spec table tr th, .goods-spec table tr td {
+	border-bottom:solid 1px #e6e6e6;
+	border-left:solid 1px #e6e6e6;
+	line-height:18px;
+	padding-top:6px;
+	padding-bottom:6px
+}
+.goods-spec table tr th {
+	background:#f5fafe;
+	padding-left:35px;
+	text-align:left;
+	color:#333;
+	font-size:14px
+}
+.goods-spec table tr td {
+	color:#666;
+	padding-left:10px;
+	padding-right:10px
+}
+.goods-spec table tr td.key {
+	text-align:right;
+	width:18%;
+	background:#f5fafe
+}
+.side-extra {
+	width:243px;
+	font-family:Microsoft Yahei
+}
+.side-extra .module {
+	padding-left:25px;
+	padding-right:25px;
+	background:#fff;
+	margin-bottom:20px
+}
+.side-extra .module .title {
+	font-size:15px;
+	color:#333
+}
+.side-extra .seckill-record {
+	padding-top:16px;
+	padding-bottom:10px
+}
+.side-extra .seckill-record .marquee {
+	height:380px;
+	overflow:hidden;
+	margin-top:5px
+}
+.side-extra .seckill-record ul li {
+	padding:8px 0
+}
+.side-extra .seckill-record ul li p {
+	line-height:20px;
+	color:#999
+}
+.side-extra .goods-offer {
+	padding-top:16px;
+	padding-bottom:10px
+}
+.side-extra .goods-offer ul {
+	margin-top:7px
+}
+.side-extra .goods-offer ul li {
+	padding:10px 0
+}
+.side-extra .goods-offer ul li .face {
+	height:127px;
+	position:relative
+}
+.side-extra .goods-offer ul li .face span {
+	display:inline-block;
+	width:19px;
+	height:22px;
+	text-align:center;
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	top:0;
+	color:#fff;
+	background:url(http://image.meilele.com/images/miaosha/seckill_detail.gif) 0 -48px no-repeat
+}
+.side-extra .goods-offer ul li .name, .side-extra .goods-offer ul li .attr {
+	height:16px;
+	line-height:16px;
+	overflow:hidden
+}
+.side-extra .goods-offer ul li .name {
+	color:#666;
+	display:block;
+	margin-top:9px
+}
+.side-extra .goods-offer ul li .attr {
+	color:#999;
+	margin-top:3px
+}
+.ms-tip {
+	width:398px;
+	padding:6px;
+	background:rgba(102, 102, 102, 0.5);
+	box-shadow:0 0 10px #999;
+	font-family:Microsoft Yahei;
+	position:fixed;
+	z-index:100;
+	left:0;
+	top:0;
+	_position:absolute;
+_top:expression(eval(document.documentElement.scrollTop+0))
+}
+.ms-tip .content {
+	background:#fff
+}
+.ms-tip h2 {
+	font-weight:normal;
+	font-size:16px;
+	color:#333;
+	background:#f1f1f1;
+	padding:10px 14px;
+	border-bottom:1px solid #dedede
+}
+.ms-tip h2 a {
+	font-family:Arial;
+	font-size:20px;
+	text-decoration:none;
+	float:right
+}
+.ms-tip .form {
+	padding:22px 30px
+}
+.ms-tip .form p {
+	color:#777;
+	line-height:16px
+}
+.ms-tip .form ul {
+	margin-top:10px
+}
+.ms-tip .form ul li {
+	padding:8px 5px;
+	line-height:28px
+}
+.ms-tip .form ul li span, .ms-tip .form ul li a, .ms-tip .form ul li input, .ms-tip .form ul li img {
+	display:inline-block;
+	vertical-align:top
+}
+.ms-tip .form ul li span {
+	width:100px;
+	text-align:right
+}
+.ms-tip .form ul li a {
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	padding:0 8px;
+	color:#333;
+	border:solid 1px #dedede;
+	border-radius:2px;
+	background:#f9f9f9
+}
+.ms-tip .form ul li a.disabled {
+	background:#eee;
+	border-color:#ccc;
+	color:#999;
+	text-decoration:none;
+	cursor:default
+}
+.ms-tip .form ul li a.disabled:hover {
+	color:#999!important
+}
+.ms-tip .form ul li input {
+	width:50px;
+	height:20px;
+	line-height:20px;
+	padding:3px 5px;
+	color:#777;
+	border:1px solid #cecece;
+	margin-right:4px
+}
+.ms-tip .form ul li input.phone {
+	width:180px
+}
+.ms-tip .form ul li img {
+	cursor:pointer
+}
+.ms-tip .form .submit {
+	padding-left:105px;
+	margin-top:8px
+}
+.ms-tip .form .submit a {
+	display:block;
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	background:#c9033b;
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+	border-radius:2px
+}
+.ms-tip .form .submit a.disabled {
+	background:#ccc;
+	border-color:#ccc;
+	color:#999;
+	text-decoration:none;
+	cursor:default
+}
+.ms-tip .form .submit a.disabled:hover {
+	color:#999!important
+}
+.ms-tip .form .submit a:hover {
+	color:#fff!important
+}
+.snatch-panel h3{ font-size:18px;}
+.goods-panel .table {margin: 10px 0 10px 0; display:inline-block}
+.snatch-panel .table dl{ padding:10px 0; display:inline-block;}
+.snatch-panel .table dt,.snatch-panel .table dd{ float:left;}
+.snatch-panel .table dt{ text-align:right; width:65px;}
+.snatch-panel .table dd input{ float:left}
+.snatch-panel .table dd input.bnt_blue_1{ background:#c9033b; border:none; color:#ffffff; height:22px; margin-left:15px; cursor:pointer}
+.goods-panel .table p{ line-height:25px;}
+
+

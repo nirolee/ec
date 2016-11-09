@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/xspace_common-980.css" rel="stylesheet" type="text/css" />
+<link href="article.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="w-980">2
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<section class="art_main w clearfix">
+	<aside class="art_nav art_box clearfix Left">
+    	<h2 class="art_title">
+        	<span class="aside_txt">帮助中心</span>
+			 SERVICE
+        </h2>
+        <section id="JS_silde_menu">
+        	{foreach from=$article_categories item=cat name=foo}
+            <!-- {if $smarty.foreach.foo.iteration<5}--> 
+        	<dl>
+            	<dt>
+                	<span class="dt_ico art_ico{$smarty.foreach.foo.iteration}"></span>
+                	<span class="dt_txt"><a href="{$cat.url}">{$cat.name}</a></span>
+                </dt>
+                {foreach from=$cat.child item=child}
+                <dd>
+                	<a href="{$child.url}">{$child.name}</a>
+                </dd>
+                {/foreach}
+            </dl>
+            <!-- {/if} -->
+            {/foreach}
+        </section>
+    </aside>
+    <section class="art_content clearfix Right">
+    	<h2 class="art_title">
+			<span class="line">{$lang.article_list}</span>
+		</h2>
+        <article class="article">
+        	<ul class="clearfix">
+            	<!-- {foreach from=$artciles_list item=article} -->
+                <li>
+                	<span class="art_txt">
+                    	• <a href="{$article.url}" title="{$article.title|escape:html}">{$article.short_title}</a>
+                    </span>
+                    <span class="art_author">{$article.author}</span>
+                    <span class="art_time">{$article.add_time}</span>
+                </li>
+                <!-- {/foreach} -->
+            </ul>
+            <div class="cPager">
+            	<!-- {if $pager.page_prev} --><a class="p-item p-prev " href="{$pager.page_prev}">上一页</a><!-- {else} --><!-- {/if} --> 
+        		<!-- {if $pager.page_count neq 1} --> 
+        		<!--{foreach from=$pager.page_number key=key item=item}--> 
+        		<!-- {if $pager.page eq $key} --> 
+        		<strong class="current">{$key}</strong> 
+        		<!-- {else} --> 
+        		<a href="{$item}" class="p-item p-num">{$key}</a> 
+        		<!-- {/if} --> 
+        		<!--{/foreach}--> 
+        		<!-- {/if} -->
+        		<!-- {if $pager.page_next} --><a class="p-item p-next " href="{$pager.page_next}">{$lang.page_next}</a><!-- {else} --><!-- {/if} -->
+            </div>
+        </article>
+    </section>
+</section>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+document.getElementById('cur_url').value = window.location.href;
+</script>
+</html>
+
+

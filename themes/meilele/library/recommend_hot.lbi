@@ -1,0 +1,147 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $hot_goods} -->
+<!-- {if $script_name eq "category_top"} -->
+<!--{foreach from=$hot_goods item=goods name=foo}-->
+<div class="o_list Left">
+	<a target="_blank" href="{$goods.url}"><img width="156" height="130" src="{$goods.thumb}" alt="{$goods.name|escape:html}"></a>
+    <div class="o_b1_title">
+    	<table width="100%">
+        	<tr>
+            	<td class="c_1 f_1" width="45%">
+                	<span class="s_1">¥</span>
+					<span class="s_2">
+                    	<!-- {if $goods.promote_price neq ""} --> 
+            			{$goods.promote_price} 
+            			<!-- {else}--> 
+            			{$goods.shop_price} 
+            			<!--{/if}-->
+            		</span>
+                </td>
+                <td width="55%">
+					<span class=" s_1 c_2">已售 </span>
+					<span class=" s_1 c_1">{$goods.sales_volume}</span>
+					<span class="s_1 c_2"> 件</span>
+				</td>
+            </tr>
+        </table>
+    </div>
+    <div class="o_b1_title c_3">
+    	<a target="_blank" href="{$goods.url}">{$goods.short_style_name}</a>
+    </div>
+</div>
+<!--{/foreach}-->
+<!-- {elseif $script_name eq "category"}-->
+<!--{foreach from=$hot_goods item=goods name=doo}-->
+<!-- {if $smarty.foreach.doo.iteration==1}--> 
+<div class="hot-list-box current" style=" border-top:0px" onmouseover="showCurrentImg(this);">
+	<div class="list-titles">
+    	<s>{$smarty.foreach.doo.iteration}</s>
+        <a class="black" target="_blank" title="{$goods.short_style_name}" href="{$goods.url}">{$goods.short_style_name}</a>
+        <span class="red price">
+        	¥<!-- {if $goods.promote_price neq ""} --> 
+            {$goods.promote_price} 
+            <!-- {else}--> 
+            {$goods.shop_price} 
+            <!--{/if}-->
+        </span>
+    </div>
+    <div class="list-images">
+    	<a class="good-img" alt="{$goods.short_style_name}" target="_blank" title="{$goods.short_style_name}" href="{$goods.url}">
+			<img width="160" height="106" alt="{$goods.short_style_name}" src="{$goods.thumb}" >
+		</a>
+        <div class="good-info">
+			本站价：
+			<span class=" red yen">
+            	¥<!-- {if $goods.promote_price neq ""} --> 
+            	{$goods.promote_price} 
+            	<!-- {else}--> 
+            	{$goods.shop_price} 
+            	<!--{/if}-->
+            </span>
+			<span class="gray">销量：</span>
+			<span class="orange">{$goods.sales_volume}</span>
+		</div>
+    </div>
+</div>
+<!--{else}-->
+<div class="hot-list-box" onmouseover="showCurrentImg(this);">
+	<div class="list-titles">
+    	<s>{$smarty.foreach.doo.iteration}</s>
+        <a class="black" target="_blank" title="{$goods.short_style_name}" href="{$goods.url}">{$goods.short_style_name}</a>
+        <span class="red price">
+        	¥<!-- {if $goods.promote_price neq ""} --> 
+            {$goods.promote_price} 
+            <!-- {else}--> 
+            {$goods.shop_price} 
+            <!--{/if}-->
+        </span>
+    </div>
+    <div class="list-images">
+    	<a class="good-img" alt="{$goods.short_style_name}" target="_blank" title="{$goods.short_style_name}" href="{$goods.url}">
+			<img width="160" height="106" alt="{$goods.short_style_name}" src="{$goods.thumb}" >
+		</a>
+        <div class="good-info">
+			本站价：
+			<span class=" red yen">
+            	¥<!-- {if $goods.promote_price neq ""} --> 
+            	{$goods.promote_price} 
+            	<!-- {else}--> 
+            	{$goods.shop_price} 
+            	<!--{/if}-->
+            </span>
+			<span class="gray">销量：</span>
+			<span class="orange">{$goods.sales_volume}</span>
+		</div>
+    </div>
+</div>
+<!-- {/if} -->
+<!--{/foreach}-->
+<script type="text/javascript">
+function showCurrentImg(a) {
+    var b = $(a);
+    b.addClass("current");
+    b.siblings("").removeClass("current");
+}
+</script>
+<!-- {elseif $script_name eq "group"}-->
+<div class="tg_dtlR">
+	<h2 class="f14">热卖商品</h2>
+    <ul class="list">
+    	<!-- {foreach from=$hot_goods item=goods} -->
+        <li>
+        	<p><a target="_blank" href="{$goods.url}"><img width="180" height="118" src="{$goods.thumb}"></a></p>
+            <p class="name"><a class="title" title="{$goods.name|escape:html}" target="_blank" href="{$goods.url}">{$goods.short_name|escape:html}</a></p>
+            <p class="tprc"> 本站价:<span class="yen">¥<!-- {if $goods.promote_price neq ""} --> {$goods.promote_price} <!-- {else}--> {$goods.shop_price} <!--{/if}--></span></p>
+            <p class="prc clearfix"><span class="Left">市场价:<del class="yen">¥{$goods.market_price}</del></span> <span class="Right">已抢购<b>{$goods.sales_volume}</b></span></p>
+        </li>
+        <!-- {/foreach} -->
+    </ul>
+</div>
+<!-- {else}-->
+<!--{foreach from=$hot_goods item=goods name=hot}-->
+<div class="goods4_list <!-- {if $smarty.foreach.hot.iteration==1}-->first<!--{/if}-->">
+	<div class="img">
+    	<span class="yahei">
+			<strong>{$goods.zhekou}</strong>
+			<br>
+			折
+		</span>
+    	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}"><img src="{$goods.thumb}"></a>  
+    </div>
+    <p class="info">
+    	<a target="_blank" title="{$goods.name|escape:html}"  href="{$goods.url}" style=" width:290px;text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:inline-block">{$goods.short_style_name}</a>	
+        <br />
+        价格：
+        <span class="yen red">¥</span>
+        <strong class="pr red"><!-- {if $goods.promote_price neq ""} --> 
+        {$goods.promote_price} 
+        <!-- {else}--> 
+        {$goods.shop_price} 
+        <!--{/if}--></strong>
+    </p>
+</div>
+<!-- {/foreach} -->
+<!-- {/if} --> 
+<!-- {/if} --> 
+
+

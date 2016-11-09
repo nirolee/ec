@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta name="Description" content="{$description}" />
+{if $auto_redirect}
+<meta http-equiv="refresh" content="3;URL={$message.href}" />
+{/if}
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/xspace_common-980.css" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/category_wide.css" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/message-b.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="clearfix w mt10">
+	<div class="user_main">
+    	<div class="position2 clearfix">
+        	<div id="JS_uhere" class="here">留言板</div>
+        	<div class="Left" style="padding-left:15px;padding-top:2px;">
+        		{insert name='ads' id=45 num=1}
+        	</div>
+            <div class="Right">
+				<a target="_blank" href="./index.php">首页</a>
+			</div>
+        </div>
+        <div class="gray_box u_message_list">
+        	<!-- #BeginLibraryItem "/library/message_list.lbi" --><!-- #EndLibraryItem -->
+            <div class="page-panel">
+            	<div class="p-wrap">
+            		<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+            	</div>
+            </div>
+            <div class="inBox">
+            	<div class="title clearfix mt20">
+					<div class="Left current">{$lang.post_message}</div>
+				</div>
+                <form action="message.php" method="post" name="formMsg" onSubmit="return submitMsgBoard(this)">
+                	<table class="u_lm mt20">
+                    	<tr>
+                        	<td class="label">{$lang.username}</td>
+                            <td>
+                            	<!--{if $smarty.session.user_name}-->
+                				{$username}<input type="checkbox" name="anonymous" value="1" id="anonymous" />{$lang.message_anonymous}
+                				<!--{else}-->
+               					{$lang.anonymous}
+                				<!--{/if}-->
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="label">{$lang.email}</td>
+                            <td>
+                            	<input name="user_email" type="text" class="u_input u_w250" value="{$smarty.session.email|escape}" />
+                            </td>
+                        </tr>
+                    	<tr>
+                        	<td class="label">{$lang.message_board_type}</td>
+                			<td>
+                            	<label>
+                                	<input name="msg_type" type="radio" value="0" checked="checked" />
+                  					{$lang.message_type[0]}
+                                </label>
+                                <label>
+                  					<input type="radio" name="msg_type" value="1" />
+                  					{$lang.message_type[1]}
+                                </label>
+                                <label>
+                  					<input type="radio" name="msg_type" value="2" />
+                  					{$lang.message_type[2]}
+                                </label>
+                                <label>
+                  					<input type="radio" name="msg_type" value="3" />
+                  					{$lang.message_type[3]}
+                                </label>
+                                <label>
+                  					<input type="radio" name="msg_type" value="4" />
+                  					{$lang.message_type[4]}
+                                </label> 
+                            </td>
+                        </tr>
+                        <tr>
+                        	<td class="label">{$lang.message_title}</td>
+                            <td><input name="msg_title" type="text" class="u_input u_w250" /></td>
+                        </tr>
+                        <!-- 判断是否启用验证码{if $enabled_mes_captcha} -->
+                        <tr>
+                        	<td class="label">{$lang.comment_captcha}</td>
+                            <td>
+                            	<input type="text" size="8" name="captcha"  class="inputBg" />
+                				<img src="captcha.php?{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" />
+                            </td>
+                        </tr>
+                        <!--{/if}-->
+                        <tr>
+                        	<td class="label">{$lang.message_content}</td>
+                            <td>
+                            	<textarea name="msg_content" cols="50" rows="4" wrap="virtual" class="u_mta"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                			<td>&nbsp;</td>
+                			<td>
+                            	<input type="hidden" name="act" value="act_add_message" />
+                  				<input type="submit" value="{$lang.post_message}" class="u_btn1" />
+                			</td>
+              			</tr>
+                    </table>
+                </form>
+                <script type="text/javascript">
+        {foreach from=$lang.message_board_js item=item key=key}
+        var {$key} = "{$item}";
+        {/foreach}
+        {literal}
+        /**
+         * 提交留言信息
+        */
+        function submitMsgBoard(frm)
+        {
+            var msg = new Object;
+
+             msg.user_email  = frm.elements['user_email'].value;
+             msg.msg_title   = frm.elements['msg_title'].value;
+             msg.msg_content = frm.elements['msg_content'].value;
+             msg.captcha     = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
+
+            var msg_err = '';
+
+            if (msg.user_email.length > 0)
+            {
+               if (!(Utils.isEmail(msg.user_email)))
+               {
+                  msg_err += msg_error_email + '\n';
+                }
+             }
+             else
+             {
+                  msg_err += msg_empty_email + '\n';
+             }
+            if (msg.msg_title.length == 0)
+            {
+                msg_err += msg_title_empty + '\n';
+            }
+            if (frm.elements['captcha'] && msg.captcha.length==0)
+            {
+                msg_err += msg_captcha_empty + '\n'
+            }
+            if (msg.msg_content.length == 0)
+            {
+                msg_err += msg_content_empty + '\n'
+            }
+            if (msg.msg_title.length > 200)
+            {
+                msg_err += msg_title_limit + '\n';
+            }
+
+            if (msg_err.length > 0)
+            {
+                alert(msg_err);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        {/literal}
+        </script>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+</html>
+
+

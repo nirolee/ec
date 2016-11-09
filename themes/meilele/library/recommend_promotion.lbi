@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+<div class="head clearfix">
+	<strong class="name Left" style="color:#333">最新活动</strong>
+    <span class="weekly">限时购</span>
+</div>
+<div id="JS_limit_time" class="body">
+	<table id="JS_limit_table">
+    	<tr>
+        	<!--{foreach from=$promotion_goods item=goods name=pro}-->
+            <td>
+            <div class="goods4_list <!-- {if $smarty.foreach.pro.iteration==1}-->first<!-- {/if} -->">
+            	<div class="img">
+                	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}"> <img src="{$goods.thumb}" ></a>
+                </div>
+                <div class="info">
+                	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}" style=" width:290px;text-overflow:ellipsis; overflow:hidden; white-space:nowrap; display:inline-block">{$goods.short_name|escape:html}</a>
+                    <br>
+					促销价：
+					<span class="yen red">¥</span>
+					<strong class="pr red">{$goods.promote_price}</strong>
+                </div>
+            </div>
+            </td>
+            <!--{/foreach}-->
+        </tr>
+    </table>
+</div>
+<!-- {/if} -->
+

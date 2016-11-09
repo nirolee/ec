@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $bought_goods} -->
+<div class="recommend-data">
+	<h3 class="title">购买了该商品的用户还购买了</h3>
+    <ul>
+    	<!--{foreach from=$bought_goods item=bought_goods_data name=bought_goods}-->
+        <li>
+        	<div class="face">
+            	<a target="_blank" title="{$bought_goods_data.goods_name}" href="{$bought_goods_data.url}"><img height="129" width="195" alt="{$bought_goods_data.goods_name}" src="{$bought_goods_data.goods_thumb}"></a>
+            </div>
+            <div class="name">
+            	<a target="_blank" title="{$bought_goods_data.goods_name}" href="{$bought_goods_data.url}">{$bought_goods_data.short_name}</a>
+            </div>
+            <p class="clearfix">
+            	<a class="red Left" title="{$bought_goods_data.goods_name}" target="_blank" href="{$bought_goods_data.url}">
+                	¥<!-- {if $bought_goods_data.promote_price neq 0} --> 
+            		{$bought_goods_data.formated_promote_price} 
+            		<!-- {else} --> 
+            		{$bought_goods_data.shop_price} 
+            		<!-- {/if} -->
+            	</a>
+                <a class="goods_side_gray Right" title="{$bought_goods_data.goods_name}" target="_blank" href="{$bought_goods_data.url}">
+					已售 <span class="red">{$goods.sales_volume}</span>
+				</a>                
+            </p>
+        </li>
+        <!-- {/foreach} -->
+    </ul>
+</div>
+<!-- {/if} -->
+
+

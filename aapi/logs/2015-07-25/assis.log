@@ -1,0 +1,5482 @@
+14:33:17	Array
+(
+    [succ] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [table] => attribute
+                    [guid] => 283
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [1] => Array
+                (
+                    [table] => attribute
+                    [guid] => 290
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [2] => Array
+                (
+                    [table] => attribute
+                    [guid] => 291
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [3] => Array
+                (
+                    [table] => attribute
+                    [guid] => 384
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [4] => Array
+                (
+                    [table] => attribute
+                    [guid] => 418
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [5] => Array
+                (
+                    [table] => attribute
+                    [guid] => 421
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [6] => Array
+                (
+                    [table] => attribute
+                    [guid] => 422
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [7] => Array
+                (
+                    [table] => attribute
+                    [guid] => 426
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [8] => Array
+                (
+                    [table] => attribute
+                    [guid] => 439
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [9] => Array
+                (
+                    [table] => attribute
+                    [guid] => 440
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [10] => Array
+                (
+                    [table] => attribute
+                    [guid] => 442
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [11] => Array
+                (
+                    [table] => attribute
+                    [guid] => 443
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [12] => Array
+                (
+                    [table] => attribute
+                    [guid] => 444
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [13] => Array
+                (
+                    [table] => attribute
+                    [guid] => 539
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [14] => Array
+                (
+                    [table] => attribute
+                    [guid] => 563
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [15] => Array
+                (
+                    [table] => attribute
+                    [guid] => 566
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [16] => Array
+                (
+                    [table] => attribute
+                    [guid] => 581
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [17] => Array
+                (
+                    [table] => attribute
+                    [guid] => 942
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 1
+                )
+
+        )
+
+)
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(14) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "25755"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "25756"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "25757"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "25758"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "25759"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "25760"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "SS668"
+      ["goods_attr_id"]=>
+      string(5) "25761"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "25762"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "25763"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "25764"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "25765"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "单人位"
+      ["goods_attr_id"]=>
+      string(5) "25766"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "三人位"
+      ["goods_attr_id"]=>
+      string(5) "25767"
+      ["attr_price"]=>
+      string(4) "2063"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "双人位"
+      ["goods_attr_id"]=>
+      string(5) "25768"
+      ["attr_price"]=>
+      string(3) "750"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/1_P_1446852682.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/1_P_1458429554.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/1_thumb_P_1473120188.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150720151241.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/1_P_1489136044.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/1_P_1474095292.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/1_thumb_P_1487655215.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150720151303.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1587)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437380903"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/1_G_1458329329.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/1_thumb_G_1480627230.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/1_G_1506204063.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437798895"
+      ["integral"]=>
+      string(2) "40"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(6) "4874.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "SS668"
+      ["goods_id"]=>
+      string(4) "1587"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "4062"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(144) "美韩美家 布艺 客厅 成人 欧式 组合 SS668 木骨架 高密度海绵 可以 内贸 单人 三人 双人 单人位 双人位 三人位"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(95) "富润家 欧式客厅组合沙发 别墅酒店会所沙发 成都富润家家具[五包到家]"
+      ["goods_desc"]=>
+      string(1825) "<div><img src="/images/upload/Image/201507/20150720164154505_897440.jpg" /><img src="/images/upload/Image/201507/20150720164154507_66244.jpg" /><img src="/images/upload/Image/201507/20150720164154509_16943.jpg" /><img src="/images/upload/Image/201507/20150720164154512_30014.jpg" /><img src="/images/upload/Image/201507/20150720164154514_435169.jpg" /><img src="/images/upload/Image/201507/20150720164154515_340519.jpg" /><img src="/images/upload/Image/201507/20150720164154518_941492.jpg" /><img src="/images/upload/Image/201507/20150720164154520_210150.jpg" /><img src="/images/upload/Image/201507/20150720164154522_183135.jpg" /><img src="/images/upload/Image/201507/20150720164154524_786381.jpg" /><img src="/images/upload/Image/201507/20150720164154527_834990.jpg" /><img src="/images/upload/Image/201507/20150720164154529_559209.jpg" /><img src="/images/upload/Image/201507/20150720164154531_651672.jpg" /><img src="/images/upload/Image/201507/20150720164154534_592888.jpg" /><img src="/images/upload/Image/201507/20150720164154537_205886.jpg" /><img src="/images/upload/Image/201507/20150720164154540_48805.jpg" /><img src="/images/upload/Image/201507/20150720164154542_843322.jpg" /><img src="/images/upload/Image/201507/20150720164154545_818581.jpg" /><img src="/images/upload/Image/201507/20150720164154547_276235.jpg" /><img src="/images/upload/Image/201507/20150720164154550_126303.jpg" /><img src="/images/upload/Image/201507/20150720164154553_546145.jpg" /><img src="/images/upload/Image/201507/20150720164154556_87350.jpg" /><img src="/images/upload/Image/201507/20150720164154558_415715.jpg" /><img src="/images/upload/Image/201507/20150720164154561_56713.jpg" /><img src="/images/upload/Image/201507/20150720164154564_388458.jpg" /><img src="/images/upload/Image/201507/20150720164154567_824933.jpg" /></div>"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(15) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "25784"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "25785"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "25786"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "25787"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "25788"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "25789"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(10) "1+3+贵妃"
+      ["goods_attr_id"]=>
+      string(5) "25790"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "SS626"
+      ["goods_attr_id"]=>
+      string(5) "25791"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "25792"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(18) "高弹泡沫海绵"
+      ["goods_attr_id"]=>
+      string(5) "25793"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "25794"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "25795"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "单人位"
+      ["goods_attr_id"]=>
+      string(5) "25796"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "贵妃位"
+      ["goods_attr_id"]=>
+      string(5) "25797"
+      ["attr_price"]=>
+      string(3) "875"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [14]=>
+    array(6) {
+      ["attr_value"]=>
+      string(10) " 三人位"
+      ["goods_attr_id"]=>
+      string(5) "25798"
+      ["attr_price"]=>
+      string(4) "1688"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/4_P_1494925031.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/4_P_1507599770.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/4_thumb_P_1517034480.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721093138.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/4_P_1480120245.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/4_P_1463832076.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/4_thumb_P_1470888657.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721093200.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1589)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437442926"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/4_G_1537021271.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/4_thumb_G_1471721599.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/4_G_1463306952.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437800928"
+      ["integral"]=>
+      string(2) "20"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(6) "2474.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "SS626"
+      ["goods_id"]=>
+      string(4) "1589"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2062"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(153) "美韩美家 布艺 客厅 成人 欧式 组合 1+3+贵妃 SS626 木骨架 高密度海绵 可以 内贸 单人位 贵妃位 三人位 高弹泡沫海绵"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "0"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(101) "富润家 欧式时尚客厅布艺沙发 小户型沙发 成都家具厂家直销批发[五包到家]"
+      ["goods_desc"]=>
+      string(1610) "<img src="/images/upload/Image/201507/20150721095643880_605261.jpg" /><img src="/images/upload/Image/201507/20150721095643883_337797.jpg" /><img src="/images/upload/Image/201507/20150721095643885_692278.jpg" /><img src="/images/upload/Image/201507/20150721095643902_923977.jpg" /><img src="/images/upload/Image/201507/20150721095643904_175614.jpg" /><img src="/images/upload/Image/201507/20150721095643906_585316.jpg" /><img src="/images/upload/Image/201507/20150721095643908_889900.jpg" /><img src="/images/upload/Image/201507/20150721095643910_599372.jpg" /><img src="/images/upload/Image/201507/20150721095643912_997706.jpg" /><img src="/images/upload/Image/201507/20150721095643915_311325.jpg" /><img src="/images/upload/Image/201507/20150721095643917_29502.jpg" /><img src="/images/upload/Image/201507/20150721095643919_565830.jpg" /><img src="/images/upload/Image/201507/20150721095643921_822013.jpg" /><img src="/images/upload/Image/201507/20150721095643923_869126.jpg" /><img src="/images/upload/Image/201507/20150721095643925_340422.jpg" /><img src="/images/upload/Image/201507/20150721095643928_510392.jpg" /><img src="/images/upload/Image/201507/20150721095643930_344994.jpg" /><img src="/images/upload/Image/201507/20150721095643933_838186.jpg" /><img src="/images/upload/Image/201507/20150721095643935_510236.jpg" /><img src="/images/upload/Image/201507/20150721095643938_754661.jpg" /><img src="/images/upload/Image/201507/20150721095643940_52426.jpg" /><img src="/images/upload/Image/201507/20150721095643943_303283.jpg" /><img src="/images/upload/Image/201507/20150721095643945_316354.jpg" /> "
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(13) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26786"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "实木"
+      ["goods_attr_id"]=>
+      string(5) "26787"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "26788"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "26789"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "田园"
+      ["goods_attr_id"]=>
+      string(5) "26790"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "SS622"
+      ["goods_attr_id"]=>
+      string(5) "26795"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "26791"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "26792"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "26793"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "26794"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "单人位"
+      ["goods_attr_id"]=>
+      string(5) "26773"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "双人位"
+      ["goods_attr_id"]=>
+      string(5) "26774"
+      ["attr_price"]=>
+      string(3) "375"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "三人位"
+      ["goods_attr_id"]=>
+      string(5) "26775"
+      ["attr_price"]=>
+      string(4) "1062"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/5_P_1524165808.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/5_P_1529882498.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/5_thumb_P_1483742733.jpg"
+      ["img_desc"]=>
+      string(35) "QQ截图20150721100839 - 副本.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/5_P_1461875308.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/5_P_1490993824.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/5_thumb_P_1475857095.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721100853.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1590)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437444697"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/5_G_1525562655.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/5_thumb_G_1455461766.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/5_G_1523073878.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437801611"
+      ["integral"]=>
+      string(2) "21"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "2550"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "SS622"
+      ["goods_id"]=>
+      string(4) "1590"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2125"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(123) "单人位 三人位 双人位 美韩美家 实木 客厅 成人 田园 组合 SS622 木骨架 高密度海绵 可以 内贸"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(87) "富润家 韩式田园沙发 实木客厅组合沙发 厂家直销 批发[五包到家]"
+      ["goods_desc"]=>
+      string(1329) "<img src="/images/upload/Image/201507/20150721101939045_11202.jpg" /><img src="/images/upload/Image/201507/20150721101939047_202351.jpg" /><img src="/images/upload/Image/201507/20150721101939049_609780.jpg" /><img src="/images/upload/Image/201507/20150721101939051_451981.jpg" /><img src="/images/upload/Image/201507/20150721101939053_128967.jpg" /><img src="/images/upload/Image/201507/20150721101939055_295946.jpg" /><img src="/images/upload/Image/201507/20150721101939072_112497.jpg" /><img src="/images/upload/Image/201507/20150721101939074_446577.jpg" /><img src="/images/upload/Image/201507/20150721101939076_987841.jpg" /><img src="/images/upload/Image/201507/20150721101939078_882152.jpg" /><img src="/images/upload/Image/201507/20150721101939080_247223.jpg" /><img src="/images/upload/Image/201507/20150721101939083_944220.jpg" /><img src="/images/upload/Image/201507/20150721101939085_511929.jpg" /><img src="/images/upload/Image/201507/20150721101939087_573790.jpg" /><img src="/images/upload/Image/201507/20150721101939089_542617.jpg" /><img src="/images/upload/Image/201507/20150721101939091_614678.jpg" /><img src="/images/upload/Image/201507/20150721101939094_453050.jpg" /><img src="/images/upload/Image/201507/20150721101939097_269136.jpg" /><img src="/images/upload/Image/201507/20150721101939099_976722.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(16) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "象牙白"
+      ["goods_attr_id"]=>
+      string(5) "26797"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "283"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26796"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "实木布艺"
+      ["goods_attr_id"]=>
+      string(5) "25813"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "25814"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "25815"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "田园"
+      ["goods_attr_id"]=>
+      string(5) "25817"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "25816"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "1+2+3"
+      ["goods_attr_id"]=>
+      string(5) "25818"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "SS621"
+      ["goods_attr_id"]=>
+      string(5) "25819"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "25820"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(18) "高弹泡沫海绵"
+      ["goods_attr_id"]=>
+      string(5) "25821"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "25822"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "25823"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "单人位"
+      ["goods_attr_id"]=>
+      string(5) "25824"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [14]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "双人位"
+      ["goods_attr_id"]=>
+      string(5) "25825"
+      ["attr_price"]=>
+      string(3) "500"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [15]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "三人位"
+      ["goods_attr_id"]=>
+      string(5) "25826"
+      ["attr_price"]=>
+      string(4) "1250"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/6_P_1450209473.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/6_P_1501976008.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/6_thumb_P_1448501290.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721102720.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/6_P_1520923232.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/6_P_1492953600.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/6_thumb_P_1514374930.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721102743.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1591)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437445969"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/6_G_1532917825.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/6_thumb_G_1521191403.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/6_G_1511745525.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437802381"
+      ["integral"]=>
+      string(2) "23"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "2850"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "SS621"
+      ["goods_id"]=>
+      string(4) "1591"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2375"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(164) "实木布艺 客厅 成人 组合 田园 1+2+3 SS621 木骨架 高密度海绵 可以 内贸 单人位 三人位 双人位 美韩美家 高弹泡沫海绵 象牙白"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(106) "富润家 田园沙发 客厅沙发组合 实木布艺沙发 成都厂家直销 家具批发[五包到家]"
+      ["goods_desc"]=>
+      string(1607) "<img src="/images/upload/Image/201507/20150721103651280_645610.jpg" /><img src="/images/upload/Image/201507/20150721103651282_778158.jpg" /><img src="/images/upload/Image/201507/20150721103651284_864967.jpg" /><img src="/images/upload/Image/201507/20150721103651286_590743.jpg" /><img src="/images/upload/Image/201507/20150721103651288_52227.jpg" /><img src="/images/upload/Image/201507/20150721103651290_47559.jpg" /><img src="/images/upload/Image/201507/20150721103651292_158538.jpg" /><img src="/images/upload/Image/201507/20150721103651294_98648.jpg" /><img src="/images/upload/Image/201507/20150721103651297_892447.jpg" /><img src="/images/upload/Image/201507/20150721103651299_275646.jpg" /><img src="/images/upload/Image/201507/20150721103651301_230504.jpg" /><img src="/images/upload/Image/201507/20150721103651303_694260.jpg" /><img src="/images/upload/Image/201507/20150721103651305_466881.jpg" /><img src="/images/upload/Image/201507/20150721103651307_283356.jpg" /><img src="/images/upload/Image/201507/20150721103651310_248025.jpg" /><img src="/images/upload/Image/201507/20150721103651312_782080.jpg" /><img src="/images/upload/Image/201507/20150721103651314_937692.jpg" /><img src="/images/upload/Image/201507/20150721103651317_652817.jpg" /><img src="/images/upload/Image/201507/20150721103651319_575906.jpg" /><img src="/images/upload/Image/201507/20150721103651322_199165.jpg" /><img src="/images/upload/Image/201507/20150721103651324_724515.jpg" /><img src="/images/upload/Image/201507/20150721103651326_412808.jpg" /><img src="/images/upload/Image/201507/20150721103651329_609999.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(7) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26798"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "439"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "实木"
+      ["goods_attr_id"]=>
+      string(5) "26799"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "440"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26800"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "441"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(3) "620"
+      ["goods_attr_id"]=>
+      string(5) "26801"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "443"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(28) "自主加工 尺寸可定制"
+      ["goods_attr_id"]=>
+      string(5) "26804"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "539"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26802"
+      ["attr_price"]=>
+      string(4) "1125"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐椅"
+      ["goods_attr_id"]=>
+      string(5) "26803"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/7_P_1477946625.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/7_P_1503134438.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/7_thumb_P_1533969750.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721104702.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/7_P_1497055515.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/7_P_1470521752.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/7_thumb_P_1533834870.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721104727.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1592)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437447016"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/7_G_1462726206.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/7_thumb_G_1467105559.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/7_G_1523224661.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437803554"
+      ["integral"]=>
+      string(1) "5"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(5) "674.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(3) "620"
+      ["goods_id"]=>
+      string(4) "1592"
+      ["cat_id"]=>
+      string(2) "29"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(3) "562"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(73) "美韩美家 实木 欧式 620 餐桌 餐椅 自主加工 尺寸可定制"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "40"
+      ["goods_name"]=>
+      string(96) "富润家 欧式实木餐桌椅组合家庭餐厅饭店方形餐桌椅厂家直销[五包到家]"
+      ["goods_desc"]=>
+      string(1400) "<img src="/images/upload/Image/201507/20150721105822377_248907.jpg" /><img src="/images/upload/Image/201507/20150721105822380_507631.jpg" /><img src="/images/upload/Image/201507/20150721105822383_213274.jpg" /><img src="/images/upload/Image/201507/20150721105822385_990830.jpg" /><img src="/images/upload/Image/201507/20150721105822387_159305.jpg" /><img src="/images/upload/Image/201507/20150721105822402_732925.jpg" /><img src="/images/upload/Image/201507/20150721105822404_827661.jpg" /><img src="/images/upload/Image/201507/20150721105822406_638872.jpg" /><img src="/images/upload/Image/201507/20150721105822408_690532.jpg" /><img src="/images/upload/Image/201507/20150721105822410_636684.jpg" /><img src="/images/upload/Image/201507/20150721105822412_554508.jpg" /><img src="/images/upload/Image/201507/20150721105822414_107470.jpg" /><img src="/images/upload/Image/201507/20150721105822417_808625.jpg" /><img src="/images/upload/Image/201507/20150721105822419_655702.jpg" /><img src="/images/upload/Image/201507/20150721105822421_375763.jpg" /><img src="/images/upload/Image/201507/20150721105822424_280335.jpg" /><img src="/images/upload/Image/201507/20150721105822426_722524.jpg" /><img src="/images/upload/Image/201507/20150721105822428_615728.jpg" /><img src="/images/upload/Image/201507/20150721105822431_835595.jpg" /><img src="/images/upload/Image/201507/20150721105822433_649407.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(7) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26805"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "439"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(24) "实木餐椅板木餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26806"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "440"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26807"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "441"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(8) "1400X800"
+      ["goods_attr_id"]=>
+      string(5) "26808"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "442"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(3) "629"
+      ["goods_attr_id"]=>
+      string(5) "26809"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "443"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26810"
+      ["attr_price"]=>
+      string(4) "1188"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐椅"
+      ["goods_attr_id"]=>
+      string(5) "26811"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/8_P_1444010347.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/8_P_1456646184.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/8_thumb_P_1498558700.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721110308.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/8_P_1441341731.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/8_P_1535526508.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/8_thumb_P_1507837803.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721110337.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1593)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437448036"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/8_G_1465611615.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/8_thumb_G_1454073644.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/8_G_1527662645.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437803855"
+      ["integral"]=>
+      string(1) "6"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(3) "750"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(3) "629"
+      ["goods_id"]=>
+      string(4) "1593"
+      ["cat_id"]=>
+      string(2) "29"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(3) "625"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(100) "美韩美家 实木餐椅板木餐桌 1400X800 629 餐桌 餐椅 欧式 自主加工 尺寸可定制"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "40"
+      ["goods_name"]=>
+      string(110) "富润家 欧式餐桌餐椅 实木家用餐桌椅组合 成都厂家直销批发成套餐桌椅[五包到家]"
+      ["goods_desc"]=>
+      string(1469) "<img src="/images/upload/Image/201507/20150721110927163_437727.jpg" /><img src="/images/upload/Image/201507/20150721110927165_704110.jpg" /><img src="/images/upload/Image/201507/20150721110927167_497132.jpg" /><img src="/images/upload/Image/201507/20150721110927169_332902.jpg" /><img src="/images/upload/Image/201507/20150721110927171_194398.jpg" /><img src="/images/upload/Image/201507/20150721110927173_392367.jpg" /><img src="/images/upload/Image/201507/20150721110927175_943832.jpg" /><img src="/images/upload/Image/201507/20150721110927177_94180.jpg" /><img src="/images/upload/Image/201507/20150721110927179_690995.jpg" /><img src="/images/upload/Image/201507/20150721110927181_589135.jpg" /><img src="/images/upload/Image/201507/20150721110927183_987081.jpg" /><img src="/images/upload/Image/201507/20150721110927186_569538.jpg" /><img src="/images/upload/Image/201507/20150721110927187_326304.jpg" /><img src="/images/upload/Image/201507/20150721110927190_534086.jpg" /><img src="/images/upload/Image/201507/20150721110927192_522597.jpg" /><img src="/images/upload/Image/201507/20150721110927194_613564.jpg" /><img src="/images/upload/Image/201507/20150721110927196_255729.jpg" /><img src="/images/upload/Image/201507/20150721110927199_252167.jpg" /><img src="/images/upload/Image/201507/20150721110927201_532131.jpg" /><img src="/images/upload/Image/201507/20150721110927203_133105.jpg" /><img src="/images/upload/Image/201507/20150721110927206_637664.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(7) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26812"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "439"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(24) "实木餐椅板木餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26813"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "440"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26814"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "441"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(19) "1300*1300*（750）"
+      ["goods_attr_id"]=>
+      string(5) "26815"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "442"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(4) "6068"
+      ["goods_attr_id"]=>
+      string(5) "26816"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "443"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26817"
+      ["attr_price"]=>
+      string(4) "2062"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐椅"
+      ["goods_attr_id"]=>
+      string(5) "26818"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/9_P_1454222865.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/9_P_1525421621.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/9_thumb_P_1454593711.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721112321.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201507/goods_img/9_P_1513742714.jpg"
+      ["img_original"]=>
+      string(43) "images/201507/source_img/9_P_1437572463.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["thumb_url"]=>
+      string(48) "images/201507/thumb_img/9_thumb_P_1462807790.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721112458.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1594)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437448598"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/9_G_1441213822.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/9_thumb_G_1481735429.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/9_G_1471352402.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437804079"
+      ["integral"]=>
+      string(2) "10"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "1200"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(4) "6068"
+      ["goods_id"]=>
+      string(4) "1594"
+      ["cat_id"]=>
+      string(2) "29"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "1000"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(137) "美韩美家 板木餐桌实木餐椅 1300*1300*（750） 6068 餐椅 餐桌 欧式 自主加工 尺寸可定制 实木餐椅板木餐桌"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "40"
+      ["goods_name"]=>
+      string(86) "富润家 欧式餐桌椅 餐厅餐桌椅组合 成都厂家直销批发[五包到家]"
+      ["goods_desc"]=>
+      string(1537) "<img src="/images/upload/Image/201507/20150721114425756_491497.jpg" /><img src="/images/upload/Image/201507/20150721114425758_983582.jpg" /><img src="/images/upload/Image/201507/20150721114425760_912713.jpg" /><img src="/images/upload/Image/201507/20150721114425762_299353.jpg" /><img src="/images/upload/Image/201507/20150721114425764_259536.jpg" /><img src="/images/upload/Image/201507/20150721114425766_955426.jpg" /><img src="/images/upload/Image/201507/20150721114425768_86868.jpg" /><img src="/images/upload/Image/201507/20150721114425770_25093.jpg" /><img src="/images/upload/Image/201507/20150721114425772_409458.jpg" /><img src="/images/upload/Image/201507/20150721114425774_591902.jpg" /><img src="/images/upload/Image/201507/20150721114425776_685860.jpg" /><img src="/images/upload/Image/201507/20150721114425778_205947.jpg" /><img src="/images/upload/Image/201507/20150721114425780_594080.jpg" /><img src="/images/upload/Image/201507/20150721114425783_962141.jpg" /><img src="/images/upload/Image/201507/20150721114425786_390690.jpg" /><img src="/images/upload/Image/201507/20150721114425788_346654.jpg" /><img src="/images/upload/Image/201507/20150721114425790_575615.jpg" /><img src="/images/upload/Image/201507/20150721114425793_483956.jpg" /><img src="/images/upload/Image/201507/20150721114425795_417634.jpg" /><img src="/images/upload/Image/201507/20150721114425797_370218.jpg" /><img src="/images/upload/Image/201507/20150721114425800_622961.jpg" /><img src="/images/upload/Image/201507/20150721114425802_25065.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(8) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26819"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "439"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(24) "实木餐椅板木餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26820"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "440"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26821"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "441"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(8) "1400X800"
+      ["goods_attr_id"]=>
+      string(5) "26822"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "442"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(4) "A610"
+      ["goods_attr_id"]=>
+      string(5) "26823"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "443"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(28) "自主加工 尺寸可定制"
+      ["goods_attr_id"]=>
+      string(5) "26824"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "539"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐桌"
+      ["goods_attr_id"]=>
+      string(5) "26825"
+      ["attr_price"]=>
+      string(4) "1188"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "餐椅"
+      ["goods_attr_id"]=>
+      string(5) "26826"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["attr_id"]=>
+      string(3) "581"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(43) "images/201507/goods_img/10_P_1492700458.jpg"
+      ["img_original"]=>
+      string(44) "images/201507/source_img/10_P_1523936905.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["thumb_url"]=>
+      string(49) "images/201507/thumb_img/10_thumb_P_1439309602.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721115052.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(43) "images/201507/goods_img/10_P_1513245217.jpg"
+      ["img_original"]=>
+      string(44) "images/201507/source_img/10_P_1520625130.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["thumb_url"]=>
+      string(49) "images/201507/thumb_img/10_thumb_P_1464161968.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721115114.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1595)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437450802"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(43) "images/201507/goods_img/10_G_1474770370.jpg"
+      ["goods_thumb"]=>
+      string(49) "images/201507/thumb_img/10_thumb_G_1499868264.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(44) "images/201507/source_img/10_G_1452622019.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437804217"
+      ["integral"]=>
+      string(1) "6"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(5) "824.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(4) "A610"
+      ["goods_id"]=>
+      string(4) "1595"
+      ["cat_id"]=>
+      string(2) "29"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(3) "687"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(111) "象牙白 美韩美家 实木餐椅板木餐桌 欧式 1400X800 A610 餐椅 餐桌 自主加工 尺寸可定制"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "40"
+      ["goods_name"]=>
+      string(73) "富润家 欧式家用餐桌椅组合 餐厅成套餐桌椅[五包到家]"
+      ["goods_desc"]=>
+      string(1469) "<img src="/images/upload/Image/201507/20150721115521228_474697.jpg" /><img src="/images/upload/Image/201507/20150721115521230_268497.jpg" /><img src="/images/upload/Image/201507/20150721115521233_461531.jpg" /><img src="/images/upload/Image/201507/20150721115521234_312827.jpg" /><img src="/images/upload/Image/201507/20150721115521236_46919.jpg" /><img src="/images/upload/Image/201507/20150721115521238_864171.jpg" /><img src="/images/upload/Image/201507/20150721115521240_777837.jpg" /><img src="/images/upload/Image/201507/20150721115521242_148950.jpg" /><img src="/images/upload/Image/201507/20150721115521244_148051.jpg" /><img src="/images/upload/Image/201507/20150721115521246_488173.jpg" /><img src="/images/upload/Image/201507/20150721115521248_581024.jpg" /><img src="/images/upload/Image/201507/20150721115521250_563104.jpg" /><img src="/images/upload/Image/201507/20150721115521252_725147.jpg" /><img src="/images/upload/Image/201507/20150721115521255_564297.jpg" /><img src="/images/upload/Image/201507/20150721115521257_443531.jpg" /><img src="/images/upload/Image/201507/20150721115521259_935227.jpg" /><img src="/images/upload/Image/201507/20150721115521262_730523.jpg" /><img src="/images/upload/Image/201507/20150721115521264_577989.jpg" /><img src="/images/upload/Image/201507/20150721115521266_639461.jpg" /><img src="/images/upload/Image/201507/20150721115521269_669163.jpg" /><img src="/images/upload/Image/201507/20150721115521271_248958.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(6) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26827"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["attr_id"]=>
+      string(3) "418"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26828"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["attr_id"]=>
+      string(3) "419"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "来样定制"
+      ["goods_attr_id"]=>
+      string(5) "26829"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["attr_id"]=>
+      string(3) "421"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "象牙白"
+      ["goods_attr_id"]=>
+      string(5) "26830"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["attr_id"]=>
+      string(3) "422"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(3) "668"
+      ["goods_attr_id"]=>
+      string(5) "26831"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["attr_id"]=>
+      string(3) "426"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(8) "2000*400"
+      ["goods_attr_id"]=>
+      string(5) "26832"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["attr_id"]=>
+      string(3) "566"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(43) "images/201507/goods_img/11_P_1437583169.jpg"
+      ["img_original"]=>
+      string(44) "images/201507/source_img/11_P_1523640283.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["thumb_url"]=>
+      string(49) "images/201507/thumb_img/11_thumb_P_1448615414.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721120127.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(43) "images/201507/goods_img/11_P_1504554676.jpg"
+      ["img_original"]=>
+      string(44) "images/201507/source_img/11_P_1517151612.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["thumb_url"]=>
+      string(49) "images/201507/thumb_img/11_thumb_P_1524396645.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721120140.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1596)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437451433"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(43) "images/201507/goods_img/11_G_1488484785.jpg"
+      ["goods_thumb"]=>
+      string(49) "images/201507/thumb_img/11_thumb_G_1446814293.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(44) "images/201507/source_img/11_G_1526374123.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437804436"
+      ["integral"]=>
+      string(2) "20"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "2400"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(3) "668"
+      ["goods_id"]=>
+      string(4) "1596"
+      ["cat_id"]=>
+      string(2) "28"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2000"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(77) "象牙白 美韩美家 板材 欧式 668 2000*400 来样定制 1570*430*600MM"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "39"
+      ["goods_name"]=>
+      string(104) "富润家 欧式简约电视柜 板式烤漆客厅电视柜 成都家具厂家直销批发[五包到家]"
+      ["goods_desc"]=>
+      string(1190) "<img src="/images/upload/Image/201507/20150721130352376_759978.jpg" /><img src="/images/upload/Image/201507/20150721130352378_832039.jpg" /><img src="/images/upload/Image/201507/20150721130352380_597122.jpg" /><img src="/images/upload/Image/201507/20150721130352382_527420.jpg" /><img src="/images/upload/Image/201507/20150721130352384_828624.jpg" /><img src="/images/upload/Image/201507/20150721130352386_234169.jpg" /><img src="/images/upload/Image/201507/20150721130352388_697148.jpg" /><img src="/images/upload/Image/201507/20150721130352390_499653.jpg" /><img src="/images/upload/Image/201507/20150721130352392_885902.jpg" /><img src="/images/upload/Image/201507/20150721130352394_872140.jpg" /><img src="/images/upload/Image/201507/20150721130352396_862925.jpg" /><img src="/images/upload/Image/201507/20150721130352398_223060.jpg" /><img src="/images/upload/Image/201507/20150721130352401_516276.jpg" /><img src="/images/upload/Image/201507/20150721130352403_407596.jpg" /><img src="/images/upload/Image/201507/20150721130352406_157481.jpg" /><img src="/images/upload/Image/201507/20150721130352408_264302.jpg" /><img src="/images/upload/Image/201507/20150721130352411_464874.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:08	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(15) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "25859"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "25860"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "25861"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "25862"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "25863"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "25864"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "1+2+3"
+      ["goods_attr_id"]=>
+      string(5) "25865"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "SS6601"
+      ["goods_attr_id"]=>
+      string(5) "25866"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "25867"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "25868"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "25869"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "25870"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "单人"
+      ["goods_attr_id"]=>
+      string(5) "25871"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "双人"
+      ["goods_attr_id"]=>
+      string(5) "25872"
+      ["attr_price"]=>
+      string(4) "1100"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [14]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "三人"
+      ["goods_attr_id"]=>
+      string(5) "25873"
+      ["attr_price"]=>
+      string(4) "3025"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(43) "images/201507/goods_img/12_P_1502402561.jpg"
+      ["img_original"]=>
+      string(44) "images/201507/source_img/12_P_1507326541.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["thumb_url"]=>
+      string(49) "images/201507/thumb_img/12_thumb_P_1498953352.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150721142401.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(43) "images/201507/goods_img/12_P_1529522407.jpg"
+      ["img_original"]=>
+      string(44) "images/201507/source_img/12_P_1486733320.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["thumb_url"]=>
+      string(49) "images/201507/thumb_img/12_thumb_P_1500326087.jpg"
+      ["img_desc"]=>
+      string(5) "s.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1597)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437455674"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(43) "images/201507/goods_img/12_G_1515621825.jpg"
+      ["goods_thumb"]=>
+      string(49) "images/201507/thumb_img/12_thumb_G_1472288110.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(44) "images/201507/source_img/12_G_1533247331.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437804580"
+      ["integral"]=>
+      string(2) "57"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "6840"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(6) "SS6601"
+      ["goods_id"]=>
+      string(4) "1597"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "5700"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(121) "美韩美家 布艺 客厅 成人 欧式 组合 1+2+3 SS6601 木骨架 高密度海绵 可以 内贸 单人 双人 三人"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(109) "富润家 欧式拉扣布艺沙发别墅客厅单人双人三人沙发 成都家具厂家直销[五包到家]"
+      ["goods_desc"]=>
+      string(1830) "<div><img src="/images/upload/Image/201507/20150721142823389_777085.jpg" /><img src="/images/upload/Image/201507/20150721142823392_327773.jpg" /><img src="/images/upload/Image/201507/20150721142823394_414582.jpg" /><img src="/images/upload/Image/201507/20150721142823396_679081.jpg" /><img src="/images/upload/Image/201507/20150721142823399_177538.jpg" /><img src="/images/upload/Image/201507/20150721142823401_869270.jpg" /><img src="/images/upload/Image/201507/20150721142823403_250195.jpg" /><img src="/images/upload/Image/201507/20150721142823405_728311.jpg" /><img src="/images/upload/Image/201507/20150721142823407_823825.jpg" /><img src="/images/upload/Image/201507/20150721142823409_776409.jpg" /><img src="/images/upload/Image/201507/20150721142823411_781553.jpg" /><img src="/images/upload/Image/201507/20150721142823414_11232.jpg" /><img src="/images/upload/Image/201507/20150721142823416_564192.jpg" /><img src="/images/upload/Image/201507/20150721142823419_823755.jpg" /><img src="/images/upload/Image/201507/20150721142823421_637178.jpg" /><img src="/images/upload/Image/201507/20150721142823423_625300.jpg" /><img src="/images/upload/Image/201507/20150721142823426_805082.jpg" /><img src="/images/upload/Image/201507/20150721142823428_449910.jpg" /><img src="/images/upload/Image/201507/20150721142823431_153339.jpg" /><img src="/images/upload/Image/201507/20150721142823433_970920.jpg" /><img src="/images/upload/Image/201507/20150721142823436_109122.jpg" /><img src="/images/upload/Image/201507/20150721142823438_181511.jpg" /><img src="/images/upload/Image/201507/20150721142823441_599858.jpg" /><img src="/images/upload/Image/201507/20150721142823444_961487.jpg" /><img src="/images/upload/Image/201507/20150721142823446_185124.jpg" /><img src="/images/upload/Image/201507/20150721142823449_722559.jpg" /></div>"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:12	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(15) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26689"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "26690"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "26691"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "26692"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "新古典欧式"
+      ["goods_attr_id"]=>
+      string(5) "26693"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "26833"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(10) "1+3+贵妃"
+      ["goods_attr_id"]=>
+      string(5) "26694"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "SS629"
+      ["goods_attr_id"]=>
+      string(5) "26695"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "26696"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "26697"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "26698"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "26834"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "单人位"
+      ["goods_attr_id"]=>
+      string(5) "26699"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "三人位"
+      ["goods_attr_id"]=>
+      string(5) "26700"
+      ["attr_price"]=>
+      string(4) "1475"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [14]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "贵妃位"
+      ["goods_attr_id"]=>
+      string(5) "26701"
+      ["attr_price"]=>
+      string(3) "462"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1599_P_1474352244.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1599_P_1498370444.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1599_thumb_P_1534455622.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150720174241.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1599_P_1476173629.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1599_P_1476562649.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1599_thumb_P_1522438713.jpg"
+      ["img_desc"]=>
+      string(9) "SS629.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1685)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437441366"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201507/goods_img/3_G_1530720414.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201507/thumb_img/3_thumb_G_1501562996.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(43) "images/201507/source_img/3_G_1470539232.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437805309"
+      ["integral"]=>
+      string(2) "29"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "1"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "3570"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "SS629"
+      ["goods_id"]=>
+      string(4) "1685"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2975"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(143) "美韩美家 布艺 客厅 成人 新古典欧式 组合 1+3+贵妃 SS629 木骨架 高密度海绵 可以 内贸 单人位 三人位 贵妃位"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(105) "富润家 新古典欧式沙发 客厅布艺沙发组合 成都家具厂家直销批发【五包到家】"
+      ["goods_desc"]=>
+      string(1609) "<img src="/images/upload/Image/201507/20150721091929169_774448.jpg" /><img src="/images/upload/Image/201507/20150721091929193_258199.jpg" /><img src="/images/upload/Image/201507/20150721091929195_947269.jpg" /><img src="/images/upload/Image/201507/20150721091929203_300548.jpg" /><img src="/images/upload/Image/201507/20150721091929205_75832.jpg" /><img src="/images/upload/Image/201507/20150721091929207_666215.jpg" /><img src="/images/upload/Image/201507/20150721091929209_875163.jpg" /><img src="/images/upload/Image/201507/20150721091929211_453851.jpg" /><img src="/images/upload/Image/201507/20150721091929223_922206.jpg" /><img src="/images/upload/Image/201507/20150721091929232_384312.jpg" /><img src="/images/upload/Image/201507/20150721091929234_713844.jpg" /><img src="/images/upload/Image/201507/20150721091929237_656945.jpg" /><img src="/images/upload/Image/201507/20150721091929239_435998.jpg" /><img src="/images/upload/Image/201507/20150721091929241_811268.jpg" /><img src="/images/upload/Image/201507/20150721091929243_700704.jpg" /><img src="/images/upload/Image/201507/20150721091929247_455076.jpg" /><img src="/images/upload/Image/201507/20150721091929250_437095.jpg" /><img src="/images/upload/Image/201507/20150721091929252_877010.jpg" /><img src="/images/upload/Image/201507/20150721091929255_207649.jpg" /><img src="/images/upload/Image/201507/20150721091929257_134118.jpg" /><img src="/images/upload/Image/201507/20150721091929260_765693.jpg" /><img src="/images/upload/Image/201507/20150721091929262_962106.jpg" /><img src="/images/upload/Image/201507/20150721091929265_271956.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:12	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(14) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "美韩美家"
+      ["goods_attr_id"]=>
+      string(5) "26702"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "26703"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "26704"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "26705"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26706"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "1+2+3"
+      ["goods_attr_id"]=>
+      string(5) "26707"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "SS6606"
+      ["goods_attr_id"]=>
+      string(5) "26708"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "26709"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "26710"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "26711"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "内贸"
+      ["goods_attr_id"]=>
+      string(5) "26712"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "449"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(22) "单人：1200*1000*119"
+      ["goods_attr_id"]=>
+      string(5) "26713"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(22) "双人：1850*1050*120"
+      ["goods_attr_id"]=>
+      string(5) "26714"
+      ["attr_price"]=>
+      string(3) "812"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(22) "三人：2250*1050*120"
+      ["goods_attr_id"]=>
+      string(5) "26715"
+      ["attr_price"]=>
+      string(4) "2375"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1600_P_1470290074.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1600_P_1479865722.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1600_thumb_P_1505932661.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722111653.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1600_P_1530563731.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1600_P_1465015976.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1600_thumb_P_1464543095.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722111712.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1686)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437535210"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(45) "images/201507/goods_img/1600_G_1482387312.jpg"
+      ["goods_thumb"]=>
+      string(51) "images/201507/thumb_img/1600_thumb_G_1442756947.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(46) "images/201507/source_img/1600_G_1533133784.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437555981"
+      ["integral"]=>
+      string(2) "44"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "1"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(6) "5324.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(6) "SS6606"
+      ["goods_id"]=>
+      string(4) "1686"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "4437"
+      ["goods_number"]=>
+      string(4) "1000"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(162) "美韩美家 布艺 客厅 成人 欧式 1+2+3 SS6606 木骨架 高密度海绵 可以 内贸 单人：1200*1000*119 三人：2250*1050*120 双人：1850*1050*120"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(104) "富润家 成都欧式沙发 客厅沙发 布艺沙发组合 厂家直销 家具批发【五包到家】"
+      ["goods_desc"]=>
+      string(1748) "<img src="/images/upload/Image/201507/20150722112227428_880518.jpg" /><img src="/images/upload/Image/201507/20150722112227443_270796.jpg" /><img src="/images/upload/Image/201507/20150722112227456_733765.jpg" /><img src="/images/upload/Image/201507/20150722112227460_916088.jpg" /><img src="/images/upload/Image/201507/20150722112227464_268504.jpg" /><img src="/images/upload/Image/201507/20150722112227469_175946.jpg" /><img src="/images/upload/Image/201507/20150722112227473_267898.jpg" /><img src="/images/upload/Image/201507/20150722112227477_101212.jpg" /><img src="/images/upload/Image/201507/20150722112227482_335316.jpg" /><img src="/images/upload/Image/201507/20150722112227487_412460.jpg" /><img src="/images/upload/Image/201507/20150722112227491_911574.jpg" /><img src="/images/upload/Image/201507/20150722112227494_61083.jpg" /><img src="/images/upload/Image/201507/20150722112227496_687004.jpg" /><img src="/images/upload/Image/201507/20150722112227499_309156.jpg" /><img src="/images/upload/Image/201507/20150722112227501_524865.jpg" /><img src="/images/upload/Image/201507/20150722112227503_973096.jpg" /><img src="/images/upload/Image/201507/20150722112227509_614302.jpg" /><img src="/images/upload/Image/201507/20150722112227511_438315.jpg" /><img src="/images/upload/Image/201507/20150722112227514_97112.jpg" /><img src="/images/upload/Image/201507/20150722112227517_771762.jpg" /><img src="/images/upload/Image/201507/20150722112227519_470645.jpg" /><img src="/images/upload/Image/201507/20150722112227522_493138.jpg" /><img src="/images/upload/Image/201507/20150722112227524_672919.jpg" /><img src="/images/upload/Image/201507/20150722112227527_642853.jpg" /><img src="/images/upload/Image/201507/20150722112227530_550027.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:12	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(8) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "自主品牌"
+      ["goods_attr_id"]=>
+      string(5) "26716"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "372"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成年"
+      ["goods_attr_id"]=>
+      string(5) "26717"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "373"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "板木结构"
+      ["goods_attr_id"]=>
+      string(5) "26718"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "374"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(48) "酒吧,客厅,餐厅,书房,卧室,办公,酒店"
+      ["goods_attr_id"]=>
+      string(5) "26719"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "375"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26720"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "376"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(8) "1400*800"
+      ["goods_attr_id"]=>
+      string(5) "26721"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "377"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(4) "6602"
+      ["goods_attr_id"]=>
+      string(5) "26722"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "378"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "象牙白"
+      ["goods_attr_id"]=>
+      string(5) "26835"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["attr_id"]=>
+      string(3) "383"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1601_P_1518356394.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1601_P_1485247544.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1601_thumb_P_1472183785.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722092731.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1601_P_1462485374.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1601_P_1471606314.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1601_thumb_P_1525499392.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722092758.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1687)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437536529"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(45) "images/201507/goods_img/1601_G_1529340417.jpg"
+      ["goods_thumb"]=>
+      string(51) "images/201507/thumb_img/1601_thumb_G_1451410966.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(46) "images/201507/source_img/1601_G_1462506344.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437805462"
+      ["integral"]=>
+      string(2) "18"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "1"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(6) "2174.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(4) "6602"
+      ["goods_id"]=>
+      string(4) "1687"
+      ["cat_id"]=>
+      string(1) "1"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "1812"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(168) "自主品牌 成年 板木结构 户外,酒吧,学校,客厅,餐厅,卧室,办公,酒店 酒吧,客厅,餐厅,书房,卧室,办公,酒店 欧式 1400*800 6602 象牙白"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "35"
+      ["goods_name"]=>
+      string(111) "富润家 新款 欧式客厅茶几 高档板木结构雕花描银时尚客厅家具 厂家直销[五包到家]"
+      ["goods_desc"]=>
+      string(1330) "<img src="/images/upload/Image/201507/20150722114424894_870468.jpg" /><img src="/images/upload/Image/201507/20150722114424901_104002.jpg" /><img src="/images/upload/Image/201507/20150722114424907_969024.jpg" /><img src="/images/upload/Image/201507/20150722114424911_119968.jpg" /><img src="/images/upload/Image/201507/20150722114424914_420273.jpg" /><img src="/images/upload/Image/201507/20150722114424916_191009.jpg" /><img src="/images/upload/Image/201507/20150722114424919_743191.jpg" /><img src="/images/upload/Image/201507/20150722114424921_793295.jpg" /><img src="/images/upload/Image/201507/20150722114424924_618086.jpg" /><img src="/images/upload/Image/201507/20150722114424926_622452.jpg" /><img src="/images/upload/Image/201507/20150722114424929_361030.jpg" /><img src="/images/upload/Image/201507/20150722114424931_936665.jpg" /><img src="/images/upload/Image/201507/20150722114424934_130807.jpg" /><img src="/images/upload/Image/201507/20150722114424936_787718.jpg" /><img src="/images/upload/Image/201507/20150722114424939_471075.jpg" /><img src="/images/upload/Image/201507/20150722114424941_948023.jpg" /><img src="/images/upload/Image/201507/20150722114424944_811732.jpg" /><img src="/images/upload/Image/201507/20150722114424946_604366.jpg" /><img src="/images/upload/Image/201507/20150722114424949_665448.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:12	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(12) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "自主品牌"
+      ["goods_attr_id"]=>
+      string(5) "26723"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "372"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成年"
+      ["goods_attr_id"]=>
+      string(5) "26724"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "373"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "板式"
+      ["goods_attr_id"]=>
+      string(5) "26725"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "374"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(20) "客厅,办公,酒店"
+      ["goods_attr_id"]=>
+      string(5) "26726"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "375"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "欧式"
+      ["goods_attr_id"]=>
+      string(5) "26727"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "376"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "668-1"
+      ["goods_attr_id"]=>
+      string(5) "26728"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "378"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(16) "PU底漆PU面漆"
+      ["goods_attr_id"]=>
+      string(5) "26729"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "380"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(10) "不可以 "
+      ["goods_attr_id"]=>
+      string(5) "26730"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "381"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "26731"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "382"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "象牙白"
+      ["goods_attr_id"]=>
+      string(5) "26836"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "383"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(8) "1400*800"
+      ["goods_attr_id"]=>
+      string(5) "26837"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "384"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(7) "茶几 "
+      ["goods_attr_id"]=>
+      string(5) "26838"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["attr_id"]=>
+      string(3) "629"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1602_P_1530809716.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1602_P_1529652218.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1602_thumb_P_1462327090.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722120049.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1602_P_1441045749.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1602_P_1537471220.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1602_thumb_P_1450103556.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722120107.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1688)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437537785"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(45) "images/201507/goods_img/1602_G_1497947583.jpg"
+      ["goods_thumb"]=>
+      string(51) "images/201507/thumb_img/1602_thumb_G_1482966461.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(46) "images/201507/source_img/1602_G_1533419891.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437805593"
+      ["integral"]=>
+      string(2) "20"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "1"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "2400"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "668-1"
+      ["goods_id"]=>
+      string(4) "1688"
+      ["cat_id"]=>
+      string(1) "1"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2000"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(120) "自主品牌 成年 板式 客厅,办公,酒店 欧式 668-1 PU底漆PU面漆 不可以 可以 象牙白 1400*800 茶几"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(2) "35"
+      ["goods_name"]=>
+      string(98) "富润家 欧式雕花茶几 板式客厅抽屉茶几 成都家具厂家直销批发[五包到家]"
+      ["goods_desc"]=>
+      string(1119) "<img src="/images/upload/Image/201507/20150722120514283_488962.jpg" /><img src="/images/upload/Image/201507/20150722120514287_90592.jpg" /><img src="/images/upload/Image/201507/20150722120514290_465414.jpg" /><img src="/images/upload/Image/201507/20150722120514294_995967.jpg" /><img src="/images/upload/Image/201507/20150722120514297_146972.jpg" /><img src="/images/upload/Image/201507/20150722120514300_451495.jpg" /><img src="/images/upload/Image/201507/20150722120514303_649733.jpg" /><img src="/images/upload/Image/201507/20150722120514306_116810.jpg" /><img src="/images/upload/Image/201507/20150722120514310_588373.jpg" /><img src="/images/upload/Image/201507/20150722120514314_550708.jpg" /><img src="/images/upload/Image/201507/20150722120514317_860496.jpg" /><img src="/images/upload/Image/201507/20150722120514320_267415.jpg" /><img src="/images/upload/Image/201507/20150722120514324_121641.jpg" /><img src="/images/upload/Image/201507/20150722120514326_916547.jpg" /><img src="/images/upload/Image/201507/20150722120514328_594639.jpg" /><img src="/images/upload/Image/201507/20150722120514331_461399.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+14:34:12	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(14) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "枚红色"
+      ["goods_attr_id"]=>
+      string(5) "26839"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "283"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(13) "深灰+灰色"
+      ["goods_attr_id"]=>
+      string(5) "26840"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "283"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "轩亿家具"
+      ["goods_attr_id"]=>
+      string(5) "26732"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "26733"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "26734"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "26735"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "简约"
+      ["goods_attr_id"]=>
+      string(5) "26736"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "26737"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(20) "双人+单人+贵妃"
+      ["goods_attr_id"]=>
+      string(5) "26738"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "8006#"
+      ["goods_attr_id"]=>
+      string(5) "26739"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "26740"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "26741"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(30) "按人坐在沙发上左贵妃"
+      ["goods_attr_id"]=>
+      string(5) "26841"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(30) "按人坐在沙发上右贵妃"
+      ["goods_attr_id"]=>
+      string(5) "26842"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1603_P_1506480314.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1603_P_1457493043.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1603_thumb_P_1517811659.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722140859.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1603_P_1482781943.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1603_P_1497990418.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1603_thumb_P_1439558876.jpg"
+      ["img_desc"]=>
+      string(26) "QQ截图20150722140917.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1689)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437545514"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(45) "images/201507/goods_img/1603_G_1523213885.jpg"
+      ["goods_thumb"]=>
+      string(51) "images/201507/thumb_img/1603_thumb_G_1443387799.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(46) "images/201507/source_img/1603_G_1512681308.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437805937"
+      ["integral"]=>
+      string(2) "20"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "1"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(6) "2474.4"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(2) "10"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "8006#"
+      ["goods_id"]=>
+      string(4) "1689"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2062"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(245) "轩亿家具 布艺 客厅 成人 简约 组合 双人+单人+贵妃 8006# 高密度海绵 可以 枚红色 按人做在沙发上左贵妃 深灰+灰色 按人做在沙发上右贵妃 按人坐在沙发上左贵妃 按人坐在沙发上右贵妃"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(97) "轩亿 直销新款客厅布艺沙发组合现代简约可拆洗转角小 大户型[五包到家]"
+      ["goods_desc"]=>
+      string(1959) "<img src="/images/upload/Image/201507/20150722141509792_867734.jpg" /><img src="/images/upload/Image/201507/20150722141509795_863783.jpg" /><img src="/images/upload/Image/201507/20150722141509797_816757.jpg" /><img src="/images/upload/Image/201507/20150722141509799_202618.jpg" /><img src="/images/upload/Image/201507/20150722141509801_149548.jpg" /><img src="/images/upload/Image/201507/20150722141509803_290023.jpg" /><img src="/images/upload/Image/201507/20150722141509805_855458.jpg" /><img src="/images/upload/Image/201507/20150722141509808_780820.jpg" /><img src="/images/upload/Image/201507/20150722141509810_814681.jpg" /><img src="/images/upload/Image/201507/20150722141509812_118488.jpg" /><img src="/images/upload/Image/201507/20150722141509814_196980.jpg" /><img src="/images/upload/Image/201507/20150722141509816_695886.jpg" /><img src="/images/upload/Image/201507/20150722141509819_854488.jpg" /><img src="/images/upload/Image/201507/20150722141509821_33165.jpg" /><img src="/images/upload/Image/201507/20150722141509823_112764.jpg" /><img src="/images/upload/Image/201507/20150722141509826_661566.jpg" /><img src="/images/upload/Image/201507/20150722141509828_234929.jpg" /><img src="/images/upload/Image/201507/20150722141509830_252158.jpg" /><img src="/images/upload/Image/201507/20150722141509833_137435.jpg" /><img src="/images/upload/Image/201507/20150722141509835_363344.jpg" /><img src="/images/upload/Image/201507/20150722141509838_334445.jpg" /><img src="/images/upload/Image/201507/20150722141509841_686591.jpg" /><img src="/images/upload/Image/201507/20150722141509843_571480.jpg" /><img src="/images/upload/Image/201507/20150722141509846_719103.jpg" /><img src="/images/upload/Image/201507/20150722141509848_974508.jpg" /><img src="/images/upload/Image/201507/20150722141509851_966727.jpg" /><img src="/images/upload/Image/201507/20150722141509854_774497.jpg" /><img src="/images/upload/Image/201507/20150722141509856_579993.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+
+15:07:40	Array
+(
+    [succ] => 1
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [table] => attribute
+                    [guid] => 283
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+            [1] => Array
+                (
+                    [table] => attribute
+                    [guid] => 563
+                    [succ] => 1
+                    [errmsg] => 
+                    [syncstate] => 2
+                )
+
+        )
+
+)
+
+15:08:29	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(17) {
+    [0]=>
+    array(6) {
+      ["attr_value"]=>
+      string(32) "米色+浅墨兰色-高级绒布"
+      ["goods_attr_id"]=>
+      string(5) "26847"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "283"
+    }
+    [1]=>
+    array(6) {
+      ["attr_value"]=>
+      string(32) "浅灰色+米黄色-耐磨麻布"
+      ["goods_attr_id"]=>
+      string(5) "26848"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "283"
+    }
+    [2]=>
+    array(6) {
+      ["attr_value"]=>
+      string(32) "浅紫色+紫红色-雪尼尔纱"
+      ["goods_attr_id"]=>
+      string(5) "26849"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "283"
+    }
+    [3]=>
+    array(6) {
+      ["attr_value"]=>
+      string(12) "轩亿家具"
+      ["goods_attr_id"]=>
+      string(5) "26851"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "284"
+    }
+    [4]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "布艺"
+      ["goods_attr_id"]=>
+      string(5) "26852"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "285"
+    }
+    [5]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "客厅"
+      ["goods_attr_id"]=>
+      string(5) "26853"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "286"
+    }
+    [6]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "成人"
+      ["goods_attr_id"]=>
+      string(5) "26854"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "287"
+    }
+    [7]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "简约"
+      ["goods_attr_id"]=>
+      string(5) "26855"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "288"
+    }
+    [8]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "组合"
+      ["goods_attr_id"]=>
+      string(5) "26843"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "289"
+    }
+    [9]=>
+    array(6) {
+      ["attr_value"]=>
+      string(32) "3.15*1.85双人+单人+贵妃位"
+      ["goods_attr_id"]=>
+      string(5) "26856"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "290"
+    }
+    [10]=>
+    array(6) {
+      ["attr_value"]=>
+      string(5) "1303#"
+      ["goods_attr_id"]=>
+      string(5) "26857"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "291"
+    }
+    [11]=>
+    array(6) {
+      ["attr_value"]=>
+      string(9) "木骨架"
+      ["goods_attr_id"]=>
+      string(5) "26858"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "292"
+    }
+    [12]=>
+    array(6) {
+      ["attr_value"]=>
+      string(15) "高密度海绵"
+      ["goods_attr_id"]=>
+      string(5) "26859"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "293"
+    }
+    [13]=>
+    array(6) {
+      ["attr_value"]=>
+      string(6) "可以"
+      ["goods_attr_id"]=>
+      string(5) "26860"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "294"
+    }
+    [14]=>
+    array(6) {
+      ["attr_value"]=>
+      string(32) "3.15*1.85双人+单人+贵妃位"
+      ["goods_attr_id"]=>
+      string(5) "26844"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [15]=>
+    array(6) {
+      ["attr_value"]=>
+      string(30) "按人坐在沙发上左贵妃"
+      ["goods_attr_id"]=>
+      string(5) "26845"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+    [16]=>
+    array(6) {
+      ["attr_value"]=>
+      string(30) "按人坐在沙发上右贵妃"
+      ["goods_attr_id"]=>
+      string(5) "26846"
+      ["attr_price"]=>
+      string(0) ""
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["attr_id"]=>
+      string(3) "563"
+    }
+  }
+  ["data_goods_gallery"]=>
+  array(2) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1604_P_1519264662.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1604_P_1451865232.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1604_thumb_P_1518082933.jpg"
+      ["img_desc"]=>
+      string(35) "QQ截图20150722150012 - 副本.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(45) "images/201507/goods_img/1604_P_1507325556.jpg"
+      ["img_original"]=>
+      string(46) "images/201507/source_img/1604_P_1517505461.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["thumb_url"]=>
+      string(51) "images/201507/thumb_img/1604_thumb_P_1460737142.jpg"
+      ["img_desc"]=>
+      string(35) "QQ截图20150722150044 - 副本.jpg"
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(1690)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1437548761"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(45) "images/201507/goods_img/1604_G_1492466222.jpg"
+      ["goods_thumb"]=>
+      string(51) "images/201507/thumb_img/1604_thumb_G_1536730081.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(0) ""
+      ["original_img"]=>
+      string(46) "images/201507/source_img/1604_G_1447182300.jpg"
+      ["suppliers_id"]=>
+      string(0) ""
+      ["last_update"]=>
+      string(10) "1437807921"
+      ["integral"]=>
+      string(2) "21"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "1"
+      ["is_check"]=>
+      string(0) ""
+      ["market_price"]=>
+      string(4) "2520"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "0"
+      ["sort_order"]=>
+      string(0) ""
+      ["brand_id"]=>
+      string(1) "7"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(5) "1303#"
+      ["goods_id"]=>
+      string(4) "1690"
+      ["cat_id"]=>
+      string(2) "26"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(4) "2100"
+      ["goods_number"]=>
+      string(3) "100"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(0) ""
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(280) "轩亿家具 布艺 客厅 成人 简约 3.15*1.85双人+单人+贵妃位 1303# 木骨架 高密度海绵 可以 组合 按人坐在沙发上左贵妃 按人坐在沙发上右贵妃 米色+浅墨兰色-高级绒布 浅灰色+米黄色-耐磨麻布 浅紫色+紫红色-雪尼尔纱"
+      ["bonus_type_id"]=>
+      string(0) ""
+      ["goods_weight"]=>
+      string(1) "0"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "1"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(1) "9"
+      ["goods_name"]=>
+      string(92) "轩亿 厂商直销 组合沙发 现代简约小户型客厅转角沙发家具[五包到家]"
+      ["goods_desc"]=>
+      string(630) "<img src="/images/upload/Image/201507/20150722150844028_388010.jpg" /><img src="/images/upload/Image/201507/20150722150844030_693311.jpg" /><img src="/images/upload/Image/201507/20150722150844032_274272.jpg" /><img src="/images/upload/Image/201507/20150722150844034_522139.jpg" /><img src="/images/upload/Image/201507/20150722150844036_512923.jpg" /><img src="/images/upload/Image/201507/20150722150844038_482918.jpg" /><img src="/images/upload/Image/201507/20150722150844040_102797.jpg" /><img src="/images/upload/Image/201507/20150722150844043_896207.jpg" /><img src="/images/upload/Image/201507/20150722150844045_933120.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+

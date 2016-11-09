@@ -1,0 +1,68 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $myprice.is_end eq false} -->
+<div class="snatch-panel">
+	<h3>{$lang.me_bid}</h3>
+    <form action="javascript:bid()" method="post" name="formBid" id="formBid">
+    <div class="table">
+    	<dl>
+        	<dt>{$lang.my_integral}：</dt>
+            <dd>{$myprice.pay_points}</dd>
+        </dl>
+        <div class="clear"></div>
+        <dl>
+        	<dt>{$lang.bid}：</dt>
+            <dd>
+            	<input type="hidden" name="snatch_id" value="{$id}" />
+                <input name="price" type="text" class="inputBg" >
+    			<input type="submit" name="Submit" class="bnt_blue_1" value="{$lang.me_bid}" style="vertical-align:middle;" />
+            </dd>
+        </dl>
+    </div>
+    </form>
+</div>
+<div class="clear"></div>
+<div class="snatch-panel">
+	<h3>{$lang.me_now_bid}</h3>
+    <div class="table">
+    	<!--{foreach from=$myprice.bid_price item=item}-->
+    	<p>        	
+      		{$item.price}
+      		<!--{if $item.is_only}-->
+      		({$lang.only_price})
+      		<!--{/if}-->
+        </p>
+        <!--{/foreach}-->
+    </div>
+</div>
+<!-- {else} -->
+<div class="snatch-panel">
+	<h3>{$lang.view_snatch_result}</h3>
+    <div class="table">
+    	<!--{if $result}-->
+		<form name="buy" action="snatch.php" method="get">
+        	<dl>
+            	<dt>{$lang.victory_user}</dt>
+                <dd>
+                	{$result.user_name}
+      				<input type="hidden" name="act" value="buy" />
+      				<input type="hidden" name="id" value="{$id}" />
+                </dd>
+            </dl>
+            <div class="clear"></div>
+            <dl>
+            	<dt>{$lang.price_bid}</dt>
+                <dd>
+                	{$result.formated_bid_price} &nbsp;&nbsp;
+    				<!-- {if $result.order_count eq 0 and $result.user_id eq $smarty.session.user_id} -->
+      				<input type="submit" name="bug" class="bnt_blue_1" title="{$lang.button_buy}" />
+    				<!--{/if}-->
+                </dd>
+            </dl>
+        </form>
+        <!--{else}-->
+		{$lang.not_victory_user}
+		<!--{/if}-->
+    </div>
+</div>
+<!-- {/if} -->
+

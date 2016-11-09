@@ -1,0 +1,84 @@
+{* TitlePicWidth: 2 *}
+{* TitlePicHeight: 38 *}
+
+{* 说明：$title_pic，分类标题图片地址； *}
+{* 说明：$base_style，基本风格样式颜色； *}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$topic.title}_{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="topic.css" rel="stylesheet" type="text/css" />
+{if $topic.css neq ''}
+<style type="text/css">
+  {$topic.css}
+</style>
+{/if}
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="topic_1 mt10">
+	<div class="topic_2">
+    	<div id="JS_main_img_box" class="w pr">
+        	<img id="JS_img_1" height="119px" width="980px" alt="" src="images/qc_01.jpg" name="JS_img_1">
+			<img id="JS_img_2" height="122px" width="980px" alt="" src="images/qc_02.jpg" name="JS_img_2">
+			<img id="JS_img_3" height="140px" width="980px" alt="" src="images/qc_03.jpg" name="JS_img_3">
+            <!-- {if $topic.title_pic eq ''} -->
+            <!-- {foreach from=$sort_goods_arr item=sort key=sort_name name=no} -->
+            <div class="topic-title-{$smarty.foreach.no.iteration} top-t">
+            	<h1>{$sort_name}</h1>
+            </div>
+			<div class="clearfix activityGoods activityGoods_5"> </div>
+			<img height="12px" width="980px" alt="" src="images/qc_05.jpg" name="JS_img_5">
+            <div class="clearfix activityGoods activityGoods_4">
+            	<!-- {foreach from=$sort item=goods} -->
+                <div class="Left item">
+                	<div class="img">
+                    	<a href="{$goods.url}"><img src="{$goods.goods_thumb}" alt="{$goods.name|escape:html}" width="285" height="191" /></a>
+                    </div>
+                    <div class="clearfix" style="height:25px;background:#e8e8e8;padding:0 10px;">
+                    	<div class="Left" style="height:25px;line-height:25px;width:160px;overflow:hidden;font-family:微软雅黑;font-size:12px;">
+                        	<a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a>
+                        </div>
+                        <div class="Right" style="width:42px;">
+							<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}">
+								<img height="25" width="42" src="images/buy_1365383960.jpg">
+							</a>
+						</div>
+                    </div>
+                    <div class="clearfix" style="margin-top:20px;padding:0 10px;">
+                    	<div class="Left" style="width:51px;height:60px;background:url(images/bg_1365383960.jpg) 0 0 no-repeat;color:#fff;padding-right:6px;text-align:center;line-height:17px;font-family:微软雅黑;font-weight:bold;padding-top:8px;">
+							<div style="font-size:14px;">本站价</div>
+							<div>PRICE</div>
+						</div>
+                        <div class="Left" style="width:100px;line-height:1">
+							<div style="font-weight:bold;font-family:Arial;color:#d10022">RMB</div>
+							<div style="font-weight:bold;font-family:Arial;color:#d10022;font-size:24px;"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></div>
+							<div class="gray"></div>
+						</div>
+                    </div>
+                </div>
+                <!--{/foreach}-->
+            </div>
+            <img height="32px" width="980px" alt="" src="images/qc_06.jpg" name="JS_img_6">
+            <!--{/foreach}-->
+            <!-- {/if} -->
+        </div>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+
+</body>
+</html>
+

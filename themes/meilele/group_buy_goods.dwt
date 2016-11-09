@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="group_goods.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+<script type="text/javascript">
+  {foreach from=$lang.js_languages item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+</script>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89343201.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem --> {insert_scripts files='meilele_group.js'}
+<div class="tugouWrap w">
+  <div class="tg_dtl_wrap w clearfix">
+    <div class="tg_dtl_Left Left">
+      <div class="tg_dtl_main">
+        <form action="group_buy.php?act=buy" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
+          <div class="dtl_main_top clearfix">
+            <h1> <a id="JS_tg_goods_name" href="{$gb_goods.url}" title="{$gb_goods.goods_name|escape:html}" target="_blank">{$gb_goods.goods_name|escape:html}</a>
+              <p class="Right">编号：{$gb_goods.goods_sn}</p>
+            </h1>
+          </div>
+          <p class="dtl_main_tishi mt15">（温馨提示：此商品每个亲最多购买<span id="JS_user_limit"><!--{if $group_buy.restrict_amount > 0} 限购数量-->{$group_buy.restrict_amount}<!--{/if}--></span>个，团购商品价格已调至最低，不再参与其他促销优惠活动。）</p>
+          <div class="dtl_main_info clearfix">
+            <div class="main_infoL Left">
+              <input type="submit"  class="infobnr tgstart" value="￥{$group_buy.formated_cur_price}" />
+              <input type="hidden" name="group_buy_id" value="{$group_buy.group_buy_id}" />
+              <div class="userTool">
+                <div class="numbox"> <span>我要买：</span> <a class="jian" onclick="buyNumber.minus()" href="javascript:;"> <b></b> </a>
+                  <input name="number" type="text" class="val" id="number" value="1" onblur="changePrice()" defaultnumber="1"  />
+                  <a class="jia" onclick="buyNumber.plus()" href="javascript:;"> <b></b> </a> </div>
+              </div>
+              <div id="JS_price_box" class="infoprc">
+              	<span>
+                	本站价<br><del>¥{$group_buy.shop_price}</del>
+                </span>
+                <span class="line">
+					折扣<br><b id="JS_distinct">{$group_buy.zhekou}折</b>
+                </span>
+                <span class="line">
+					节省<br><b id="JS_save_money">{$group_buy.jiesheng}</b>
+				</span>
+              </div>
+              <div class="buyed">
+              	<span id="JS_normal_group_number">
+					已抢购
+					<b id="JS_already_number">{$group_buy.trans_amount}</b>
+					<span>套</span>
+				</span>
+              </div>
+              <div class="timebox">
+              	<i></i>
+                <span id="leftTime" class="timer">{$lang.please_waiting}</span>
+              </div>
+            </div>
+            <div class="main_infoR Right">
+            	<p>
+                	<a href="{$gb_goods.url}"><img src="{$gb_goods.goods_img}" alt="{$gb_goods.goods_name|escape:html}" width="600" height="400" /></a>
+                </p>
+                <div class="infoshare clearfix">
+                	<div class="Right">
+                    	<div class="bdsharebuttonbox"><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+                    </div>
+                    <p class="Right"> 分享到： </p>
+                </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="tg_dtl_box" style="width: auto;">
+      	<div class="title">
+			<b class="f14">本单详情</b>
+		</div>
+        <div class="content infos">
+        	<div class="imgs">{$gb_goods.goods_desc}</div>
+        </div>
+      </div>
+    </div>
+    <div class="tg_dtl_Right Right">
+    	<!-- #BeginLibraryItem "/library/recommend_hot.lbi" --><!-- #EndLibraryItem -->
+    </div>
+  </div>
+</div>
+<div id="footer" class="footer-box">
+	<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+</body>
+<script>
+// add by liuguichun 2011-7-19
+var buyNumber = {
+maxNumber : {$group_buy.restrict_amount},
+minNumber : 1,
+
+defaultNumber : function(){
+var defaultnumber = $('#number').attr('defaultnumber');
+defaultnumber = parseInt(defaultnumber)
+if(defaultnumber < 1){
+defaultnumber = 1;
+};
+
+return defaultnumber;
+
+
+},
+																
+goodNumber : function(num){
+if(typeof(num) == 'number'){
+return document.getElementById('number').value = num;
+
+
+}else{
+return parseInt(document.getElementById('number').value);
+}
+																	
+},
+plus : function(){
+var num = buyNumber.goodNumber() + buyNumber.defaultNumber();
+if(num <= buyNumber.maxNumber){
+buyNumber.goodNumber(num);
+}
+},
+minus : function(){
+var num = buyNumber.goodNumber() - buyNumber.defaultNumber();
+if(num >= buyNumber.minNumber){
+buyNumber.goodNumber(num);
+}
+}
+															   
+}
+
+
+</script>
+<script type="text/javascript">
+var gmt_end_time = "{$group_buy.gmt_end_date|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var now_time = {$now_time};
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
+</html>
+
+

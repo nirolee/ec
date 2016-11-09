@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/xspace_common-980.css" rel="stylesheet" type="text/css" />
+<link href="auction.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="w seckill-header">
+	<div class="ad">
+		<img height="26" width="306" style="background:none;" alt="" src="images/auction_ad.gif">
+	</div>
+    <div class="nav">
+    	<div class="tab">
+        	<a class="current" href="javascript:;">{$lang.auction_goods}</a>
+        </div>
+        <ul>
+        	<li class="attention">
+            	<a href="javascript:;">关注家居网</a>
+                <div class="wechat">
+					<div class="arrow arrow-line">◆</div>
+					<div class="arrow arrow-bg">◆</div>
+					<img id="JS_wechat_img" height="182" width="182" alt="二维码" src="images/weixin.png">
+					<p>关注家居网，第一时间了解最新动态！</p>
+				</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$('.attention').mouseover(function(){
+			$(this).addClass('hover');
+		})
+		$('.attention').mouseout(function(){
+			$(this).removeClass('hover');
+		})
+	})
+</script>
+<!-- {if $auction_list} 如果有拍卖活动 -->
+<ul class="seckill-goods clearfix">
+	<!-- {foreach from=$auction_list item=auction name=no} 循环拍卖活动开始 -->
+    <li <!-- {if $smarty.foreach.no.index mod 3 eq 0}-->class="first"<!-- {/if} -->>
+    	<div class="item">
+        	<div class="face">
+            	<div class="bg"></div>
+                <a href="{$auction.url}"><img src="{$auction.goods_thumb}" border="0" alt="{$auction.goods_name|escape:html}" width="312" height="207" /></a>
+                <div class="fg">
+                	<div class="time">
+                    	<!-- {if $auction.status_no eq 0} -->
+            			{$lang.au_pre_start}<br>
+            			<!-- {elseif $auction.status_no eq 1} -->
+            			{$lang.au_under_way_1}<br>
+            			<!-- {else} -->
+            			{$lang.au_finished}<br>
+            			<!-- {/if} -->
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+            	<div class="goods-name">
+                	<a class="link1" title="{$auction.goods_name|escape:html}" target="_blank" href="{$auction.url}">{$auction.goods_name|escape:html}</a>
+                </div>
+                <div class="goods-attr">
+                	<div class="price">
+                    	<table>
+                        	<tr>
+                            	<td><strong class="yen">{$lang.au_start_price}：</strong></td>
+                                <td><strong class="f">¥{$auction.formated_start_price}</strong></td>
+                            </tr>
+                            <tr>
+                            	<!-- {if $auction.end_price gt 0} -->
+                                <td><strong class="yen">{$lang.au_end_price}：</strong></td>
+                                <td><strong class="f">¥{$auction.formated_end_price}</strong></td>
+                                <!-- {/if} -->
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="extra">
+                    	<table>
+                        	<tr>
+                            	<td>
+                                	<a class="state1" target="_blank" href="{$auction.url}">拍下来</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!--{/foreach}-->
+</ul>
+<!-- {else} -->
+{$lang.no_auction}
+<!-- {/if} -->
+<div class="w seckill-pager">
+	<table>
+    	<tr>
+        	<!-- {if $pager.page_prev} --><td><a class="prev" href="{$pager.page_prev}"><span class="arrow"><span class="char">◆</span></span>上一页</a></td><!-- {else} --><!-- {/if} --> 
+            <!-- {if $pager.page_count neq 1} -->
+            <!--{foreach from=$pager.page_number key=key item=item}--> 
+            <!-- {if $pager.page eq $key} --> 
+        	<td><span class="current">{$key}</span></td> 
+        	<!-- {else} --> 
+        	<td><a href="{$item}">{$key}</a></td>
+        	<!-- {/if} -->
+            <!--{/foreach}--> 
+            <!-- {/if} --> 
+            <!-- {if $pager.page_next} --><a class="next" href="{$pager.page_next}">下一页<span class="arrow"><span class="char">◆</span></span></a><!-- {else} --><!-- {/if} -->
+        </tr>
+    </table>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+{literal}
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+{/literal}
+//-->
+</script>
+
+
+</html>
+
+

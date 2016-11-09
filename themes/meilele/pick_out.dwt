@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="category_wide.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,lefttime.js'}
+<script type="text/javascript">
+  {foreach from=$lang.js_languages item=item key=key}
+    var {$key} = "{$item}";
+  {/foreach}
+</script>
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="category-filter">
+	<div class="w">
+    	<div id="JS_category_filter" class="filter">
+        	<!--{foreach from=$condition item=caption}-->
+        	<dl class="normal clearfix">
+            	<dt>{$caption.name}</dt>
+                <!--{foreach from=$caption.cat item=cat}-->
+                <dd>
+                	<div class="shell">
+                    	<table>
+                        	<tr>
+                            	<td>{$cat.cat_name}</td>
+                                <td class="list">
+                                	<!--{foreach from = $cat.list item=list}-->
+          							<a href="{$list.url}" target="_blank">{$list.name}</a>
+          							<!--{/foreach}-->
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </dd>
+                <!--{/foreach}-->
+            </dl>
+            <!--{/foreach}-->
+        </div>
+    </div>
+</div>
+<div id="JS_list_panel" class="list-panel">
+	<div class="w list-wrap">
+    	<ul class="list-goods clearfix">
+        	<!--{foreach from=$pickout_goods item=goods name=goods}-->
+            <li class="g-item <!--{if $smarty.foreach.goods.index mod 4 eq 3}-->last4<!--{/if}-->">
+            	<div class="g-dtl">
+                	<a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="d-img" /></a>
+                    <div class="d-price">
+                    	<strong class="p-money">
+							<sub class="m-mark">¥</sub>
+							<span class="m-count JS_async_price"><!--{if $goods.promote_price neq "" } -->{$goods.promote_price} <!--{else}-->{$goods.shop_price}<!--{/if}--> </span>
+						</strong>
+                        <del class="p-del">
+							<sub class="d-mark">¥</sub>
+							{$goods.shop_price}
+						</del>
+                    </div>
+                    <a href="{$goods.url}" title="{$goods.name|escape:html}" class="d-name"><span>{$goods.short_name}</span></a>
+                </div>
+            </li>
+            <!--{/foreach}-->
+        </ul>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+var gmt_end_time = "{$group_buy.gmt_end_date|default:0}";
+{foreach from=$lang.goods_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+
+var btn_buy = "{$lang.btn_buy}";
+var is_cancel = "{$lang.is_cancel}";
+var select_spe = "{$lang.select_spe}";
+<!-- {literal} -->
+
+onload = function()
+{
+  try
+  {
+    onload_leftTime();
+  }
+  catch (e)
+  {}
+}
+<!-- {/literal} -->
+</script>
+</html>
+
+

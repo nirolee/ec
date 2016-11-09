@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="w clearfix">
+	<div class="frameLeft"></div>
+    <div class="menuBox">
+    	<span>
+			<a style="color:#c9033b;" title="拍卖" target="_blank" href="auction.php">拍卖</a>
+		</span>
+        <span>
+			 | 
+			<a style="color:#c9033b;" title="团购" target="_blank" href="group_buy.php">团购</a>
+		</span>
+        <span>
+			 | 
+			<a style="" title="新品首发" target="_blank" href="search.php?intro=new">新品首发</a>
+		</span>
+    </div>
+    <div class="frameRight"></div>
+</div>
+
+

@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="banner-panel clearfix">
+	<div id="index-slide" class="focus-box" style="width:100%">
+    	<ul>
+    		<!--{foreach from=$index_ad_w item=index_ad}-->
+        	<div class="banner-img" style="background-image: url({$index_ad.src});">
+        		<a target="_blank" href="{$index_ad.url}" ></a>
+        	</div>
+        	<!--{/foreach}-->
+        </ul>
+    </div>
+    <div class="w banner-content">
+    	<div class="center-banner">
+        	<div class="slide-nav">
+            	<!--{foreach from=$index_ad_w item=index_ad name=foo}-->
+      			<a href="javascript:;" class="img-nav {if $smarty.foreach.foo.first}cur-nav{/if}">{$smarty.foreach.foo.iteration}</a>
+      			<!--{/foreach}-->
+            </div>
+        </div>
+        <div class="right-banner right-banner-no">
+        	{insert name='ads' id=5 num=1}
+        </div>
+    </div>
+</div>
+

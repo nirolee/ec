@@ -1,0 +1,59 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<a class="cart" href="flow.php">
+	<b class="common-bg cart-icon"></b>购物车<b class="common-bg cart-arrow"></b>
+</a>
+<span id="hd_cartnum" class="cart-num">{$number}</span>
+<span class="blank none"> </span>
+<div id="JS_cart_box" class="cart-box">
+	<!--{if $cart_list}-->
+    <ul class="cart-list cart-full cart-full3">
+    	<!--{foreach from=$cart_list item=goods}-->
+        <li class=" cart-item">
+        	<a class="Left" target="_blank" href="{$goods.url}">
+				<img class="cart-img" alt="{$goods.short_name}" src="{$goods.thumb}">
+			</a>
+            <a class="cart-link" href="{$goods.url}" title="{$goods.short_name}" target="_blank">{$goods.short_name}</a>
+            <p class="cart-cal">
+				<a class="cart-del Right Cart_del" href="javascript:deleteCartGoods({$goods.rec_id});">删除</a>
+				<strong class="cart-price red">¥{$goods.shop_price}</strong>×<strong class="black">{$goods.goods_number}</strong>
+			</p>
+        </li>
+        <!--{/foreach}-->
+    </ul>
+    <div class="cart-count">
+    	<p class="count-area">
+			共<span id="totalNumber">{$number}</span>件商品，共计<strong id="totalDesc" class="count-total red">¥{$amount}</strong>
+		</p>
+        <a class="count-btn" href="./flow.php" target="_blank">去购物车结算</a>
+    </div>
+    <!--{else}-->
+    <ul class="cart-list">
+		<li class="nothing">
+			<b class="common-bg nothing-icon"></b>
+ 			购物车中还没有商品，赶紧选购吧！
+		</li>
+	</ul>
+    <!--{/if}-->
+</div>
+<script type="text/javascript">
+function deleteCartGoods(rec_id)
+{
+	Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+	  $("#ECS_CARTINFO").html(res.content);
+  }
+}
+</script> 
+

@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+<div class="title">
+	<span></span>
+	<strong>促销特惠</strong>
+</div>
+<div class="body">
+	<!--{foreach from=$promotion_goods item=goods name=no}-->
+    <!-- {if $smarty.foreach.no.iteration<3}--> 
+	<div class="list else <!-- {if $smarty.foreach.no.iteration==1}-->first<!-- {/if} -->">
+    	<div class="float_bg">
+        	<span class="text1">抢</span>
+        </div>
+        <div class="img">
+        	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}" style=" display:inline-block;"> <img src="{$goods.thumb}" width="146" height="97" /></a>
+        </div>
+        <div class="txt">
+        	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}">{$goods.short_name|escape:html}</a>
+            <br>
+            <span class=" lh20">
+				特惠价：
+				<strong class="reds lh20 yen">¥{$goods.promote_price}</strong>
+			</span>
+            <br>
+			<span class=" lh20">仅剩:</span>
+            <span class="endtime last_time" value="{$goods.end_date}"></span>
+        </div>
+    </div>
+    <!-- {/if} -->
+    <!--{/foreach}-->
+</div>
+<!-- {/if} -->
+

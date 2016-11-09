@@ -1,0 +1,214 @@
+20:13:13	array(12) {
+  ["data_goods_article"]=>
+  array(0) {
+  }
+  ["data_volume_price"]=>
+  array(0) {
+  }
+  ["data_goods_attr"]=>
+  array(0) {
+  }
+  ["data_goods_gallery"]=>
+  array(6) {
+    [0]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201503/goods_img/2_P_1446079419.jpg"
+      ["img_original"]=>
+      string(43) "images/201503/source_img/2_P_1500992174.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(1) "2"
+      ["thumb_url"]=>
+      string(48) "images/201503/thumb_img/2_thumb_P_1518232693.jpg"
+      ["img_desc"]=>
+      string(13) "QQ截图4.jpg"
+    }
+    [1]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201503/goods_img/2_P_1452649057.jpg"
+      ["img_original"]=>
+      string(43) "images/201503/source_img/2_P_1445435542.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(1) "2"
+      ["thumb_url"]=>
+      string(48) "images/201503/thumb_img/2_thumb_P_1493703130.jpg"
+      ["img_desc"]=>
+      string(13) "QQ截图1.jpg"
+    }
+    [2]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201503/goods_img/2_P_1435279216.jpg"
+      ["img_original"]=>
+      string(43) "images/201503/source_img/2_P_1487507736.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(1) "2"
+      ["thumb_url"]=>
+      string(48) "images/201503/thumb_img/2_thumb_P_1468478496.jpg"
+      ["img_desc"]=>
+      string(13) "QQ截图2.jpg"
+    }
+    [3]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201503/goods_img/2_P_1499563648.jpg"
+      ["img_original"]=>
+      string(43) "images/201503/source_img/2_P_1429529465.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(1) "2"
+      ["thumb_url"]=>
+      string(48) "images/201503/thumb_img/2_thumb_P_1428365505.jpg"
+      ["img_desc"]=>
+      string(13) "QQ截图3.jpg"
+    }
+    [4]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201503/goods_img/2_P_1523389515.jpg"
+      ["img_original"]=>
+      string(43) "images/201503/source_img/2_P_1465294036.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(1) "2"
+      ["thumb_url"]=>
+      string(48) "images/201503/thumb_img/2_thumb_P_1484893366.jpg"
+      ["img_desc"]=>
+      string(0) ""
+    }
+    [5]=>
+    array(6) {
+      ["img_url"]=>
+      string(42) "images/201503/goods_img/2_P_1469881803.jpg"
+      ["img_original"]=>
+      string(43) "images/201503/source_img/2_P_1490439854.jpg"
+      ["syncstate"]=>
+      string(1) "1"
+      ["goods_id"]=>
+      string(1) "2"
+      ["thumb_url"]=>
+      string(48) "images/201503/thumb_img/2_thumb_P_1437803323.jpg"
+      ["img_desc"]=>
+      string(0) ""
+    }
+  }
+  ["data_products"]=>
+  array(0) {
+  }
+  ["data_member_price"]=>
+  array(0) {
+  }
+  ["syncfield"]=>
+  string(9) "syncstate"
+  ["data_link_goods"]=>
+  array(0) {
+  }
+  ["goods_id"]=>
+  int(2)
+  ["data_goods_cat"]=>
+  array(0) {
+  }
+  ["data_group_goods"]=>
+  array(0) {
+  }
+  ["data_goods"]=>
+  array(1) {
+    [0]=>
+    array(42) {
+      ["add_time"]=>
+      string(10) "1426402374"
+      ["give_integral"]=>
+      string(2) "-1"
+      ["goods_img"]=>
+      string(42) "images/201503/goods_img/2_G_1478766074.jpg"
+      ["goods_thumb"]=>
+      string(48) "images/201503/thumb_img/2_thumb_G_1505805521.jpg"
+      ["rank_integral"]=>
+      string(2) "-1"
+      ["seller_note"]=>
+      string(0) ""
+      ["goods_brief"]=>
+      string(67) "欧式水晶吊灯简约欧式吊灯客厅水晶吊灯餐吊灯DS36"
+      ["original_img"]=>
+      string(43) "images/201503/source_img/2_G_1480323459.jpg"
+      ["suppliers_id"]=>
+      string(1) "0"
+      ["last_update"]=>
+      string(10) "1426583693"
+      ["integral"]=>
+      string(1) "6"
+      ["is_alone_sale"]=>
+      string(1) "1"
+      ["syncstate"]=>
+      string(1) "2"
+      ["is_check"]=>
+      string(1) "0"
+      ["market_price"]=>
+      string(3) "738"
+      ["is_new"]=>
+      string(1) "1"
+      ["is_hot"]=>
+      string(1) "1"
+      ["sort_order"]=>
+      string(1) "0"
+      ["brand_id"]=>
+      string(2) "24"
+      ["is_delete"]=>
+      string(1) "0"
+      ["goods_sn"]=>
+      string(7) "MY-DS36"
+      ["goods_id"]=>
+      string(1) "2"
+      ["cat_id"]=>
+      string(2) "73"
+      ["goods_name_style"]=>
+      string(7) "+strong"
+      ["promote_start_date"]=>
+      string(1) "0"
+      ["shop_price"]=>
+      string(3) "615"
+      ["goods_number"]=>
+      string(4) "1000"
+      ["is_real"]=>
+      string(1) "1"
+      ["is_best"]=>
+      string(1) "0"
+      ["is_promote"]=>
+      string(1) "0"
+      ["extension_code"]=>
+      string(0) ""
+      ["keywords"]=>
+      string(162) "六个头 0-220（V） 0.3（m） 水晶 1100*H800（mm） 室内场所 欧式现代 不配光源 尊艺 10+5头（1.2米） 10+5头（1.1米） 八个头 12+6头"
+      ["bonus_type_id"]=>
+      string(1) "0"
+      ["goods_weight"]=>
+      string(5) "0.015"
+      ["warn_number"]=>
+      string(1) "1"
+      ["is_shipping"]=>
+      string(1) "0"
+      ["is_on_sale"]=>
+      string(1) "1"
+      ["goods_type"]=>
+      string(3) "156"
+      ["goods_name"]=>
+      string(80) "尊艺灯饰 欧式水晶吊灯简约欧式吊灯客厅水晶吊灯餐吊灯DS36"
+      ["goods_desc"]=>
+      string(2376) "<img src="/images/upload/Image/201503/20150315150907203_536450.jpg" /><img src="/images/upload/Image/201503/20150315150907218_391412.jpg" /><img src="/images/upload/Image/201503/20150315150907218_158423.jpg" /><img src="/images/upload/Image/201503/20150315150907234_544316.jpg" /><img src="/images/upload/Image/201503/20150315150907250_357377.jpg" /><img src="/images/upload/Image/201503/20150315150907250_218625.jpg" /><img src="/images/upload/Image/201503/20150315150907250_665275.jpg" /><img src="/images/upload/Image/201503/20150315150907265_763816.jpg" /><img src="/images/upload/Image/201503/20150315150907265_244011.jpg" /><img src="/images/upload/Image/201503/20150315150907265_18261.jpg" /><img src="/images/upload/Image/201503/20150315150907281_425461.jpg" /><img src="/images/upload/Image/201503/20150315150907296_27709.jpg" /><img src="/images/upload/Image/201503/20150315150907312_985281.jpg" /><img src="/images/upload/Image/201503/20150315150907312_98649.jpg" /><img src="/images/upload/Image/201503/20150315150907343_470972.jpg" /><img src="/images/upload/Image/201503/20150315150907343_791644.jpg" /><img src="/images/upload/Image/201503/20150315150907390_106678.jpg" /><img src="/images/upload/Image/201503/20150315150907390_899873.jpg" /><img src="/images/upload/Image/201503/20150315150907406_588269.jpg" /><img src="/images/upload/Image/201503/20150315150907406_183433.jpg" /><img src="/images/upload/Image/201503/20150315150907421_127149.jpg" /><img src="/images/upload/Image/201503/20150315150907421_148247.jpg" /><img src="/images/upload/Image/201503/20150315150907421_813290.jpg" /><img src="/images/upload/Image/201503/20150315150907437_154022.jpg" /><img src="/images/upload/Image/201503/20150315150907453_44032.jpg" /><img src="/images/upload/Image/201503/20150315150907453_129526.jpg" /><img src="/images/upload/Image/201503/20150315150907468_373065.jpg" /><img src="/images/upload/Image/201503/20150315150907468_530528.jpg" /><img src="/images/upload/Image/201503/20150315150907468_490831.jpg" /><img src="/images/upload/Image/201503/20150315150907484_642216.jpg" /><img src="/images/upload/Image/201503/20150315150907484_439162.jpg" /><img src="/images/upload/Image/201503/20150315150907500_300354.jpg" /><img src="/images/upload/Image/201503/20150315150907500_937802.jpg" /><img src="/images/upload/Image/201503/20150315150907515_503389.jpg" />"
+      ["promote_end_date"]=>
+      string(1) "0"
+      ["promote_price"]=>
+      string(1) "0"
+    }
+  }
+}
+

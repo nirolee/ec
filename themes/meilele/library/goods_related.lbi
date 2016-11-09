@@ -1,0 +1,37 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $related_goods} -->
+<div class="title">
+	<div class="text">
+		<span>相关商品</span>
+	</div>
+	<div class="line"></div>
+</div>
+<div class="stage">
+	<ul id="JS_recommend_scroll_stage">
+    	<!--{foreach from=$related_goods item=releated_goods_data}-->
+        <li>
+        	<a href="{$releated_goods_data.url}" target="_blank" title="{$releated_goods_data.goods_name}"><img src="{$releated_goods_data.goods_thumb}" width="140" height="92"></a>
+            <p class="p1">
+            	<a href="{$releated_goods_data.url}" target="_blank" title="{$releated_goods_data.goods_name}">{$releated_goods_data.short_name}</a>
+            </p>
+            <p class="red">
+            	¥<!-- {if $releated_goods_data.promote_price neq 0} -->
+        		{$releated_goods_data.formated_promote_price}
+        		<!-- {else} -->
+        		{$releated_goods_data.shop_price}
+        		<!-- {/if} -->
+        	</p>
+        </li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+<div id="JS_recommend_scroll_btn" class="arrow">
+	<a class="prev" href="javascript:;"></a>
+	<a class="next" href="javascript:;"></a>
+</div>
+<script type="text/javascript">
+jQuery(".goods-recommend").slide({titCell:".hd ul",mainCell:".stage ul",autoPage:true,effect:"topLoop",autoPlay:false,vis:4,scroll:4,trigger:"click"});
+</script>
+<!-- {/if} -->
+
+

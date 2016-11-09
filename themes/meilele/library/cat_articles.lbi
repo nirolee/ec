@@ -1,0 +1,40 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{if $script_name eq 'index'}
+ <!--{foreach from=$articles item=article_item}-->
+<li><a target="_blank" title="{$article_item.title|escape:html}" href="{$article_item.url}"> {$article_item.short_title} </a></li>
+<!--{/foreach}-->
+{elseif $script_name eq 'category'}
+<!--{foreach from=$articles item=article_item}-->
+<li>
+	• <a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  
+</li>
+<!--{/foreach}-->
+{else}
+<div class="title">
+	<strong class="Left">创意家居</strong>
+	<a class="Right" title="更多" target="_blank" href="{$articles_cat.url}">更多>></a>
+</div>
+<div class="body">
+	<div class="notes">
+		<div class="img">
+			{insert name='ads' id=36 num=1}
+		</div>
+    	<h4>
+			<a title="金属线条框架家具 颠覆传统想象" target="_blank" href="#">金属线条框架家具 颠</a>
+		</h4>
+		<p>家具也跟随时代的脚步不断发展创新，到如今门类繁多，用料各异，</p>
+    </div>
+    <ul>
+    	<!--{foreach from=$articles item=article_item}-->
+    	<li>        	
+        	• [
+				<a title="创意家居" target="_blank" href="article_cat.php?id=23">创意家居</a>
+			]            
+  			<a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  			
+        </li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+{/if}
+
+

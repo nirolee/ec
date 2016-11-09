@@ -1,0 +1,42 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="title">
+	<a class="white" href="user.php">我的家居网</a>
+</div>
+<div class="navs">
+	<h3>
+		<span class="s1"></span>
+		订单中心
+	</h3>
+    <ul>
+    	<li><a class="{if $action eq 'order_list'|| $action eq 'order_detail'}red{/if}" href="user.php?act=order_list">{$lang.label_order}</a></li>
+        <li><a class="{if $action eq 'address_list'}red{/if}" href="user.php?act=address_list">{$lang.label_address}</a></li>
+        <li><a class="{if $action eq 'booking_list'}red{/if}" href="user.php?act=booking_list">{$lang.label_booking}</a></li>
+    </ul>
+    <h3>
+		<span class="s4"></span>
+		会员中心
+	</h3>
+    <ul>
+    	<li><a class="{if $action eq 'profile'}red{/if}" href="user.php?act=profile">{$lang.label_profile}</a></li>
+        <li><a class="{if $action eq 'collection_list'}red{/if}" href="user.php?act=collection_list">{$lang.label_collection}</a></li>
+        <li><a class="{if $action eq 'message_list'}red{/if}" href="user.php?act=message_list">{$lang.label_message}</a></li>
+        <li><a class="{if $action eq 'affiliate'}red{/if}" href="user.php?act=affiliate">{$lang.label_affiliate}</a></li>
+        <li><a class="{if $action eq 'comment_list'}red{/if}" href="user.php?act=comment_list">{$lang.label_comment}</a></li>
+        <li><a class="{if $action eq 'single_list'}red{/if}" href="user.php?act=single_list">{$lang.label_single_sun}</a></li>
+        <li><a href="user.php?act=tag_list" class="{if $action eq 'tag_list'}red{/if}">{$lang.label_tag}</a></li>
+    </ul>
+    <h3>
+		<span class="s3"></span>
+		账户中心
+	</h3>
+    <ul>
+    	<li><a class="{if $action eq 'bonus'|| $action eq 'order_detail'}red{/if}" href="user.php?act=bonus">{$lang.label_bonus}</a></li>
+        <li><a class="{if $action eq 'track_packages'}red{/if}" href="user.php?act=track_packages">{$lang.label_track_packages}</a></li>
+        <li><a class="{if $action eq 'account_log'}red{/if}" href="user.php?act=account_log">{$lang.label_user_surplus}</a></li>
+    </ul>
+</div>
+
+
+
+
+

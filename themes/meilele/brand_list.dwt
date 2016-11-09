@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="brand.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="brandBanner" class="w">
+	<img width="980" height="79" alt="品牌展厅" title="品牌展厅" src="images/index_banner_01.jpg">
+	<img width="980" height="79" alt="品牌展厅" title="品牌展厅" src="images/index_banner_02.jpg">
+</div>
+<div id="brandList" class="w clearfix">
+	<!-- {foreach from=$brand_list name="brand_list_foreach" item=brand_data} -->
+	<div class="list <!--{if $smarty.foreach.brand_list_foreach.index mod 3 eq 0}-->first<!-- {/if} -->">
+    	<h1>{$brand_data.brand_name}</h1>
+        <div class="logo">
+        	<!-- {if $brand_data.brand_logo} -->
+            <a href="{$brand_data.url}"><img src="data/brandlogo/{$brand_data.brand_logo}" alt="{$brand_data.brand_name|escape:html} ({$brand_data.goods_num})" width="168"  height="114"/></a>
+            <!-- {else} -->
+            <a href="{$brand_data.url}">{$brand_data.brand_name}</a>
+      		<!-- {/if} -->
+        </div>
+        <h4>{$brand_data.brand_desc}</h4>
+        <a class="look" title="查看品牌详细介绍" target="_blank" href="{$brand_data.url}">查看品牌</a>
+    </div>
+    <!-- {/foreach} -->	
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</div>
+</body>
+</html>
+
+

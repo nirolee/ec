@@ -1,0 +1,28 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<ul class="message_list">
+	<!--{foreach name=message_lists from=$msg_lists key=key item=msg}-->
+    <li>
+    	<div class="u_mt mt10 clearfix">
+        	<div class="Left b">
+            	<span class="icon"></span>
+                <span>{$msg.msg_type}：</span>
+                <span class="red">{$msg.user_name}</span>
+            </div>
+            <div class="Right gray">{$msg.msg_time}</div>
+        </div>
+        <div class="u_mb">
+        	{$msg.msg_content}
+            <!-- {if $msg.re_content} -->
+       		<div class="u_mr"><strong>{$lang.shopman_reply}</strong><br />{$msg.re_content}</div>
+      		<!-- {/if} -->
+        </div>
+    </li>
+    <!--{/foreach}-->
+</ul>
+
+
+
+
+
+
+

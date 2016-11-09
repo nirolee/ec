@@ -1,0 +1,78 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js,meilele_common.js'}
+<div class="AD_tonglan">
+	<div style="width:980px;height:50px;margin:0 auto">
+    	{insert name='ads' id=3 num=1}
+    </div>
+</div>
+<div class="site-nav">
+	<div class="w sn-container">
+    	<div class="snc-wraper Left clearfix">
+        	<a class="common-bg snc-link snc-app" target="_blank" href="/mobile">移动客户端</a>
+			<a class="common-bg snc-link snc-weibo" target="_blank" href="#">新浪微博</a>
+			<s class="snc-line">|</s>
+            <span id="ECS_MEMBERZONE">
+            	{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'}
+            </span>
+        </div>
+        <ul id="JS_quick_memu" class="snc-qmenu">
+        	<!--{if $navigator_list.top}-->
+            <li class="sncq-item">
+            	<!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+            		<a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} --> class="snc-link snc-order">{$nav.name}</a>
+             		<s class="snc-line">|</s>
+    			<!-- {/foreach} -->
+            </li>
+            <!-- {/if} -->
+            <li class="sncq-item">
+            	<a class="snc-link snc-mll" rel="nofollow" target="_blank" href="user.php">我的家居网<b class="common-bg snc-arrow"></b></a><s class="snc-line">|</s><span class="blank"></span>
+                <ul class="sncq-submenu">
+                	<li class="sncq-subitem">
+						<a class="sncq-sublink" href="user.php?act=account_log" rel="nofollow" target="_blank">我的余额</a>
+					</li>
+                    <li class="sncq-subitem">
+						<a class="sncq-sublink" href="user.php?act=bonus" rel="nofollow" target="_blank">我的红包</a>
+					</li>
+                    <li class="sncq-subitem">	
+						<a class="sncq-sublink" href="user.php?act=collection_list" rel="nofollow" target="_blank">我的收藏</a>
+					</li>
+                    <li class="sncq-subitem">
+						<a class="sncq-sublink" href="user.php?act=comment_list" rel="nofollow" target="_blank">我的评论</a>
+					</li>
+                    <li class="sncq-subitem">
+						<a class="sncq-sublink" href="article.php?id=22" rel="nofollow" target="_blank">售后保证</a>
+					</li>
+                </ul>
+            </li>
+            <li class="sncq-item">
+            	<a class="snc-link snc-help" rel="nofollow" target="_blank" href="article_cat.php?id=3">帮助中心<b class="common-bg snc-arrow"></b></a><s class="snc-line">|</s><span class="blank blank-help"></span>
+                <ul class="sncq-submenu sncq-submenu-help">
+                	<li class="sncq-subitem">
+						<a class="sncq-sublink" rel="nofollow" href="article.php?id=10" target="_blank">购买流程</a>
+					</li>
+                    <li class="sncq-subitem">
+                    	<!-- QQ 号码 {foreach from=$qq item=im name=no} -->
+                        <!-- {if $im} -->
+                        <!-- {if $smarty.foreach.no.iteration==1}--> 
+						<a class="sncq-sublink" rel="nofollow" href="http://wpa.qq.com/msgrd?V=1&amp;uin={$im}&amp;Site={$shop_name}&amp;Menu=yes">在线帮助</a>
+                        <!-- {/if} -->
+                        <!-- {/if} -->
+                        <!-- {/foreach} 结束QQ号码 -->
+					</li>
+                </ul>
+            </li>
+            <li class="sncq-item">
+				<a class="snc-link snc-collect" id="favorite_wb" href="javascript:;" rel="nofollow">收藏本站</a><s class="snc-line">|</s>
+			</li>
+            <li class="sncq-item" style="width:225px">
+            	<div id="JS_head_scoll_phone_527" class="JS_head_scoll_phone_527_active_br">
+                	<div style="height:22px;width:213px;padding:0 5px;padding-left:7px;line-height:15px;line-height:13px\9;*line-height:13px;overflow:hidden;">
+						<span>全国热线：</span><span class="hotLine">400 666 8888</span>
+					</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+

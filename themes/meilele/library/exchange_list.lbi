@@ -1,0 +1,50 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<form name="compareForm" method="post">
+	<div id="JS_list_panel" class="list-panel">
+    	<div class="w list-wrap">
+        	<ul class="list-goods clearfix">
+            	<!--{foreach from=$goods_list item=goods name=gli}-->
+                <!-- {if $goods.goods_id} -->
+                <li class="g-item <!--{if $smarty.foreach.gli.index mod 4 eq 3}-->last4<!--{/if}-->">
+                	<div class="g-dtl">
+                    	<a href="{$goods.url}" target="_blank" class="productitem"><img class="d-img" title="{$goods.goods_name}" alt="{$goods.goods_name}" src="{$goods.goods_thumb}" /></a>
+                        <div class="d-price">
+                    		<strong class="p-money">
+								<sub class="m-mark">消耗积分：</sub>
+								<span class="m-count JS_async_price">{$goods.exchange_integral}</span>
+							</strong>
+                    	</div>
+                        <a href="{$goods.url}" class="d-name"><!-- {if $goods.goods_style_name} --><span>{$goods.goods_style_name}</span><!-- {else} --><span>{$goods.goods_name}</span><!-- {/if} --></a>
+                        <div class="d-tags">
+                    		<span class="t-item t-sale" style=" width:264px; border-right:none">
+                        		<a href="javascript:void(0);">
+									已售
+									<b class="t-num JS_async_sale_num">{$goods.sales_volume}</b>
+								</a>
+                        	</span>
+                    	</div>
+                        <div class="d-options">
+                    		<a class="list-bg o-btn o-cart" href="javascript:addToCart({$goods.goods_id})">
+								<b class="list-bg o-icon"></b>
+								<span>加入购物车</span>
+							</a>
+							<a class="list-bg o-btn o-collect" href="javascript:collect({$goods.goods_id});">收藏</a>
+                    	</div>
+                    </div>
+                </li>
+                <!--{/if}-->
+                <!--{/foreach}-->   
+            </ul>
+        </div>
+    </div> 
+</form>
+<script type="text/javascript">
+  window.onload = function()
+  {
+    Compare.init();
+    fixpng();
+  }
+  var button_compare = '';
+</script>
+

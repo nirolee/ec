@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/meilele/category_wide.css" />
+<!-- {if $cat_style} -->
+<link href="{$cat_style}" rel="stylesheet" type="text/css" />
+<!-- {/if} -->
+{* 包含脚本文件 *}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}	
+{insert_scripts files='common.js,global.js,compare.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='easydialog.min.js,meilele_category.js'} 
+<div class="category-filter">
+	<div class="w">
+    	<!--组合搜索 开始-->
+    	<!--{if $brands.1 || $price_grade.1 || $filter_attr_list}--> 
+    	<div id="JS_category_filter" class="filter">
+        	<!--{if $brand_id || (($price_max > $price_min) && $price_max > 0) || $price_max || $filter_attr_sum > 0}-->
+            <dl class="selected clearfix">
+            	<dt>您已选择</dt>
+                
+                <dd>
+                	<table>
+                    	<tr>
+                        	
+                        	<td>
+                            	<!--{if $brands.1}-->
+                            	<!--{foreach from=$brands item=brand key=key}--> 
+        						<!-- {if $brand.selected && $key > 0} --> 
+                            	<div class="current">
+                                	<span>{$brand.brand_name}</span>
+                                	<a href="{$brands.0.url}" class="item"></a> 
+                                </div>
+                                <!-- {/if} --> 
+        						<!--{/foreach}--> 
+                                <!--{/if}-->
+                                
+                                <!--{if  $filter_attr_sum > 0}-->
+                                <!--{foreach from=$filter_attr_list item=filter_attr}--> 
+                				<!--{foreach from=$filter_attr.attr_list item=attr key=key}-->
+                				<!-- {if $attr.selected && $key > 0} --> 
+                            	<div class="current">
+                                	<span>{$attr.attr_value}</span>
+                 					<a href="{$attr.del_url}" class="item"></a> 
+                                </div>
+                                <!-- {/if} --> 
+                				<!--{/foreach}-->
+            					<!--{/foreach}-->
+                                <!--{/if}--> 
+                                
+                                <!--{if ($price_max > $price_min) && $price_max > 0}-->
+                                <div class="current">
+                                	<span>{$price_min}&nbsp;-&nbsp;{$price_max}</span>
+        							<a href="{$price_grade.0.url}" class="item"></a> 
+                                </div>
+                                <!--{/if}-->
+                            </td>
+                            <td>
+								<a class="clear" name="RESET" href="{$clear_filter}">清空选择</a>
+							</td>                            
+                        </tr>
+                    </table>
+                </dd>
+            </dl>
+            <!--{/if}--> 
+            <div id="search-options">
+        		<!--{if $brands.1 && !$brand_id}-->
+                <dl class="brand clearfix">
+                   <dt>品牌</dt>
+                   <dd>
+                   		<div class="lists">
+                       		<table>
+                              <tr>
+                              <td>
+                                  <div id="JS_brand_overflow" class="shell" style="height: 53px; overflow: hidden;">
+                                      <ul class="clearfix">
+                                          <!--{foreach from=$brands_new item=brand key=key name=brand_foo}-->
+                                          <!--{if $key > 0}-->
+                                          <li <!-- {if $smarty.foreach.brand_foo.iteration<11}-->class="li7"<!-- {/if} -->>
+                                              <div class="relative">
+                                                <a class="abs" title="{$brand.brand_name}" href="{$brand.url}">
+                                                    <span class="txt">{$brand.brand_name}</span>
+                                                 </a>
+                                              </div>
+                                              <a class="a" title="{$brand.brand_name}" href="{$brand.url}">
+                                                <img width="102" height="51" src="{$brand.logo}" alt="{$brand.brand_name}">
+                                              </a>
+                                          </li>
+                                          <!--{/if}-->
+                                          <!--{/foreach}-->      
+                                      </ul>
+                                  </div>
+                              </td>
+                              <td class="more">
+                                  <a id="JS_brand_more" class="jMore close JS_more" title="更多" style="display: inline-block;" href="javascript:;">
+                                        <span>更多</span>
+                                        <i></i>
+                                  </a>
+                              </td>
+                              </tr>
+                          </table>
+                        </div>
+                   </dd>
+                </dl>
+            	<!-- {/if} -->
+                
+                <!--{foreach from=$filter_attr_list item=filter_attr}-->
+                <!-- {if !$filter_attr.selected} -->
+                <dl class="normal clearfix">
+                	<dt>{$filter_attr.filter_attr_name|escape:html}</dt>
+                    <dd>
+                    	<div class="shell">
+                        	<table>
+                            	<tr>
+                                	<td class="list">
+                                    	<!--{foreach from=$filter_attr.attr_list item=attr key=key}-->
+                 						<!-- {if $key > 0} --> 
+                						<a href="{$attr.url}" class="item">{$attr.attr_value}</a>
+          		 						<!--{/if}-->
+                						<!--{/foreach}--> 
+                                    </td>
+                                    <td class="more">
+                                  		<a id="JS_brand_more" class="jMore close JS_more" title="更多" style="display: inline-block;" href="javascript:;">
+                                        	<span>更多</span>
+                                        	<i></i>
+                                  		</a>
+                              		</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- {/if} -->
+                <!--{/foreach}-->
+                
+                <!--{if $price_grade.1 && !$price_min && !$price_max}-->
+                <dl class="normal clearfix">
+                	<dt>价格</dt>
+                    <dd>
+                    	<div class="shell">
+                        	<table>
+                            	<tr>
+                                	<td class="list">
+                                    	<!--{foreach from=$price_grade item=grade key=key}-->
+                  						<!--{if $key > 0}-->
+                						<a href="{$grade.url}" class="item">{$grade.price_range}</a>
+                						<!--{/if}-->
+                						<!--{/foreach}--> 
+                                        <form action="{$price_grade.0.url}" method="post" id="freepriceform" style=" display:inline-block">
+                    						<input type="text" value="" name="price_min" id="pricemin" class="min-price">
+                                             - 
+                    						<input type="text" value="" name="price_max" id="pricemax" class="max-price">
+                      						<input type="submit" value="确定" onclick="return makeUri();" class="price-btn">
+                  						</form>
+                                    </td>
+                                    <td class="more">
+                                  		<a id="JS_brand_more" class="jMore close JS_more" title="更多" style="display: inline-block;" href="javascript:;">
+                                        	<span>更多</span>
+                                        	<i></i>
+                                  		</a>
+                              		</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </dd>
+                </dl>
+                <!-- {/if} -->
+            </div>
+        </div>
+        <!-- {/if} --> 
+        <script type="text/javascript">
+
+    function makeUri() {
+        // 开始价格 pricemin
+        var v1 = document.getElementById("pricemin").value;
+        // 截止价格 pricemax
+        var v2 = document.getElementById("pricemax").value;
+        if(v1 == '' || v2 == '' || !$.isNumeric(v1) || !$.isNumeric(v2) || parseInt(v1) > parseInt(v2)){
+            alert('请输入正确的价格区间');
+			return false;
+        }
+    }
+
+</script>
+		<div class="handle">
+        	<a id="JS_exp_fliter" href="javascript:;">
+            	<span>更多选项</span>
+				<i></i>
+            </a>
+        </div>
+        <!--组合搜索 结束-->
+    </div>
+</div>
+<div class="w self-panel">
+	<div class="self-wrap">
+    	<div class="s-info">
+        	共<b class="i-num"> {$list_count} </b>件商品
+        </div>
+        <ul class="s-srvs clearfix">
+        	<ul class="s-srvs clearfix">
+            	<li class="s-item">
+                	<span class="s-title">家居网配送商品服务</span>
+                </li>
+                <li class="s-item">
+					<a class="link back" target="_blank" href="#">45天退换</a>
+				</li>
+                <li class="s-item">
+					<a class="link year" target="_blank" href="#">质保三年</a>
+				</li>
+                <li class="s-item">
+					<a class="link pay" target="_blank" href="#">贵就赔</a>
+				</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/goods_list.lbi" --><!-- #EndLibraryItem -->        
+<div class="page-panel">
+	<div class="w p-wrap">
+    	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+    </div>
+</div>
+<div id="JS_like_root" class="list-panel favour-panel">
+	<div class="w list-wrap">
+    	<h2 class="f-title">
+        	<span class="Left">猜您喜欢</span>
+        </h2>
+        <ul class="list-goods clearfix favour-list">
+        	<!-- {foreach from=$browse_related item=goods name=brow} -->
+            <!-- {if $smarty.foreach.brow.iteration<5}--> 
+            <li class="g-item <!-- {if $smarty.foreach.brow.iteration==4} -->last4<!-- {/if} -->">
+            	<div class="g-dtl">
+                	<a target="_blank" href="{$goods.url}" title="{$goods.name}"><img src="{$goods.thumb}" class="d-img" /></a>
+                    <div class="d-price">
+                    	<strong class="p-money">
+							<sub class="m-mark">¥</sub>
+							<span class="m-count JS_async_price">{$goods.shop_price}</span>
+						</strong>
+                    </div>
+                    <a class="d-name" target="_blank" href="{$goods.url}" title="{$goods.name}">{$goods.short_name}</a>
+                    <div class="d-tags">
+                    	<span class="t-item t-sale">
+                        	<a href="javascript:void(0);">
+								已售
+								<b class="t-num JS_async_sale_num">{$goods.sales_volume}</b>
+							</a>
+                        </span>
+                        <span class="t-item t-score">
+                        	<a href="javascript:void(0);">
+								评分
+								<b class="t-num JS_async_score">{$goods.comment_ranks}</b>
+							</a>
+                        </span>
+                    </div>
+                </div>
+            </li>
+            <!-- {/if} -->
+            <!-- {/foreach} -->
+        </ul>
+    </div>
+</div>
+<div class="mt10"></div>
+<div class="fixture clearfix">
+	<div class="fixture_module pright">
+    	<div id="JS_fixture_recom" class="fixture_header clearfix">
+        	<div class="fixture_title fixture_title_hot Left current">热卖商品</div>
+			<div class="fixture_title fixture_title_pro Left">促销商品</div>
+        </div>
+        <!-- #BeginLibraryItem "/library/recommend_hot_category.lbi" --><!-- #EndLibraryItem -->	
+        <!-- #BeginLibraryItem "/library/recommend_promotion_category.lbi" --><!-- #EndLibraryItem -->	
+    </div>
+    <div class="fixture_module pleft pright">
+    	<div id="JS_fixture_article" class="fixture_header clearfix">
+			<div class="fixture_title fixture_title_zixun Left current">资讯</div>
+			<div class="fixture_title fixture_title_retie Left">热帖</div>
+		</div>
+        <ul class="fixture_knowledge fixture_knowledge_zixun">
+        <!-- TemplateBeginEditable name="咨询（分类页）" -->
+<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
+
+{if $script_name eq 'index'}
+ <!--{foreach from=$articles item=article_item}-->
+<li><a target="_blank" title="{$article_item.title|escape:html}" href="{$article_item.url}"> {$article_item.short_title} </a></li>
+<!--{/foreach}-->
+{elseif $script_name eq 'category'}
+<!--{foreach from=$articles item=article_item}-->
+<li>
+	• <a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  
+</li>
+<!--{/foreach}-->
+{else}
+<div class="title">
+	<strong class="Left">创意家居</strong>
+	<a class="Right" title="更多" target="_blank" href="{$articles_cat.url}">更多>></a>
+</div>
+<div class="body">
+	<div class="notes">
+		<div class="img">
+			{insert name='ads' id=36 num=1}
+		</div>
+    	<h4>
+			<a title="金属线条框架家具 颠覆传统想象" target="_blank" href="#">金属线条框架家具 颠</a>
+		</h4>
+		<p>家具也跟随时代的脚步不断发展创新，到如今门类繁多，用料各异，</p>
+    </div>
+    <ul>
+    	<!--{foreach from=$articles item=article_item}-->
+    	<li>        	
+        	• [
+				<a title="创意家居" target="_blank" href="article_cat.php?id=23">创意家居</a>
+			]            
+  			<a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  			
+        </li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+{/if}
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</ul>
+<ul class="fixture_knowledge fixture_knowledge_retie none">
+<!-- TemplateBeginEditable name="热门文章（分类页）" -->
+<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
+
+{if $script_name eq 'index'}
+ <!--{foreach from=$articles item=article_item}-->
+<li><a target="_blank" title="{$article_item.title|escape:html}" href="{$article_item.url}"> {$article_item.short_title} </a></li>
+<!--{/foreach}-->
+{elseif $script_name eq 'category'}
+<!--{foreach from=$articles item=article_item}-->
+<li>
+	• <a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  
+</li>
+<!--{/foreach}-->
+{else}
+<div class="title">
+	<strong class="Left">创意家居</strong>
+	<a class="Right" title="更多" target="_blank" href="{$articles_cat.url}">更多>></a>
+</div>
+<div class="body">
+	<div class="notes">
+		<div class="img">
+			{insert name='ads' id=36 num=1}
+		</div>
+    	<h4>
+			<a title="金属线条框架家具 颠覆传统想象" target="_blank" href="#">金属线条框架家具 颠</a>
+		</h4>
+		<p>家具也跟随时代的脚步不断发展创新，到如今门类繁多，用料各异，</p>
+    </div>
+    <ul>
+    	<!--{foreach from=$articles item=article_item}-->
+    	<li>        	
+        	• [
+				<a title="创意家居" target="_blank" href="article_cat.php?id=23">创意家居</a>
+			]            
+  			<a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  			
+        </li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+{/if}
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</ul>
+    </div>
+    <div class="fixture_module fixture_tag pleft">
+    	<div id="JS_fixture_tag" class="fixture_header clearfix">
+			<div class="fixture_tagname Left">热门索引</div>
+			<div class="fixture_title Left current">{$on_cat_name}</div>
+		</div>
+        <div class="fixture_show">
+        	<!--{foreach from=$categories_left item=cat name=categories_left}-->
+            <!-- {foreach from=$cat.cat_id item=child} -->
+            <a title="{$child.name}" href="{$child.url}">{$child.name}</a>
+            <!-- {/foreach} -->
+            <!-- {/foreach} -->
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var btn=$(".icon2"),content=$(".category_body"),title=$(".category_title"),i=0;
+		title.click(function(){
+			var index=title.index(this);
+			if(index==i){
+				var status=content.eq(index).css("display");
+				if(status=="block"){
+					content.eq(index).hide();
+					btn.eq(index).text("+");
+				}else{
+					content.eq(index).show();
+					btn.eq(index).text("−");
+				}
+			}else{
+				i=index;
+				content.hide();
+				content.eq(index).show();
+				btn.text("+");
+				btn.eq(index).text("−");
+			}
+			
+			
+		});
+		
+		
+		$(".category").find("dl").each(function(){
+			var dt=$(this).children("dt"),b=dt.find("b"),dd=$(this).find("dd"),done=false;
+			dt.click(function(){
+				if(!done){
+					dd.show();
+					done=!done;
+					b.text("−");
+					b.addClass("current");
+				}else{
+					dd.hide();
+					done=!done;
+					b.text("+");
+					b.removeClass("current");
+				}
+			});
+		});
+	});	
+	
+	$(function(){
+		$('.fixture_title_hot').mouseover(function(){
+			$(this).addClass('current');
+			$('.fixture_title_pro').removeClass('current')
+			$('.fixture_commune_pro').addClass('none')
+			$('.fixture_commune_hot').removeClass('none')
+		});
+		$('.fixture_title_pro').mouseover(function(){
+			$(this).addClass('current');
+			$('.fixture_title_hot').removeClass('current')
+			$('.fixture_commune_hot').addClass('none')
+			$('.fixture_commune_pro').removeClass('none')
+		});
+	})
+	
+	$(function(){
+		$('.fixture_title_zixun').mouseover(function(){
+			$(this).addClass('current');
+			$('.fixture_title_retie').removeClass('current')
+			$('.fixture_knowledge_retie').addClass('none')
+			$('.fixture_knowledge_zixun').removeClass('none')
+		});
+		$('.fixture_title_retie').mouseover(function(){
+			$(this).addClass('current');
+			$('.fixture_title_zixun').removeClass('current')
+			$('.fixture_knowledge_zixun').addClass('none')
+			$('.fixture_knowledge_retie').removeClass('none')
+		});
+	})
+</script>
+<div class="footer-box">
+	<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!-- #BeginLibraryItem "/library/back-top.lbi" --><!-- #EndLibraryItem -->
+
+
+<div id="JS_lightBox" class="lightBox MALERT MCONFIRM addToCart_LB" style="z-index: 300; display:none">
+	
+</div>
+
+</body>
+</html>
+
+

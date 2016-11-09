@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/xspace_common-980.css" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/snatch.css" rel="stylesheet" type="text/css" />
+<link href="auction.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="w mt20 clearfix">
+	<div class="main-info" style="width:980px;">
+    	<div id="JS_sekill_detail_tab_head" class="tab-head">
+			<a class="current" href="javascript:;">{$lang.all_tags}</a>
+		</div>
+        <!-- {if $tags} -->
+        <div id="JS_sekill_detail_tab_body" class="tab-body">
+			<div class="body-item goods-info current"> {$lang.tag_cloud_desc} </div>
+            <!-- 标签云开始 {foreach from=$tags item=tag}-->
+            <a href="{$tag.url}" style="color:{$tag.color}">{if $tag.bold}<b>{$tag.tag_words|escape:html}</b>{else}{$tag.tag_words|escape:html}{/if}</a>
+            <!-- {if $tags_from eq 'user'} -->
+          	<a href="user.php?act=act_del_tag&amp;tag_words={$tag.tag_words|escape:url}&amp;uid={$tag.user_id}" title="{$lang.drop}"> <img src="images/drop.gif" alt="{$lang.drop}" /> </a>&nbsp;&nbsp;
+          	<!-- {/if} -->
+            <!-- 标签云结束 {/foreach}-->
+		</div>
+        <!-- {else} -->
+        <div id="JS_sekill_detail_tab_body" class="tab-body">{$lang.no_tag}</div>
+        <!-- {/if} -->
+    </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+</html>
+
+

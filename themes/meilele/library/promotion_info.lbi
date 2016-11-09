@@ -1,0 +1,12 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_info} -->
+<div class="ctitle">促销活动</div>
+<ul class="clearfix">
+	<!-- {foreach from=$promotion_info item=item key=key name=promotion_info} -->
+    <!-- {if $smarty.foreach.promotion_info.iteration<4}--> 
+    <li><a href="{$item.url}" title="{$lang.$item.type} {$item.act_name}{$item.time}" style="background:none; padding-left:0px;"> • {$item.act_name}</a></li>
+    <!-- {/if} -->
+    <!-- {/foreach} -->
+</ul>
+<!-- {/if} -->
+

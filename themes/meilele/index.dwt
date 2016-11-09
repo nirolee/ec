@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<meta property="qc:admins" content="2452717777621152116375" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,index.js'}
+</head>
+<body>
+<!--头部 Start-->
+<!-- #BeginLibraryItem "/library/page_header_index.lbi" --><!-- #EndLibraryItem --> {insert_scripts files='meilele_index.js'}
+<!--头部 End-->
+<!--Banner切换 Start--> 
+<!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem --> 
+<!--Banner切换 End-->
+<!--美乐惠 Start--> 
+<!-- #BeginLibraryItem "/library/meilehui.lbi" --><!-- #EndLibraryItem -->
+<!--美乐惠 End--> 
+<!--首页楼层 Start-->
+<!-- TemplateBeginEditable name="分类下商品区域" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<div class="w mt29 default_floor_show">
+	<div class="floor_top clearfix">
+    	<div class="floor_nav Left JS_floor_nav">
+        	<a class="title-bg title JS_title title-{$goods_cat.sort_order}F" title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">
+				<span class="item Left">{$goods_cat.sort_order}F {$goods_cat.name}</span>
+				<span class="sign Right"></span>
+			</a>
+            <b class="title-shadow"></b>
+            <ul>
+            	<!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->{if $smarty.foreach.foo.iteration < 9}<li><a target="_blank" href="{$cat.url}">{$cat.name}</a></li>{/if}<!--{/foreach}-->
+            </ul>
+            <a class="img" target="_blank" href="#"></a>
+        </div>
+        <div class="floor_banner Left JS_floor_banner">
+        	<div class="nav">
+            	<div class="bg"></div>
+				<span class="lt"></span>
+				<span class="rt"></span>
+                <div class="list JS_list_banner hd">
+                	<ul>
+						<li href="javascript:;"></li><li href="javascript:;"></li><li class="last" href="javascript:;"></li>
+                    </ul>
+				</div>
+            </div>
+        	<div class="bd">
+        		<ul class="JS_ul_banner">
+            		<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告1'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告2'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告3'}</li>
+            	</ul>
+            </div>
+        </div>
+        <div class="goodImg Left JS_goodImg">
+        	{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告1'}
+            {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告2'}
+        </div>
+    </div>
+    <div class="floor_bottom JS_floor_bottom">
+    	<div class="other_item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告1'}</div>
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告2'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告3'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告4'}
+        <div class="hide-item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告5'}</div>
+    </div>
+</div>
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<div class="w mt29 default_floor_show">
+	<div class="floor_top clearfix">
+    	<div class="floor_nav Left JS_floor_nav">
+        	<a class="title-bg title JS_title title-{$goods_cat.sort_order}F" title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">
+				<span class="item Left">{$goods_cat.sort_order}F {$goods_cat.name}</span>
+				<span class="sign Right"></span>
+			</a>
+            <b class="title-shadow"></b>
+            <ul>
+            	<!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->{if $smarty.foreach.foo.iteration < 9}<li><a target="_blank" href="{$cat.url}">{$cat.name}</a></li>{/if}<!--{/foreach}-->
+            </ul>
+            <a class="img" target="_blank" href="#"></a>
+        </div>
+        <div class="floor_banner Left JS_floor_banner">
+        	<div class="nav">
+            	<div class="bg"></div>
+				<span class="lt"></span>
+				<span class="rt"></span>
+                <div class="list JS_list_banner hd">
+                	<ul>
+						<li href="javascript:;"></li><li href="javascript:;"></li><li class="last" href="javascript:;"></li>
+                    </ul>
+				</div>
+            </div>
+        	<div class="bd">
+        		<ul class="JS_ul_banner">
+            		<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告1'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告2'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告3'}</li>
+            	</ul>
+            </div>
+        </div>
+        <div class="goodImg Left JS_goodImg">
+        	{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告1'}
+            {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告2'}
+        </div>
+    </div>
+    <div class="floor_bottom JS_floor_bottom">
+    	<div class="other_item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告1'}</div>
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告2'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告3'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告4'}
+        <div class="hide-item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告5'}</div>
+    </div>
+</div>
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<div class="w mt29 default_floor_show">
+	<div class="floor_top clearfix">
+    	<div class="floor_nav Left JS_floor_nav">
+        	<a class="title-bg title JS_title title-{$goods_cat.sort_order}F" title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">
+				<span class="item Left">{$goods_cat.sort_order}F {$goods_cat.name}</span>
+				<span class="sign Right"></span>
+			</a>
+            <b class="title-shadow"></b>
+            <ul>
+            	<!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->{if $smarty.foreach.foo.iteration < 9}<li><a target="_blank" href="{$cat.url}">{$cat.name}</a></li>{/if}<!--{/foreach}-->
+            </ul>
+            <a class="img" target="_blank" href="#"></a>
+        </div>
+        <div class="floor_banner Left JS_floor_banner">
+        	<div class="nav">
+            	<div class="bg"></div>
+				<span class="lt"></span>
+				<span class="rt"></span>
+                <div class="list JS_list_banner hd">
+                	<ul>
+						<li href="javascript:;"></li><li href="javascript:;"></li><li class="last" href="javascript:;"></li>
+                    </ul>
+				</div>
+            </div>
+        	<div class="bd">
+        		<ul class="JS_ul_banner">
+            		<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告1'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告2'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告3'}</li>
+            	</ul>
+            </div>
+        </div>
+        <div class="goodImg Left JS_goodImg">
+        	{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告1'}
+            {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告2'}
+        </div>
+    </div>
+    <div class="floor_bottom JS_floor_bottom">
+    	<div class="other_item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告1'}</div>
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告2'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告3'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告4'}
+        <div class="hide-item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告5'}</div>
+    </div>
+</div>
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<div class="w mt29 default_floor_show">
+	<div class="floor_top clearfix">
+    	<div class="floor_nav Left JS_floor_nav">
+        	<a class="title-bg title JS_title title-{$goods_cat.sort_order}F" title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">
+				<span class="item Left">{$goods_cat.sort_order}F {$goods_cat.name}</span>
+				<span class="sign Right"></span>
+			</a>
+            <b class="title-shadow"></b>
+            <ul>
+            	<!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->{if $smarty.foreach.foo.iteration < 9}<li><a target="_blank" href="{$cat.url}">{$cat.name}</a></li>{/if}<!--{/foreach}-->
+            </ul>
+            <a class="img" target="_blank" href="#"></a>
+        </div>
+        <div class="floor_banner Left JS_floor_banner">
+        	<div class="nav">
+            	<div class="bg"></div>
+				<span class="lt"></span>
+				<span class="rt"></span>
+                <div class="list JS_list_banner hd">
+                	<ul>
+						<li href="javascript:;"></li><li href="javascript:;"></li><li class="last" href="javascript:;"></li>
+                    </ul>
+				</div>
+            </div>
+        	<div class="bd">
+        		<ul class="JS_ul_banner">
+            		<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告1'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告2'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告3'}</li>
+            	</ul>
+            </div>
+        </div>
+        <div class="goodImg Left JS_goodImg">
+        	{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告1'}
+            {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告2'}
+        </div>
+    </div>
+    <div class="floor_bottom JS_floor_bottom">
+    	<div class="other_item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告1'}</div>
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告2'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告3'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告4'}
+        <div class="hide-item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告5'}</div>
+    </div>
+</div>
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+<!--首页楼层 End-->
+<!--首页品牌广告 Start-->
+<div class="w mt29 clearfix commodity">
+	<div id="JS_roll_item" class="Left roll_item">
+    	<a id="JS_prev" class="prev work" href="javascript:;"><span class="bg"></span><span class="lt"></span></a>
+		<a id="JS_next" class="next work" href="javascript:;"><span class="bg"></span><span class="gt"></span></a>
+        <div id="JS_table_div">
+        	<table id="JS_table">
+            	<tr id="JS_tr_top" class="tr_top" bgcolor="#fff">
+                	<!-- TemplateBeginEditable name="首页品牌广告1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+                </tr>
+                <tr id="JS_tr_bottom" class="tr_bottom" bgcolor="#fff">
+                    	<!-- TemplateBeginEditable name="首页品牌广告2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="tab Right" id="tabs">
+    	<div id="JS_side_tab_nav" class="head hd">
+        	<ul>
+            	<li class="first"><a href="javascript:void(0);">家居网快讯</a></li>
+            	<li><a class="last" href="javascript:void(0);">订单查询通道 <span class="query_bg query_icon_blur" onmouseover="document.getElementById('JS_float_tip').style.display='block'" onmouseout="document.getElementById('JS_float_tip').style.display='none'"></span></a></li>
+            </ul>
+            <div id="JS_float_tip" class="float_tip none" style="display: none;">在此快速查询订单详情。</div>
+         </div>
+        <div id="JS_side_tab_body" class="body long">
+            <div class="show_news tBody models">
+                <ul class="gg long">
+                	<!-- TemplateBeginEditable name="家居网快讯" -->
+<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
+
+{if $script_name eq 'index'}
+ <!--{foreach from=$articles item=article_item}-->
+<li><a target="_blank" title="{$article_item.title|escape:html}" href="{$article_item.url}"> {$article_item.short_title} </a></li>
+<!--{/foreach}-->
+{elseif $script_name eq 'category'}
+<!--{foreach from=$articles item=article_item}-->
+<li>
+	• <a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  
+</li>
+<!--{/foreach}-->
+{else}
+<div class="title">
+	<strong class="Left">创意家居</strong>
+	<a class="Right" title="更多" target="_blank" href="{$articles_cat.url}">更多>></a>
+</div>
+<div class="body">
+	<div class="notes">
+		<div class="img">
+			{insert name='ads' id=36 num=1}
+		</div>
+    	<h4>
+			<a title="金属线条框架家具 颠覆传统想象" target="_blank" href="#">金属线条框架家具 颠</a>
+		</h4>
+		<p>家具也跟随时代的脚步不断发展创新，到如今门类繁多，用料各异，</p>
+    </div>
+    <ul>
+    	<!--{foreach from=$articles item=article_item}-->
+    	<li>        	
+        	• [
+				<a title="创意家居" target="_blank" href="article_cat.php?id=23">创意家居</a>
+			]            
+  			<a href="{$article_item.url}" title="{$article_item.title|escape:html}">{$article_item.short_title}</a>  			
+        </li>
+        <!--{/foreach}-->
+    </ul>
+</div>
+{/if}
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+					</ul>
+            </div>
+            <div class="tBody query models">
+                <div id="JS_page1">
+                        	<!-- TemplateBeginEditable name="订单查询" -->
+<!-- #BeginLibraryItem "/library/order_query.lbi" -->
+
+<!--{if empty($order_query)}-->
+<script>var invalid_order_sn = "{$lang.invalid_order_sn}"</script>
+<div class="input">
+	<form name="ecsOrderQuery">
+    	<input type="text" name="order_sn"  />
+        <div class="input login">
+        	<input type="button" value="查询" class="f14 query_bg login_btn yahei" onclick="orderQuery()" style=" border:none; padding:0; cursor:pointer"/>
+        </div>
+    </form>
+    <div id="ECS_ORDER_QUERY" style="margin-top:8px;">
+      <!--{else}-->
+      <!--{if $order_query.user_id}-->
+	  <b>{$lang.order_number}：</b><a href="user.php?act=order_detail&order_id={$order_query.order_id}" class="f6">{$order_query.order_sn}</a><br>
+      <div class="clearfix height5"></div>
+      <!--{else}-->
+      <b>{$lang.order_number}：</b>{$order_query.order_sn}<br />
+      <div class="clearfix height5"></div>
+      <!--{/if}-->
+      <b>{$lang.order_status}：</b><font class="f1">{$order_query.order_status}</font><br />
+      <div class="clearfix height5"></div>
+      <!--{if $order_query.invoice_no }-->
+      <b>{$lang.consignment}：</b>{$order_query.invoice_no}
+      <div class="clearfix height5"></div>
+      <!--{/if}-->
+      {if $order_query.shipping_date}：{$lang.shipping_date} {$order_query.shipping_date}
+      <!--{/if}-->
+      <!--{/if}-->
+    </div>
+</div>
+<div class="clearfix height5"></div>
+
+
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--首页品牌广告 End-->
+<!--楼层定位 Start-->
+<div class="default_stairs_w">
+<!-- #BeginLibraryItem "/library/louceng.lbi" --> <!-- #EndLibraryItem -->	
+</div>
+<!--楼层定位 Start-->
+<!--底部 Start-->
+<div class="footer-box">
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</div>
+<!--底部 End-->
+<!--回到顶部 Start-->
+<!-- #BeginLibraryItem "/library/back-top.lbi" --><!-- #EndLibraryItem -->
+<!--回到顶部 End-->
+</body>
+</html>
+
+

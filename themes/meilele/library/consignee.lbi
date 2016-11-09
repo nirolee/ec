@@ -1,0 +1,137 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='utils.js,transport_jquery.js'}
+<div class="w mt10">
+	<h1 class="fl_h1">{$lang.consignee_info}</h1>
+</div>
+<div class="pre_box w">
+	<div class="currentBox">
+    	<div class="title">
+        	<div class="text">
+            	填写信息
+            </div>
+        </div>
+        <div class="body">
+        	<table style="display: block;">
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.consignee_name}：
+					</td>
+                    <td class="value">
+                    	<input name="consignee" type="text" class="text" id="consignee_{$sn}" value="{$consignee.consignee|escape}" style="width:150px" />
+                    </td>
+                </tr>
+                <!-- {if $real_goods_count gt 0} -->
+                <!-- 购物车中存在实体商品显示国家和地区 start-->
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.country_province}：
+					</td>
+                    <td class="value">
+                    	<select name="country" id="selCountries_{$sn}" onchange="region.changed(this, 1, 'selProvinces_{$sn}')" style="border:1px solid #ccc;">
+                			<option value="0">{$lang.please_select}{$name_of_region[0]}</option>
+                			<!-- {foreach from=$country_list item=country} -->
+                			<option value="{$country.region_id}" {if $consignee.country eq $country.region_id}selected{/if}>{$country.region_name}</option>
+                			<!-- {/foreach} -->
+              			</select>
+              			<select name="province" id="selProvinces_{$sn}" onchange="region.changed(this, 2, 'selCities_{$sn}')" style="border:1px solid #ccc;">
+                			<option value="0">{$lang.please_select}{$name_of_region[1]}</option>
+                			<!-- {foreach from=$province_list.$sn item=province} -->
+                			<option value="{$province.region_id}" {if $consignee.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+                			<!-- {/foreach} -->
+              			</select>
+              			<select name="city" id="selCities_{$sn}" onchange="region.changed(this, 3, 'selDistricts_{$sn}')" style="border:1px solid #ccc;">
+                			<option value="0">{$lang.please_select}{$name_of_region[2]}</option>
+                			<!-- {foreach from=$city_list.$sn item=city} -->
+                			<option value="{$city.region_id}" {if $consignee.city eq $city.region_id}selected{/if}>{$city.region_name}</option>
+                			<!-- {/foreach} -->
+              			</select>
+              			<select name="district" id="selDistricts_{$sn}" {if !$district_list.$sn}style="display:none"{/if} style="border:1px solid #ccc;">
+                			<option value="0">{$lang.please_select}{$name_of_region[3]}</option>
+                			<!-- {foreach from=$district_list.$sn item=district} -->
+                			<option value="{$district.region_id}" {if $consignee.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
+                			<!-- {/foreach} -->
+              			</select>
+                    </td>
+                </tr>
+                <!-- 购物车中存在实体商品显示国家和地区 end-->
+                <!-- {/if} -->
+                <!-- {if $real_goods_count gt 0} -->
+                <!-- 购物车中存在实体商品显示详细地址以及邮政编码 start-->
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.detailed_address}：
+					</td>
+                    <td class="value">
+                    	<input name="address" type="text" class="text"  id="address_{$sn}" value="{$consignee.address|escape}" style="width:310px;" />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.postalcode}：
+					</td>
+                    <td class="value">
+                    	<input name="zipcode" type="text" class="text" id="zipcode_{$sn}" value="{$consignee.zipcode|escape}" style="width:150px" />
+                    </td>
+                </tr>
+                <!-- 购物车中存在实体商品显示详细地址以及邮政编码 end-->
+                <!-- {/if} -->
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.email_address}：
+					</td>
+                    <td class="value">
+                    	<input name="email" type="text" class="text" id="email_{$sn}" value="{$consignee.email|escape}" style="width:150px" />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.phone}：
+					</td>
+                    <td class="value">
+                    	<input name="tel" type="text" class="text" id="tel_{$sn}" value="{$consignee.tel|escape}" style="width:150px" />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="label">
+						<span class="red">*</span> {$lang.backup_phone}：
+					</td>
+                    <td class="value">
+                    	<input name="mobile" type="text" class="text" id="mobile_{$sn}" value="{$consignee.mobile|escape}" style="width:150px" />
+                    </td>
+                </tr>
+                <!-- {if $real_goods_count gt 0} -->
+                <!-- 购物车中存在实体商品显示最佳送货时间及标志行建筑 start-->
+                <tr>
+                	<td class="label">
+						{$lang.sign_building}：
+					</td>
+                    <td class="value">
+                    	<input name="sign_building" type="text" class="text" id="sign_building_{$sn}" value="{$consignee.sign_building|escape}" style="width:310px;" />
+                    </td>
+                </tr>
+                <tr>
+                	<td class="label">
+						{$lang.deliver_goods_time}：
+					</td>
+                    <td class="value">
+                    	<input name="best_time" type="text" class="text" id="best_time_{$sn}" value="{$consignee.best_time|escape}" style="width:310px;" />
+                    </td>
+                </tr>
+                <!-- 购物车中存在实体商品显示最佳送货时间及标志行建筑 end--> 
+                <!-- {/if} -->
+            </table>
+            <div style="padding-top:20px; display:inline-block">
+            	<input type="submit" name="Submit" class="flow_btn" value="{$lang.shipping_address}" style="vertical-align:middle;" /><span class="rr"></span>
+              	<input type="hidden" name="step" value="consignee" />
+          		<input type="hidden" name="act" value="checkout" />
+          		<input name="address_id" type="hidden" value="{$consignee.address_id}" />
+              	<!-- {if $smarty.session.user_id gt 0 and $consignee.address_id gt 0} --> 
+              	<!-- 如果登录了，显示删除按钮 start-->
+              	<a href="javascript:;" onclick="if (confirm('{$lang.drop_consignee_confirm}')) location.href='flow.php?step=drop_consignee&amp;id={$consignee.address_id}'"   hidefocus="true" class="flow_btn" style="vertical-align:middle; height:20px;padding-left: 10px;padding-top: 5px; margin-left:15px;"><span>删 除</span> <span class="rr" style=" float:none; margin-top:-5px;"></span></a>
+                <!-- 如果登录了，显示删除按钮 end--> 
+  				<!-- {/if} -->
+            </div>
+        </div>
+    </div>
+</div>
+

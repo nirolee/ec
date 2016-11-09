@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="themes/meilele/category_wide.css" />
+{* 包含脚本文件 *}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}
+{insert_scripts files='utils.js,common.js,global.js,compare.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem --> 
+{insert_scripts files='easydialog.min.js,meilele_category.js'} 
+
+<!-- {if $goods_list} -->
+<div class="category-filter">
+	<div class="w">
+    	<div class="prompt-info" style=" border-bottom:1px solid #e6e6e6">
+        	<strong class="red f14">
+            	<!-- {if $intromode eq 'best'} -->
+         		{$lang.best_goods}
+         		<!-- {elseif $intromode eq 'new'} -->
+         		{$lang.new_goods}
+         		<!-- {elseif $intromode eq 'hot'} -->
+         		{$lang.hot_goods}
+         		<!-- {elseif $intromode eq 'promotion'} -->
+         		{$lang.promotion_goods}
+         		<!-- {else} -->
+         		{$lang.search_result}
+         		<!-- {/if} -->
+            </strong>
+        </div>
+    </div>
+</div>
+<div class="w self-panel">
+	<div class="self-wrap">
+    	<div class="s-info">
+        	共<b class="i-num"> {$pager.record_count} </b>件商品
+        </div>
+        <ul class="s-srvs clearfix">
+        	<ul class="s-srvs clearfix">
+            	<li class="s-item">
+                	<span class="s-title">家居网配送商品服务</span>
+                </li>
+                <li class="s-item">
+					<a class="link back" target="_blank" href="#">45天退换</a>
+				</li>
+                <li class="s-item">
+					<a class="link year" target="_blank" href="#">质保三年</a>
+				</li>
+                <li class="s-item">
+					<a class="link pay" target="_blank" href="#">贵就赔</a>
+				</li>
+            </ul>
+        </ul>
+    </div>
+</div>
+<div id="JS_list_panel" class="list-panel">
+	<div class="w list-wrap">
+    	<ul class="list-goods clearfix">
+        	<!--{foreach name=goods_list from=$goods_list item=goods name=gli}-->
+          	<!-- {if $goods.goods_id} -->
+        	<li class="g-item <!--{if $smarty.foreach.gli.index mod 4 eq 3}-->last4<!--{/if}-->">
+            	<!--{if $goods.watermark_img neq "" } -->
+            	<div class="g-float" style="background:url(images/{$goods.watermark_img}.png) center center no-repeat;_background: none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(images/{$goods.watermark_img}.png);"></div>
+                <!--{/if}-->
+                <div class="g-dtl">
+                	<a href="{$goods.url}" target="_blank"><img title="{$goods.goods_name}" alt="{$goods.goods_name}" src="{$goods.goods_thumb}" class="d-img"></a>
+                    <div class="d-price">
+                    	<strong class="p-money">
+							<sub class="m-mark">¥</sub>
+							<span class="m-count JS_async_price"><!--{if $goods.promote_price neq "" } -->{$goods.promote_price} <!--{else}-->{$goods.shop_price}<!--{/if}--> </span>
+						</strong>
+                        <del class="p-del">
+							<sub class="d-mark">¥</sub>
+							{$goods.shop_price}
+						</del>
+                    </div>
+                    <a href="{$goods.url}" title="{$goods.name|escape:html}" class="d-name"><span>{$goods.goods_name}</span><span class="n-extra">{$goods.goods_brief}</span></a>
+                    <div class="d-tags">
+                    	<span class="t-item t-sale" style=" width:265px; border-right:none">
+                        	<a href="javascript:void(0);">
+								已售
+								<b class="t-num JS_async_sale_num">{$goods.sales_volume}</b>
+							</a>
+                        </span>
+                    </div>
+                    <div class="d-options">
+                    	<a class="list-bg o-btn o-cart" href="javascript:addToCart({$goods.goods_id})">
+							<b class="list-bg o-icon"></b>
+							<span>加入购物车</span>
+						</a>
+						<a class="list-bg o-btn o-collect" href="javascript:collect({$goods.goods_id});">收藏</a>
+                    </div>
+                </div>                
+            </li>
+            <!--{/if}-->
+          	<!--{/foreach}-->
+        </ul>
+    </div>
+</div>
+<!--{else}-->
+<div style="padding:20px 0px; text-align:center">{$lang.no_search_result}</div>
+<!--{/if}-->       
+<div class="page-panel">
+	<div class="w p-wrap">
+    	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+    </div>
+</div>
+<div class="footer-box">
+	<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+<!-- #BeginLibraryItem "/library/back-top.lbi" --><!-- #EndLibraryItem -->
+<div id="JS_lightBox" class="lightBox MALERT MCONFIRM addToCart_LB" style="z-index: 300; display:none">
+	
+</div>
+</body>
+</html>
+
+

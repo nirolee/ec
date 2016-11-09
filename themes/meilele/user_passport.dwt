@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="login.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,user.js'}
+<body>
+<!-- #BeginLibraryItem "/library/page_header_login.lbi" --><!-- #EndLibraryItem --> 
+<script>
+$(function(){
+	$(".input_box").click(function(){
+		$(this).find(".t_text").hide();	
+		$(this).find("input").focus();
+	})
+	
+	$(".input_box").focusin(function(){
+		$(this).find(".t_text").hide();
+	})
+
+	$(".input_box").focusout(function(){
+		if($(this).find("input").val() == "")
+		{
+			$(this).find(".t_text").show();
+		}
+	})	
+})
+</script> 
+
+<!--#登录界面 start--> 
+<!-- {if $action eq 'login'} -->
+<div class="main">
+	<div class="user_header clearfix" style="padding:15px 0px;">
+    	<div class="logo Left">
+        	<a href="./index.php">
+				<img width="146" height="53" alt="logo" src="images/logo.gif">
+			</a>
+        </div>
+        <div class="nav Right">
+			<a href="./index.php">返回首页</a> | <a target="_blank" href="article_cat.php?id=3">帮助中心</a>
+		</div>
+    </div>
+    <h1 class="user_login_tip yahei">用户登录</h1>
+    <div class="content clearfix">
+    	<div class="Left">
+        	{insert name='ads' id=42 num=1} 
+        </div>
+        <div id="JS_loginForm" class="login_form Right">
+    		<form name="formLogin" action="user.php" method="post" onSubmit="return userLogin()">
+        		<div class="form_header">
+                	<h2 class="yahei Left">用户登录</h2>
+                </div>
+                <br />
+                <p>
+                	<input name="username" type="text"  class="input yahei gray" placeholder="{$lang.label_username}"/>
+                </p>
+                <br />
+                <p>
+                	<input name="password" type="password" class="input yahei black" placeholder="{$lang.label_password}"/>
+                </p>
+                <br />
+                <!-- 判断是否启用验证码{if $enabled_captcha} -->
+                <p>
+                	<input type="text" class="input yahei black" name="captcha" maxlength="6" style=" width:80px; height:26px;"><img src="captcha.php?is_login=1&{$rand}" alt="captcha" style=" cursor:pointer; margin:0 6px;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" id="img" width="100" height="30" /><a onclick="img.src='captcha.php?is_login=1&'+Math.random();" style=" cursor:pointer" >看不清换一张</a>
+                </p>
+                <!--{/if}-->
+                <br />
+                <div class="form_header clearfix">
+                	<label class="black Left">
+						<input type="checkbox" value="1" name="remember" id="remember" class="remchk">
+                      	{$lang.remember}
+					</label>
+                	<a id="JS_forgetpwd" class="Right" href="user.php?act=get_password">忘记密码？</a>
+                </div>
+                <br>
+				<br>
+                <input type="hidden" name="act" value="act_login" />
+                <input type="hidden" name="back_act" value="{$back_act}" />
+                <input type="submit" name="submit" class="submit_btn yahei" value="登 录">
+                <br>
+				<br>
+				<br>
+                <div class="login_api">
+                	<span class="api_tips">使用合作网站账号登录家居网：</span>
+					<br>
+                    <p class="api_links">
+                    	<a class="inline_block" target="_blank" style="background-position:0 -175px;" href="user.php?act=oath&amp;type=weibo">新浪微博</a> | <a class="inline_block" target="_blank" href="user.php?act=oath&amp;type=qq" style="background-position:0 -120px;">QQ</a> | <a class="inline_block" target="_blank" style="padding-left:38px;background-position:0 -63px;" href="user.php?act=oath&amp;type=alipay">支付宝</a>
+                    </p>
+                </div>
+				<br>
+				<br>
+				<br>
+                <p class="reg_p r">
+					<a class="bold red" href="user.php?act=register">立即注册>></a>
+				</p>
+        	</form>
+        </div>
+    </div>
+</div>
+<!--{/if}--> 
+<!--#登录界面 end--> 
+
+<!--*会员注册界面 start--> 
+<!--{if $action eq 'register'}--> 
+<!-- {if $shop_reg_closed eq 1} -->
+<div class="usBox">
+  <div class="usBox_2 clearfix">
+    <div class="f1 f5" align="center">{$lang.shop_register_closed}</div>
+  </div>
+</div>
+<!-- {else} --> 
+{insert_scripts files='utils.js'}
+<div class="user_all w" style="position:relative; width:980px;">
+	<div class="user_header clearfix" style="padding:15px 0px;">
+    	<div class="logo Left">
+        	<a href="./index.php">
+				<img width="146" height="53" alt="logo" src="images/logo.gif">
+			</a>
+        </div>
+        <div class="nav Right">
+			<a href="./index.php">返回首页</a> | <a target="_blank" href="article_cat.php?id=3">帮助中心</a>
+		</div>
+    </div>
+    <div class="user_content clearfix type_register">
+    	<div class="user_login Left">
+        	<form action="user.php" method="post" name="formUser" onsubmit="return register();">
+            	<h1 class="yahei" style="padding-left:10px;">注册新用户</h1>
+                <div class="register_box">
+                	<p>
+                    	<label class="tips">
+                        	<span class="red">*</span>{$lang.label_username}：
+                        </label>
+                        <input type="text" name="username" id="username" onblur="is_registered(this.value);" onkeyup="is_registered(this.value);" class="register_input">
+                    </p>
+                    <div id="username_notice" class="error"></div>
+                    <p>
+                    	<label class="tips">
+                        	<span class="red">*</span>{$lang.label_email}：
+                        </label>
+                        <input class="register_input" name="email" type="text" id="email" onblur="checkEmail(this.value);" onkeyup="checkEmail(this.value);">
+                    </p>
+                    <div id="email_notice" class="error"></div>
+                    <p>
+                    	<label class="tips">
+                        	<span class="red">*</span>{$lang.label_password}：
+                        </label>
+                        <input class="register_input" type="password" name="password" id="password1" onblur="check_password(this.value);" onkeyup="check_password(this.value);checkIntensity(this.value);">
+                    </p>
+                    <div id="password_notice" class="error"></div>
+                    <p>
+                    	<label class="tips">
+							<span class="red">*</span>{$lang.label_confirm_password}：
+						</label>
+                        <input class="register_input" name="confirm_password" type="password" id="conform_password" onblur="check_conform_password(this.value);" onkeyup="check_conform_password(this.value);">
+                    </p>
+                    <div id="conform_password_notice" class="error"></div>
+                    <!-- {foreach from=$extend_info_list item=field} -->
+                    <!-- {if $field.id eq 6} -->
+                    <p>
+                    	<label class="tips">
+                        	<!-- {if $field.is_need} --><span class="red">*</span><!-- {/if} --> 提示问题：
+                    	</label>
+                    	<select name='sel_question'>
+                    		<option value='0'>{$lang.sel_question}</option>{html_options options=$passwd_questions}
+                    	</select>
+                    </p>
+                    <div class="error"></div>
+                    <p>
+                    	<label class="tips" <!-- {if $field.is_need} -->id="passwd_quesetion"<!--{/if}-->>
+                       	 	<!-- {if $field.is_need} --><span class="red">*</span><!-- {/if} --> 问题答案：
+                    	</label>
+                        <input name="passwd_answer" type="text" class="register_input"/>
+                    </p>
+                    <div class="error"></div>
+                    <!-- {else} -->
+                    <p>
+                    	<label class="tips" <!-- {if $field.is_need} -->id="extend_field{$field.id}i"<!--{/if}-->>
+                        	<!-- {if $field.is_need} --><span class="red">*</span><!-- {/if} -->{$field.reg_field_name}：
+                        </label>
+                        <input name="extend_field{$field.id}" type="text" class="register_input"/>
+                    </p>
+                    <div class="error"></div>
+                    <!-- {/if} -->
+                    <!-- {/foreach} -->
+                    <!-- 判断是否启用验证码{if $enabled_captcha} --> 
+                    <p>
+                    	<label class="tips">
+							<span class="red">*</span>
+							验证码：
+						</label>
+                        <input type="text" class="register_input verify_input" name="captcha" maxlength="6">
+                        <img src="captcha.php?{$rand}" alt="captcha" style="cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" width="100" height="30" id="img" />
+                        <a onclick="img.src='captcha.php?'+Math.random()" style=" cursor:pointer">看不清换一张</a>
+                    </p>
+                    <!-- {/if} --> 
+                    <div class="error"></div>
+                    <p class="readed gray">
+                    	<label>
+                        	<input name="agreement" type="checkbox" value="1" checked="checked" />
+                        	{$lang.agreement}
+						</label>
+                    </p>
+                    <div class="operate" style="padding-left:100px;">
+                    	<a class="regi_btn white f16 yahei clearfix" href="javascript:void(0);">
+                    		<input name="act" type="hidden" value="act_register" >
+          					<input type="hidden" name="back_act" value="{$back_act}" />
+          					<input name="Submit" type="submit" value="同意以上协议并注册" class="Left">
+                        	<em class="Left"></em>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="user_register Right" style="color:#555;padding-top:40px;">
+        	已经有帐号？请直接登录 <a class="logintoreg users_submit users_submit2 white f16 yahei" style="color:#666!important;" href="user.php">登 录</a>
+            <div class="login_api" style="padding-top:10px;line-height:2.5;padding-left:0">
+            	<span class="api_tips">使用第三方账号登录家居网：</span>
+                <br>
+                <span class="api_from gray">
+                	<a class="sina" target="_blank" style="background-position:0 -175px;" href="user.php?act=oath&amp;type=weibo">新浪微博</a><br />
+                    <a class="qq" target="_blank" href="user.php?act=oath&amp;type=qq" style="background-position:0 -120px;">QQ</a><br />
+                    <a class="alipay" target="_blank" style="padding-left:38px;background-position:0 -63px;" href="user.php?act=oath&amp;type=alipay">支付宝</a><br />
+                </span>
+                <div style="padding-top:10px;">
+                	{insert name='ads' id=43 num=1} 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--{/if}--> 
+<!--{/if}--> 
+<!--#会员注册界面 end--> 
+
+<!--*找回密码界面 --> 
+<!--{if $action eq 'get_password'} --> 
+{insert_scripts files='utils.js'} 
+<script type="text/javascript">
+    {foreach from=$lang.password_js item=item key=key}
+      var {$key} = "{$item}";
+    {/foreach}
+    </script>
+<div class="user_all w" style="width:980px;">
+	<div class="user_header clearfix" style="padding:15px 0px;">
+    	<div class="logo Left">
+        	<a href="./index.php">
+				<img width="146" height="53" alt="logo" src="images/logo.gif">
+			</a>
+        </div>
+        <div class="nav Right">
+			<a href="./index.php">返回首页</a> | <a target="_blank" href="article_cat.php?id=3">帮助中心</a>
+		</div>
+    </div>
+    <div class="find-password">
+    	<h1 class="yahei">找回密码</h1>
+        <div class="find-content">
+        	<p class="step-info clearfix">
+        		<span class="first present">1.输入账户名</span>
+				<span>2.设置新密码</span>
+            </p>
+            <div class="czc-check-content">
+            	<form action="user.php" method="post" name="getPassword" onsubmit="return submitPwdInfo();">
+            		<div>
+                		<table class="czc-check-table" width="100%" cellspacing="0" cellpadding="0">
+                    		<tr>
+                        		<td class="r vtop" width="30%">账户名：</td>
+                            	<td><input name="user_name" type="text" size="30" class="u_input w200" /></td>
+                        	</tr>
+                        	<tr>
+                        		<td class="r vtop">邮箱：</td>
+                            	<td><input name="email" type="text" size="30" class="u_input w200" /></td>
+                        	</tr>
+                        	<tr>
+                        		<td></td>
+                            	<td>
+                            		<div class="btn_cancel_s c323232">
+                            			<input type="hidden" name="act" value="send_pwd_email" />
+            							<input type="submit" name="submit" value="{$lang.submit}" class="btn_cancel_s c323232" />           						
+                                	</div>
+            					</td>
+                        	</tr>
+                    	</table>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--{/if}--> 
+
+<!--*通过问题找回密码的确认找回账号界面 --> 
+<!--{if $action eq 'qpassword_name'} -->
+<div class="user_all w" style="width:980px;">
+	<div class="user_header clearfix" style="padding:15px 0px;">
+    	<div class="logo Left">
+        	<a href="./index.php">
+				<img width="146" height="53" alt="logo" src="images/logo.gif">
+			</a>
+        </div>
+        <div class="nav Right">
+			<a href="./index.php">返回首页</a> | <a target="_blank" href="article_cat.php?id=3">帮助中心</a>
+		</div>
+    </div>
+    <div class="find-password">
+    	<h1 class="yahei">找回密码</h1>
+        <div class="find-content">
+        	<p class="step-info clearfix">
+        		<span class="first present">1.输入账户名</span>
+				<span>2.设置新密码</span>
+            </p>
+            <div class="czc-check-content">
+            	<form action="user.php" method="post">
+            		<div>
+                		<table class="czc-check-table" width="100%" cellspacing="0" cellpadding="0">
+                    		<tr>
+                        		<td class="r vtop" width="30%">{$lang.username}：</td>
+                            	<td><input name="user_name" type="text" size="30" class="u_input w200" /></td>
+                        	</tr>
+                        	<tr>
+                        		<td></td>
+                            	<td>
+                            		<div class="btn_cancel_s c323232">
+                                        <input type="hidden" name="act" value="get_passwd_question" />
+            							<input type="submit" name="submit" value="{$lang.submit}" class="btn_cancel_s c323232" />       						
+                                	</div>
+            					</td>
+                        	</tr>
+                    	</table>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--{/if}--> 
+
+<!--*根据输入账号显示密码问题界面 --> 
+<!--{if $action eq 'get_passwd_question'} -->
+<div class="user_all w" style="width:980px;">
+	<div class="user_header clearfix" style="padding:15px 0px;">
+    	<div class="logo Left">
+        	<a href="./index.php">
+				<img width="146" height="53" alt="logo" src="images/logo.gif">
+			</a>
+        </div>
+        <div class="nav Right">
+			<a href="./index.php">返回首页</a> | <a target="_blank" href="article_cat.php?id=3">帮助中心</a>
+		</div>
+    </div>
+    <div class="find-password">
+    	<h1 class="yahei">找回密码</h1>
+        <div class="find-content">
+        	<p class="step-info clearfix">
+        		<span class="first present">1.输入账户名</span>
+				<span>2.设置新密码</span>
+            </p>
+            <div class="czc-check-content">
+            	<form action="user.php" method="post">
+            		<div>
+                		<table class="czc-check-table" width="100%" cellspacing="0" cellpadding="0">
+                    		<tr>
+                        		<td class="r vtop" width="30%">{$lang.passwd_question}：</td>
+                            	<td>{$passwd_question}</td>
+                        	</tr>
+                        	<tr>
+                        		<td class="r vtop">{$lang.passwd_answer}：</td>
+                            	<td><input name="passwd_answer" type="text" size="20" class="u_input w200" /></td>
+                        	</tr>
+                            <!-- 判断是否启用验证码{if $enabled_captcha} -->
+        					<tr>
+          						<td class="r vtop">{$lang.comment_captcha}</td>
+          						<td>
+          							<input type="text" size="8" name="captcha" class="u_input w120" />
+            						<img src="captcha.php?is_login=1&{$rand}" alt="captcha" id="img" style="cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" width="59" height="26" /><a class="c005EA7" onclick="img.src='captcha.php?is_login=1&'+Math.random()">换一张</a>
+                                </td>
+        					</tr>
+       						<!--{/if}-->
+                        	<tr>
+                        		<td></td>
+                            	<td>
+                            		<div class="btn_cancel_s c323232">                            			                                        
+                                        <input type="hidden" name="act" value="check_answer" />
+            							<input type="submit" name="submit" value="{$lang.submit}" class="btn_cancel_s c323232" />          						
+                                	</div>
+            					</td>
+                        	</tr>
+                    	</table>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--{/if}--> 
+
+<!-- {if $action eq 'reset_password'} --> 
+<script type="text/javascript">
+    {foreach from=$lang.password_js item=item key=key}
+      var {$key} = "{$item}";
+    {/foreach}
+    </script>
+<div class="user_all w" style="width:980px;">
+	<div class="user_header clearfix" style="padding:15px 0px;">
+    	<div class="logo Left">
+        	<a href="./index.php">
+				<img width="146" height="53" alt="logo" src="images/logo.gif">
+			</a>
+        </div>
+        <div class="nav Right">
+			<a href="./index.php">返回首页</a> | <a target="_blank" href="article_cat.php?id=3">帮助中心</a>
+		</div>
+    </div>
+    <div id="JS_findpwd_content" class="find-password">
+    	<h1 class="yahei">找回密码</h1>
+        <div class="find-content">
+        	<p class="step-info clearfix">
+        		<span class="first">1.输入账户名</span>
+				<span class="present">2.设置新密码</span>
+            </p>
+            <div class="czc-check-content">
+            	<form action="user.php" method="post" name="getPassword2" onSubmit="return submitPwd()">
+            		<div>
+                		<table class="czc-check-table" width="100%" cellspacing="0" cellpadding="0">
+                    		<tr>
+                        		<td class="r vtop" width="30%">新密码：</td>
+                            	<td>
+                            		<input name="new_password" type="password" size="25" class="u_input w200" />
+                            	</td>
+                        	</tr>
+                        	<tr>
+                        		<td class="r vtop" width="30%">确认新密码：</td>
+                            	<td>
+                            		<input name="confirm_password" type="password" size="25"  class="u_input w200"/>
+                            	</td>
+                        	</tr>
+                        	<tr>
+                        		<td></td>
+                            	<td>
+                            		<div id="JS_next_btn" class="btn_cancel_s c323232">
+										<input type="hidden" name="act" value="act_edit_password" />
+            							<input type="hidden" name="uid" value="{$uid}" />
+            							<input type="hidden" name="code" value="{$code}" />
+            							<input type="submit" name="submit" value="{$lang.confirm_submit}" class="btn_cancel_s c323232" />
+									</div>
+                            	</td>
+                        	</tr>
+                    	</table>
+                	</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>    
+<!--{/if}--> 
+<!--#找回密码界面 end--> 
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+{foreach from=$lang.passport_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var username_exist = "{$lang.username_exist}";
+</script>
+</html>
+
+

@@ -1,0 +1,200 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<div class=" xm-box1 ">
+  <div class="hd">
+    <p class="title">晒单贴：{$single.single_name}</p>
+  </div>
+</div>
+<div  id="discuss_goods">
+  <div class="mc" >
+    <div class="user">
+      <p><img src="../images/name.gif" ></p>
+      <Div class="blank"></Div>
+      <p><a href="#">{if $single.user_name}{$single.user_name}{else}匿名用户{/if}</a></p>
+    </div>
+    <Div class="cont">
+      <p class="time">{$single.addtime}</p>
+      <p class="text">{$single.single_description}</p>
+      <style type="text/css">
+	
+	
+	/* 焦点图效果 */
+	.root61 .picBtnTop{ width:760px; height:400px;}
+	.picBtnTop{ width:500px; height:270px;  position:relative;  overflow:hidden;  zoom:1; margin:36px 0 0 10px;  }
+	.root61 .picBtnTop .hd{width:122px;}
+	.picBtnTop .hd{ width:82px;  height:330px; position:absolute; right:3px; overflow:hidden; text-align:right; padding-top:40px; }
+	.root61 .picBtnTop .hd ul li{width:122px;} 
+	.picBtnTop .hd ul li{ width:82px; height:92px; padding-bottom:18px; text-align:center;   }
+	.root61 .picBtnTop .hd ul li img{ width:120px;}
+	.picBtnTop .hd ul li img{ width:80px; height:90px; border:1px solid #fff; cursor:pointer;  }
+	.root61 .picBtnTop .hd ul li.on{ width:122px;}
+	.picBtnTop .hd ul li.on{ width:82px; height:92px;  }
+	.picBtnTop .hd ul li.on img{ border:1px solid #99cc00;  }
+	.root61 .picBtnTop .bd{width:600px; height:400px;}
+	.picBtnTop .bd{ width:400px;  height:270px; position:relative; margin:0; float:left; }
+	.picBtnTop .bd li{ position:relative; zoom:1; vertical-align:middle;}
+	.picBtnTop .bd li .pic{ position:relative; z-index:0;  }
+	.picBtnTop .bd li .pic img{ width:400px; height:270px; vertical-align:bottom; }   .root61 .picBtnTop .bd li .pic img{width:600px;  height:400px;}
+    .picBtnTop .control {position: absolute;width: 42px;left: 675px;height: 23px;background-repeat: no-repeat;cursor: pointer;}
+    #spec-top {top: 0;background: url(../images/top.gif) no-repeat;}
+	#spec-bottom {bottom: 0;background: url(../images/bottom.gif) no-repeat;}
+     #reply .mc { padding:0;
+
+}
+#reply .mc .item {
+position: relative;
+padding-left:10px;
+margin-bottom: 10px;
+zoom: 1;
+}
+#reply .mc .tit {
+position: absolute;
+left:18px; top:3px;
+}
+.root61 #reply .mc .cont {
+width: 750px;}
+#reply .mc .cont {
+width: 480px;
+min-height: 60px;
+max-height: 73px;
+_height: 60px;
+overflow: hidden;
+border-color: #dcdcdc #dcdcdc #dcdcdc #dcdcdc;
+border-style: solid;
+border-width: 1px;
+cursor: text;
+zoom: 1;
+}
+#reply .mc .i-cont {
+font-size: 14px;
+min-height: 60px;
+max-height: 73px;
+_height: 60px;
+overflow: hidden;
+}
+.root61 #reply .mc .i-cont textarea {
+width: 740px;}
+#reply .mc .i-cont textarea {
+font-size: 14px;
+width:470px;
+min-height: 50px;
+max-height: 63px;
+_height: 50px;
+border: 0;
+overflow: hidden;
+ margin-top:10px;
+}
+.btn-reply{ width:80px; height:25px; line-height:25px; color:#fff; text-align:center; background:#ff6f3d; border:0; float:right}	
+.reply_button{ text-align:right; height:25px; padding-right:5px;}
+</style>
+      <div id="demo1" class="picBtnTop">
+        <div class="hd">
+          <ul>
+	  {foreach from=$img_list item=img}
+            <li><img src="{$img.thumb_url}" /></li>
+	  {/foreach}
+          </ul>
+        </div>
+        <div id="spec-top" class="control "></div>
+        <div id="spec-bottom" class="control" ></div>
+        <div class="bd">
+          <ul>
+	  {foreach from=$img_list item=img}
+            <li>
+              <div class="bg">{$img.img_desc}</div>
+              <div class="pic"><a href=""><img src="{$img.img_url}" /></a></div>
+            </li>
+	     {/foreach}
+          </ul>
+        </div>
+      </div>
+      <script type="text/javascript">
+jQuery("#demo1").slide({ mainCell:".bd ul",effect:"top",autoPlay:false,triggerTime:0,nextCell:"#spec-bottom",prevCell:"#spec-top",trigger:"click"});</script>
+      <div class="blank"></div>
+      <div class="m" id="reply">
+      <!-- 评论列表 start-->
+     <div class="reply-lz-comment" id="reply-lz-comment">
+	     {foreach from=$comment_list item=reply}
+             <div class="reply-lz_list">
+	     {if $reply.quote_username}
+	     <p>引用：<span style="color:green;">{$reply.quote_username}</span> | <span>{$reply.quote_content}</span></p>
+	     {/if}
+             <p><a href="#">{$reply.user_name}</a> <span>{$reply.content}</span></p>
+             <p class="time"><span style="float:left; margin-left:20px; cursor:pointer;" onClick="reply_inn('{$reply.user_name}', {$reply.comment_id});">回复</span>{$reply.add_time}</p>
+             </div>
+	     {/foreach}
+     </div>
+      <!--评论列表 end-->
+        <div class="mc">
+          <div class="item">
+            <div class="tit">回复：<span id="username_id">{$single.user_name}</span></div>
+	    <input type="hidden" name="cid" id="cid" value="0" />
+	    <input type="hidden" name="comment_id" id="comment_id" value="0" />
+            <div class="cont">
+              <div class="i-cont">
+                <textarea id="content"></textarea>
+              </div>
+            </div>
+            
+          </div>
+          <div class="blank"></div>
+          <div class="blank5"></div>
+         <div class="reply_button">
+            <input type="button" class="btn-reply" id="btn-reply" value="发表回复" onClick="onsubmit_comm('{$single.user_name}', {$single.single_id});" />
+            <span id="respone_message" style="color:red;"></span>
+       </div>
+      </div>
+    </Div>
+  </div>
+</div>
+</div>
+<script type="text/javascript">
+function onsubmit_comm(reply_user, sid)
+{
+    var cid = document.getElementById('cid').value;
+    var content = document.getElementById('content').value;
+    if(content == "")
+    {
+	alert('评论内容不能为空');
+	return false;
+    }
+    if(cid == 0)
+    {
+		//表示评论晒单
+	    Ajax.call('single_sun.php?act=check_comm', 'sid=' + sid + '&comment_content=' + content + '&comment_type=1', get_reply_comm, 'GET', 'JSON');
+    }
+    else
+    {
+	//回复评论
+	var comment_id = document.getElementById('comment_id').value;
+	Ajax.call('single_sun.php?act=check_comm', 'sid=' + sid + '&comment_id=' + comment_id + '&comment_content=' + content + '&comment_type=2', get_reply_comm, 'GET', 'JSON');
+    }
+
+}
+
+function get_reply_comm(res)
+{
+    if(res.is_user == "")
+    {
+	window.location.href="user.php";
+    }
+    if(res.option == true)
+    {
+	location.reload();
+    }
+    else
+    {
+	document.getElementById('respone_message').innerHTML = res.error;
+    }
+}
+
+function reply_inn(username, id)
+{
+	document.getElementById('cid').value = 1;
+	document.getElementById('comment_id').value = id;
+	document.getElementById('username_id').innerHTML = username;
+}
+</script>
+
+
+

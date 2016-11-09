@@ -1,0 +1,42 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $hot_goods} -->
+<div class="fixture_commune fixture_commune_hot">
+	<!--{foreach from=$hot_goods item=goods name=hot}-->
+    <!-- {if $smarty.foreach.hot.iteration==1}-->
+	<div class="commune_notes">
+    	<div class="commune_pic">
+        	<a target="_blank" title="{$goods.name|escape:html}" href="{$goods.url}"><img src="{$goods.thumb}" width="146" height="97"/></a>  
+        </div>
+        <div class="commune_txt">
+        	<p>
+            	<a target="_blank" title="{$goods.name|escape:html}"  href="{$goods.url}">{$goods.short_style_name}</a>
+                <br />
+                本站价:
+				<span class="yen red bold">¥<!-- {if $goods.promote_price neq ""} --> {$goods.promote_price} <!-- {else}--> {$goods.shop_price} <!--{/if}--></span>
+                <br />
+                <span class="gray">
+					月销量:
+					<span class="orange">{$goods.sales_volume}</span>
+				</span>                
+            </p>
+        </div>
+    </div>
+    <!--{/if}-->
+    <!-- {/foreach} -->
+    <ul class="commune_info">
+    	<!--{foreach from=$hot_goods item=goods name=hot}-->
+        <!-- {if $smarty.foreach.hot.iteration<4}-->
+        <li>
+        	• <a target="_blank" title="{$goods.name|escape:html}"  href="{$goods.url}">{$goods.short_style_name}</a>
+            <span class="gray fixture_span_pirce">
+				本站价：
+				<span class="yen red">¥<!-- {if $goods.promote_price neq ""} -->{$goods.promote_price} <!-- {else}--> {$goods.shop_price} <!--{/if}--></span>
+			</span>	
+        </li>
+        <!-- {/if} --> 
+        <!-- {/foreach} -->
+    </ul>
+</div>
+<!-- {/if} --> 
+
+

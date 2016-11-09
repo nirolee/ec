@@ -1,0 +1,17 @@
+<div class="w clearfix" style="position:relative">
+  <div id="JS_default_stairs" class="default_stairs"> <a class="stairs_nav floor1" href="#floor-1"> <span class="icon"></span> <em class="name"> 卧室 <br>
+    家具 </em> <i class="stairs_line"></i> </a> <a class="stairs_nav floor2" href="#floor-2"> <span class="icon"></span> <em class="name"> 客厅 <br>
+    家具 </em> <i class="stairs_line"></i> </a> <a class="stairs_nav floor3" href="#floor-3"> <span class="icon"></span> <em class="name"> 餐厅 <br>
+    家具 </em> <i class="stairs_line"></i> </a> <a class="stairs_nav floor4" href="#floor-4"> <span class="icon"></span> <em class="name"> 书房 <br>
+    家具 </em> <i class="stairs_line"></i> </a> 
+    
+    <!--
+    <a class="stairs_nav floor5" href="#floor-5"> <span class="icon"></span> <em class="name"> 灯饰 <br>
+    照明 </em> <i class="stairs_line"></i> </a> 
+    <a class="stairs_nav floor6" href="#floor-6"> <span class="icon"></span> <em class="name"> 家纺 <br>
+    家饰 </em> <i class="stairs_line"></i> </a> 
+    -->
+    </div>
+</div>
+
+

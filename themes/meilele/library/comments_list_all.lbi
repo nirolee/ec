@@ -1,0 +1,70 @@
+<div class="comment-table">
+				<table>
+    				{foreach from=$comments_list item=item_comment key=k}
+					{if $k neq 'comment_page'}
+        			<tr>
+        				<td class="user-label">
+            				<div class="avatar">
+                				<img width="56" height="56" src="images/level5.gif">
+                			</div>
+                			<p class="name">
+								<span class="">{if $item_comment.user_name}{$item_comment.user_name}{else}匿名用户{/if}</span>
+							</p>
+            			</td>
+            			<td class="c-content">
+            				<div class="c-tip clearfix">
+                				<div class="score Left">
+									<span><img src="images/stars{$item_comment.comment_rank}.gif" /></span>
+									<span>{$item_comment.comment_rank}分</span>
+                    			</div>
+                    			<div class="time Right">{$item_comment.add_time}</div>
+                			</div>
+                			<p>{$item_comment.content}</p>
+                			{if $item_comment.single}
+                			<ul class="show-img clearfix">
+                			{foreach from=$item_comment.single item=com_single key=k}
+                			<li class="JS_gallery_item">
+                    			<img width="130" height="83" src="{$com_single.thumb_url}">
+                    		</li>
+                    		{/foreach}
+                			</ul>
+                			{/if}
+                			<a class="nice JS_comment_like" title="0" href="#none" name="agree" onClick="get_like({$item_comment.comment_id}, 'comm');">
+								<span id="like-comm-{$item_comment.comment_id}" class="text">({$item_comment.useful})</span><span class="space"></span>
+							</a>
+            			</td>
+        			</tr>
+        			{/if}
+					{/foreach}
+    			</table>
+			</div>
+<div class="page-unit clearfix">
+            	<table>
+                	<tr>
+                    	{foreach from=$item_comment.comment_pager item=pager}
+                        <td>
+                        	<!-- {if $pager.page_prev} -->
+	     					<a href="{$pager.page_prev}" class="Prev cm_fliter"> <span class="arrow"><span class="char">◆</span></span>上一页 </a>  
+		   					<!-- {else} -->     
+							<!-- {/if} -->
+                        </td>
+                        <!--{foreach from=$pager.page_number_comm key=key item=item}-->
+                        <td>
+	      					<!-- {if $pager.page eq $key} -->
+	      					<span class="current">{$key}</span>
+	      					<!-- {else} -->
+	      					<a href="{$item}" class="cm_fliter"> {$key}</a>  
+	      					<!-- {/if} -->
+                        </td>
+	     				<!--{/foreach}-->
+                        <td>
+                        	<!-- {if $pager.page_next} -->
+	       					<a href="{$pager.page_next}" class="Next cm_fliter"> 下一页<span class="arrow"><span class="char">◆</span></span></a>
+		   					<!-- {else} -->
+		  					<!-- {/if} -->
+                        </td>
+                        {/foreach}
+                    </tr>
+                </table>
+            </div>
+

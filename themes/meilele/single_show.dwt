@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="xspace_common.css" rel="stylesheet" type="text/css" />
+<link href="themes/meilele/xspace_common-980.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,user.js'}
+</head>
+<body class="w-980">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='meilele_single.js'}
+<div class="xspace_bg">
+	<div class="no_mt">
+    	<div class="w mt10 mb10 top_banner" style="height: 60px; overflow: hidden;">
+        	{insert name='ads' id=47 num=1}
+        </div>
+    </div>
+    <div class="w crumbs clearfix">
+    	<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+    </div>
+    <div class="w clearfix xspace_box">
+    	<div class="Left detail_left">
+        	<div class="title cont_mid">
+            	<h3 class="c">
+                	<span class="red">
+                    	[<span class="pageState">1</span>]
+                    </span>
+                </h3>
+            </div>
+            <div class="slider_box">
+            	<div class="slider cont_mid bd">
+                	<ul>
+                		<!-- {foreach from=$img_list item=img} -->
+                    	<li><a href="javascript:;"><img src="{$img.img_url}" width="580" border="0" ></a></li>
+                    	<!-- {/foreach} -->
+                    </ul>
+                </div>
+                <div class="nav">
+                	<a class="prev arrow icon_sprite" href="javascript:void(0)"></a>
+					<a class="next arrow icon_sprite" href="javascript:void(0)"></a>
+                </div>
+            </div>
+            <div class="tools cont_mid clearfix">
+            	<div class="Left share_box gray">
+                	<div class="Left share_text">分享到：</div>
+            		<div class="bdshare_t bds_tools get-codes-bdshare" id="bdshare">                		
+                		<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+                		<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+                		<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+                		<a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                        <a class="shareCount" href="#" title="累计分享0次">0</a>
+                	</div>
+                </div>
+                <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=692785" ></script>
+				<script type="text/javascript" id="bdshell_js"></script>
+				<script type="text/javascript">
+					document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+				</script>
+                <div class="msg_box clearfix Right">
+                	<div class="Left">
+                    	<!--{if $single.single_ip eq $ip}-->
+                        <i class="icon_sprite icon_like_only JS_only_like" id="like-{$single.single_id}"></i>
+                        <!--{else}-->
+                        <a href="javascript:;" onClick="get_like({$single.single_id});" id="like-{$single.single_id}" class="icon_sprite icon_like JS_i_like"></a>
+                        <!--{/if}-->
+                    </div>
+                    <div id="like_count-{$single.single_id}" class="red Left ml5 link_num_x JS_like_num">{$single.single_like}</div>
+                </div>
+            </div>
+            <div class="relation_xspace clearfix">
+            	<div class="Left clearfix">
+                	<!--{if empty($prev)}-->
+                    <a class="text-overflow w_215" href="javascript:void(0)">没有上一家了</a>
+                    <!--{else}-->
+                    <a class="w_80" href="?act=single_show&sid={$prev.single_id}">
+						<span class="simsun"> << </span> 上一秀家
+					</a>
+					<a class="text-overflow w_215" href="?act=single_show&sid={$prev.single_id}">{$prev.single_name}</a>
+                    <!--{/if}-->
+                </div>
+                <div class="Right clearfix">
+                	<!--{if empty($next)}-->
+                    <a class="text-overflow w_215" href="javascript:void(0)">没有下一家了</a>
+                    <!--{else}-->
+                    <a class="w_80" href="?act=single_show&sid={$next.single_id}">
+                    	下一秀家<span class="simsun"> >> </span>
+                    </a>
+					<a class="text-overflow w_215" href="?act=single_show&sid={$next.single_id}">{$next.single_name}</a>
+                    <!--{/if}-->
+                </div>
+            </div>
+            <div class="first_c cont_mid clearfix" style="border-bottom:none">
+            	<div class="Left f_l">
+                	<a target="_blank" href="http://zx.meilele.com/user/2405516/">
+						<img height="38" width="38" src="{$photo}" />
+					</a>
+                </div>
+                <div class="Right f_r">
+                	<p class="author F4446A">
+                    	<a class="red" target="_blank" href="user.php">{$single.user_name}</a>
+						<time class="time gray yahei">{$single.addtime}</time>
+                    </p>
+                    <p class="desc">{$single.single_description}</p>
+                    <div class="reply_thread_box mt10 JS_reply_box">
+                    	<form action="user.php" method="post" name="comm_form" id="comm_form">
+                    		<textarea name="comment_content" id="reply_thread_textarea" class="reply_textarea JS_edit_reply" style="height:16px;" rows="1" maxlength="140"></textarea>
+                            <p class="clearfix none mt5" style="display: block;">
+								<a class="Right detail_submit_reply" onClick="$('#comm_form').submit()" href="javascript:;">发表</a>
+							</p>
+                            <input type="hidden" name="act" value="check_comm" />                                         
+	                        <input type="hidden" name="sid" id="sid" value="{$single.single_id}">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="reply_box" class="reply_box cont_mid">
+            	<p class="f14 red bold reply_num">
+					<code>评论<span id="reply_count">({$comment_num})</span></code>
+				</p>
+                <div id="first_comm">
+                	<!-- {foreach from=$comment_list item=comment} -->
+                	<div class="first_c clearfix first">
+                    	<div class="Left f_l">
+                        	<a href="javascript:void(0);"><img src="{$photo}" width="38" height="38">  </a>
+                        </div>
+                        <div class="Right f_r" id="data-{$comment.comment_id}">
+                        	<p class="author red clearfix">
+                            	<a href="javascript:;" onClick="get_comment_user({$comment.comment_id});" class="CFA465 reply_this Right">回复</a>
+                                <a href="javascript:;" target="_blank" title="{$comment.user_name}" id="comm_user-{$comment.comment_id}" class="F4446A">{$comment.user_name}</a>
+                                <time class="time gray yahei">{$comment.add_time}</time>
+                            </p>
+                            <p class="desc">
+                            	<span class="JS_reply_content_dwt" id="comment_content">{$comment.content}</span>
+                            </p>
+                            <input type="hidden" name="" value="{$comment.comment_id}" />
+                            <div id="reply_textarea-{$comment.comment_id}" class="reply_thread_box mt10 JS_reply_box" style="display:none;">
+                            	<span id="reply_thread_textarea_tips" class="reply_textarea_tips"></span>
+                            	<textarea name="comment_content" class="reply_textarea JS_edit_reply" style="height: 16px;" maxlength="140" id="reply_thread_textarea-{$comment.comment_id}" rows="1"></textarea>
+                                <p class="clearfix mt5" style="display: block;">
+									<a class="Right detail_submit_reply" onClick="onsubmit_comm({$comment.comment_id})"; href="javascript:;">发表</a>
+								</p>                                        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {/foreach} -->
+                </div>
+                <div class="page_list_box clearfix"></div>
+            </div>
+        </div>
+        <div class="Right detail_right">
+        	<div style="margin-bottom: 19px;">
+            	<h3 class="title clearfix h_l20">
+					<span class="Left">相关商品</span>
+				</h3>
+                <div class="content">
+                	<!-- {foreach from=$goods item=g name=iii} -->
+                	<div class="hot_list clearfix" <!-- {if $smarty.foreach.iii.first} -->style="padding-top:10px;"<!-- {/if} -->>
+                    	<div class="Left">
+                        	<a href="goods.php?id={$g.goods_id}" title="{$g.goods_name}" target="_blank"><img src="{$g.goods_thumb}" alt="{$g.goods_name}" width="108" height="73" border="0"></a>
+                        </div>
+                        <div class="Right x_right">
+                        	<div class="mt7">
+								<a href="goods.php?id={$g.goods_id}" title="{$g.goods_name}" target="_blank">{$g.goods_name}</a>
+							</div>
+                            <div class="middle">
+								<span class="color_666">本站价：</span>
+								<span class="yen red">¥</span>
+								<span class="price yahei red">{$g.shop_price}</span>
+							</div>
+                            <div class="clearfix">
+								<a class="goods_buy" target="_blank" href="goods.php?id={$g.goods_id}" title="{$g.goods_name}">去购买</a>
+							</div>
+                        </div>
+                    </div>
+                    <!-- {/foreach} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+		function get_comment_user(id)
+		{
+		  var first_comm = document.getElementById('first_comm');
+		  var input = first_comm.getElementsByTagName('input');
+		  for(var i=0, len=input.length; i<len; i++)
+		  {
+			if(input[i].value == id)
+			{
+			  var reply_textarea = document.getElementById('reply_textarea-' + id);
+			  reply_textarea.style.display = 'block';
+			}
+			else
+			{
+			  var reply_textarea = document.getElementById('reply_textarea-' + input[i].value);
+			  reply_textarea.style.display = 'none';
+			}
+		  }
+		  
+		}
+
+		function onsubmit_comm(id)
+		{
+		    var comment_user = document.getElementById('comm_user-' + id).innerHTML;
+		    var sid = document.getElementById('sid').value;
+		    var content = document.getElementById('reply_thread_textarea-' + id).value;
+			Ajax.call('single_sun.php?act=check_comm', 'sid=' + sid + '&comment_id=' + id + '&is_ajax=1' + '&comment_content=' + '@ ' + comment_user + ' ' + content, get_reply_comm, 'GET', 'JSON');
+		}
+
+		function get_reply_comm(res)
+		{
+		    if(res.is_user == "")
+		    {
+			window.location.href="user.php";
+		    }
+		    if(res.option == true)
+		    {
+			location.reload();
+		    }
+		    else
+		    {
+			document.getElementById('text_message').innerHTML = res.error;
+		    }
+		}
+</script>   
+<script type="text/javascript">	
+function get_like(id)
+{
+	Ajax.call('single_sun.php?act=check_like', 'id=' + id, get_like_single, 'GET', 'JSON');
+}
+
+function get_like_single(res)
+{
+	var like_count = $("#like_count-"+res.id);
+	var count = like_count.html();
+	if(res.option)
+	{		
+		var like = $("#like-"+res.id).html('<i class="icon_sprite icon_like_only JS_only_like" id="like-{$single.single_id}"></i>');
+		$num = parseInt(count) + 1;
+		like_count.html($num);
+	}
+}
+</script>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+<!--回到顶部 Start-->
+<!-- #BeginLibraryItem "/library/back-top.lbi" --><!-- #EndLibraryItem -->
+<!--回到顶部 End-->
+</body>
+<script type="text/javascript">
+{foreach from=$lang.clips_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+</script>
+</html>
+
+

@@ -1,0 +1,48 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="w mt29 default_floor_show">
+	<div class="floor_top clearfix">
+    	<div class="floor_nav Left JS_floor_nav">
+        	<a class="title-bg title JS_title title-{$goods_cat.sort_order}F" title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">
+				<span class="item Left">{$goods_cat.sort_order}F {$goods_cat.name}</span>
+				<span class="sign Right"></span>
+			</a>
+            <b class="title-shadow"></b>
+            <ul>
+            	<!--{foreach from=$goods_cat.cat_clild item=cat name=foo}-->{if $smarty.foreach.foo.iteration < 9}<li><a target="_blank" href="{$cat.url}">{$cat.name}</a></li>{/if}<!--{/foreach}-->
+            </ul>
+            <a class="img" target="_blank" href="#"></a>
+        </div>
+        <div class="floor_banner Left JS_floor_banner">
+        	<div class="nav">
+            	<div class="bg"></div>
+				<span class="lt"></span>
+				<span class="rt"></span>
+                <div class="list JS_list_banner hd">
+                	<ul>
+						<li href="javascript:;"></li><li href="javascript:;"></li><li class="last" href="javascript:;"></li>
+                    </ul>
+				</div>
+            </div>
+        	<div class="bd">
+        		<ul class="JS_ul_banner">
+            		<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告1'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告2'}</li>
+                	<li>{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播广告3'}</li>
+            	</ul>
+            </div>
+        </div>
+        <div class="goodImg Left JS_goodImg">
+        	{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告1'}
+            {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播右广告2'}
+        </div>
+    </div>
+    <div class="floor_bottom JS_floor_bottom">
+    	<div class="other_item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告1'}</div>
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告2'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告3'}
+        {insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告4'}
+        <div class="hide-item">{insert name='ads_pro' cat_name=$goods_cat.name type='分类下轮播底下广告5'}</div>
+    </div>
+</div>
+
+

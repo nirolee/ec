@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{if $category==325} 建材-->
+<ul>
+	<li class="first on"><a href="#"><span>床品套件低至99元！</span></a></li>
+	<li><a href="#"><span>家饰大作战低至1折！</span></a></li>
+	<li><a href="#"><span>欧美家纺全场2折起！</span></a></li>
+	<li class="last"><a href="#"><span>美式地毯满500减50 </span></a></li>
+</ul><!-- {/if} -->
+<!--{if $category==326} 家具-->
+<ul>
+	<li class="first on"><a href="#"><span>床品套件低至99元！</span></a></li>
+	<li><a href="#"><span>家饰大作战低至1折！</span></a></li>
+	<li><a href="#"><span>欧美家纺全场2折起！</span></a></li>
+	<li class="last"><a href="#"><span>美式地毯满500减50 </span></a></li>
+</ul>
+<!-- {/if} -->
+<!--{if $category==311} 家饰-->
+<ul>
+	<li class="first on"><a href="#"><span>床品套件低至99元！</span></a></li>
+	<li><a href="#"><span>家饰大作战低至1折！</span></a></li>
+	<li><a href="#"><span>欧美家纺全场2折起！</span></a></li>
+	<li class="last"><a href="#"><span>美式地毯满500减50 </span></a></li>
+</ul>
+<!-- {/if} -->
+
